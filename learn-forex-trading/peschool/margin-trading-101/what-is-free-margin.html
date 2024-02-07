@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+   
+    <p>What does &ldquo;Free Margin&rdquo; mean?</p>
+    <p>Margin can be classified as either &ldquo;used&rdquo; or &ldquo;free&rdquo;.</p>
+    <p><strong>Used Margin</strong>, which is just the&nbsp;<em>aggregate</em>&nbsp;of all the&nbsp;<strong>Required Margin</strong>&nbsp;from all open positions, was discussed in a previous lesson.</p>
+    <p><strong>Free Margin</strong>&nbsp;is the&nbsp;<em>difference</em>&nbsp;between Equity and Used Margin.</p>
+    <p>Free Margin refers to the Equity in a trader&rsquo;s account that is NOT tied up in margin for current open positions.</p>
+    <p>Free Margin is also known as &ldquo;<strong>Usable Margin</strong>&rdquo; because it&rsquo;s margin that you can &ldquo;use&rdquo;&hellip;.it&rsquo;s &ldquo;usable&rdquo;.</p>
+    <p>Free Margin can be thought of as two things:</p>
+    <ol>
+    <li>The amount available to open NEW positions.</li>
+    <li>The amount that EXISTING positions can move against you before you receive a Margin Call or Stop Out.</li>
+    </ol>
+    <p>Don&rsquo;t worry about what a Margin Call and Stop Out are. They will be discussed later.</p>
+    <p>For now, just know they&rsquo;re bad things. Like acne breakouts, you don&rsquo;t want to experience them.</p>
+    <blockquote>
+    <p><strong>Free Margin</strong>&nbsp;is also known as&nbsp;<strong>Usable Margin</strong>,&nbsp;<strong>Usable Maintenance Margin</strong>,&nbsp;<strong>Available Margin</strong>, and &ldquo;<strong>Available to Trade</strong>&ldquo;.</p>
+    </blockquote>
+    <h2>How to Calculate Free Margin</h2>
+    <p>Here&rsquo;s how to calculate Free Margin:</p>
+    <pre>Free Margin = Equity - Used Margin</pre>
+    <p>If you have open positions, and they are currently profitable, your Equity will increase, which means that you will have more Free Margin as well.</p>
+    <p><strong>Floating profits increase Equity, which increases Free Margin.&nbsp;</strong></p>
+    <p>If your open positions are losing money, your Equity will decrease, which means that you will also have less Free Margin as well.</p>
+    <p><strong>Floating losses decrease Equity, which decreases Free Margin.&nbsp;</strong></p>
+    <h2>Example: No Open Positions</h2>
+    <p>Let&rsquo;s start with an easy example.</p>
+    <p>You deposit $1,000 in your trading account.</p>
+    <p>You don&rsquo;t have any open positions, what is your Free Margin?</p>
+    <h3>Step 1: Calculate Equity</h3>
+    <p>If you don&rsquo;t have any open position, calculating the Equity is easy.</p>
+    <pre>Equity = Account Balance + Floating Profits (or Losses)
+    $1,000 = $1,000 + $0</pre>
+    <p>The Equity would be the SAME as your Balance.</p>
+    <p>Since you don&rsquo;t have any open positions,<strong>&nbsp;you don&rsquo;t have any floating profits or losses</strong>.<img src="https://bpcdn.co/images/2019/02/13231958/equity.png" alt="" /></p>
+    <h3>Step 2: Calculate Free Margin</h3>
+    <p>If you don&rsquo;t have any open positions, then the Free Margin is the SAME as the Equity.</p>
+    <pre>Free Margin = Equity - Used Margin
+    $1,000 = $1,000 - $0</pre>
+    <p>Since you don&rsquo;t have any open positions,&nbsp;<strong>there is no margin being &ldquo;used&rdquo;</strong>.</p>
+    <p>This means that your Free Margin will be the same as your Balance and Equity.<img src="https://bpcdn.co/images/2019/02/14142742/free-margin1.png" alt="" /></p>
+    <h2>Example: Open a Long USD/JPY Position</h2>
+    <p>Now let&rsquo;s make it a bit more complicated by entering a trade!</p>
+    <p>Let&rsquo;s say you have an account balance of $1,000.<img src="https://bpcdn.co/images/2019/02/14125949/account-balance.png" alt="" /></p>
+    <h3>Step 1: Calculate Required Margin</h3>
+    <p>You want to go long USD/JPY and want to open 1 mini lot (10,000 units) position. The Margin Requirement is&nbsp;<strong>4%</strong>.</p>
+    <p>How much margin (Required Margin) will you need to open the position?</p>
+    <p>Since USD is the base currency. this mini lot is 10,000 dollars, which means the position&rsquo;s Notional Value is $10,000.</p>
+    <pre>Required Margin = Notional Value x Margin Requirement
+    $400 = $10,000 x .04</pre>
+    <p>Assuming your trading account is denominated in USD, since the Margin Requirement is&nbsp;<strong>4%</strong>, the Required Margin will be&nbsp;<strong>$400</strong>.<img src="https://bpcdn.co/images/2019/02/13175522/required-margin.png" alt="" /></p>
+    <h3>Step 2: Calculate Used Margin</h3>
+    <p>Aside from the trade we just entered, there aren&rsquo;t any other trades open.</p>
+    <p>Since we just have a SINGLE position open, the Used Margin will be the same as Required Margin.<img src="https://bpcdn.co/images/2019/02/14144711/used-margin-usdjpy-example1.png" alt="" /></p>
+    <h3>Step 3: Calculate Equity</h3>
+    <p>Let&rsquo;s assume that the price has moved slightly in your favor and your position is now trading at breakeven.</p>
+    <p>This means that your floating P/L is&nbsp;<strong>$0</strong>.</p>
+    <p>Let&rsquo;s calculate your Equity:</p>
+    <pre>Equity = Account Balance + Floating Profits (or Losses)
+    $1,000 = $1,000 + $0</pre>
+    <p>The Equity in your account is now&nbsp;<strong>$1,000</strong>.<img src="https://bpcdn.co/images/2019/02/14145842/equity-with-breakeven-floating-pl.png" alt="" /></p>
+    <h3>Step 4: Calculate Free Margin</h3>
+    <p>Now that we know the Equity, we can now calculate the Free Margin:</p>
+    <pre>Free Margin = Equity - Used Margin
+    $600 = $1,000 - $400</pre>
+    <p>The Free Margin is&nbsp;<strong>$600</strong>.<img src="https://bpcdn.co/images/2019/02/14150425/free-margin-usdjpy-example.png" alt="" /></p>
+    <p>As you can see, another way to look at Equity is that is the&nbsp;<strong>sum of your Used and Free margin</strong>.</p>
+    <pre>Equity = Used Margin + Free Margin</pre>
+    <h2>Recap</h2>
+    <p>In this lesson, we learned about the following:</p>
+    <ul>
+    <li><strong>Free Margin</strong>&nbsp;is the money that is NOT &ldquo;locked up&rdquo; due to an open position and can be used to open new positions.</li>
+    <li>When Free Margin is at zero or less, additional positions cannot be opened.</li>
+    </ul>
+    <p>Let&rsquo;s move on and learn about the concept of&nbsp;<strong>Margin Level</strong>.</p>
+
+
+   
+</body>
+
+</html>

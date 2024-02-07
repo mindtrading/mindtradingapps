@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+   
+   
+    <p>Let&rsquo;s now take all the margin jargon you&rsquo;ve learned from the previous lessons and apply them by looking at trading scenarios with different Margin Call and Stop Out Levels.</p>
+    <p>Different retail forex brokers and CFD providers have different margin call policies. Some only operate&nbsp;<strong>only with Margin Calls</strong>, while others define&nbsp;<strong><em>separate</em>&nbsp;Margin Call and Stop Out Levels.</strong></p>
+    <p>In this lesson, we will go through a real-life trading scenario where you are using a broker that only operates with a Margin Call.</p>
+    <p>The broker defines its&nbsp;<strong>Margin Call Level at 100% and has no separate Stop Out Level</strong>.</p>
+    <p>What happens to your margin account when you&rsquo;re in a trade that goes terribly wrong?</p>
+    <p>Let&rsquo;s go find out!</p>
+    <p><img src="https://bpcdn.co/images/2019/02/22001830/classic-margin-call-level-diagram.png" alt="" /></p>
+    <h2>Step 1: Deposit Funds Into Trading Account</h2>
+    <p>Let&rsquo;s say you have an account balance of $1,000.<img src="https://bpcdn.co/images/2019/02/14125949/account-balance.png" alt="" /></p>
+    <p>This is how it&rsquo;d look in your trading account:</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td><strong>Long / Short</strong></td>
+    <td><strong>FX Pair</strong></td>
+    <td><strong>Position Size</strong></td>
+    <td><strong>Entry Price</strong></td>
+    <td><strong>Current Price</strong></td>
+    <td><strong>Margin Level</strong></td>
+    <td><strong>Equity</strong></td>
+    <td><strong>Used Margin</strong></td>
+    <td><strong>Free Margin</strong></td>
+    <td><strong>Balance</strong></td>
+    <td><strong>Floating P/L</strong></td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <h2>Step 2: Calculate Required Margin</h2>
+    <p>You want to go long EUR/USD at 1.15000 and want to open a 1 mini lot (10,000 units) position. The Margin Requirement is&nbsp;<strong>2%</strong>.</p>
+    <p>How much margin (Required Margin) will you need to open the position?</p>
+    <p>Since EUR is the base currency. this mini lot is 10,000 euros, which means the position&rsquo;s Notional Value is&nbsp;<strong>&euro;10,000</strong>.</p>
+    <p>Since our trading account is denominated in USD, we need to convert the value of the EUR to USD to determine the Notional Value of the trade.</p>
+    <pre>$1.15 = &euro;1
+    $11,500 = &euro;10,000
+    </pre>
+    <p>The Notional Value is&nbsp;<strong>$11,500</strong>.</p>
+    <p>Now we can calculate the Required Margin:</p>
+    <pre>Required Margin = Notional Value x Margin Requirement
+    $230 = $11,500 x .02</pre>
+    <p>Assuming your trading account is denominated in USD, since the Margin Requirement is&nbsp;<strong>2%</strong>, the Required Margin will be&nbsp;<strong>$230</strong>.</p>
+    <h2>Step 3: Calculate Used Margin</h2>
+    <p>Aside from the trade we just entered, there aren&rsquo;t any other trades open.</p>
+    <p>Since we just have a SINGLE position open, the Used Margin will be the same as Required Margin.<img src="https://bpcdn.co/images/2019/02/15210654/scenario-1-used-margin-example-eurusd1.png" alt="" /></p>
+    <h2>Step 4: Calculate Equity</h2>
+    <p>Let&rsquo;s assume that the price has moved slightly in your favor and your position is now trading at&nbsp;<strong>breakeven</strong>.</p>
+    <p>This means that your Floating P/L is&nbsp;<strong>$0</strong>.</p>
+    <p>Let&rsquo;s calculate your Equity:</p>
+    <pre>Equity = Balance + Floating Profits (or Losses)
+    $1,000 = $1,000 + $0</pre>
+    <p>The Equity in your account is now&nbsp;<strong>$1,000</strong>.<img src="https://bpcdn.co/images/2019/02/14231957/scenario-1-equity-example-eurusd.png" alt="" /></p>
+    <h2>Step 5: Calculate Free Margin</h2>
+    <p>Now that we know the Equity, we can now calculate the Free Margin:</p>
+    <pre>Free Margin = Equity - Used Margin
+    $770 = $1,000 - $230</pre>
+    <p>The Free Margin is&nbsp;<strong>$770</strong>.<img src="https://bpcdn.co/images/2019/02/14232412/scenario-1-free-margin-example-eurusd.png" alt="" /></p>
+    <h2>Step 6: Calculate Margin Level</h2>
+    <p>Now that we know the Equity, we can now calculate the Margin Level:</p>
+    <pre>Margin Level = (Equity / Used Margin) x 100%
+    435% = ($1,000 / $230) x 100%</pre>
+    <p>The Margin Level is&nbsp;<strong>435%</strong>.<img src="https://bpcdn.co/images/2019/02/14232759/scenario-1-margin-level-example-eurusd.png" alt="" /></p>
+    <p>At this point, this is how your account metrics would look in your trading platform:</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td><strong>Long / Short</strong></td>
+    <td><strong>FX Pair</strong></td>
+    <td><strong>Position Size</strong></td>
+    <td><strong>Entry Price</strong></td>
+    <td><strong>Current Price</strong></td>
+    <td><strong>Margin Level</strong></td>
+    <td><strong>Equity</strong></td>
+    <td><strong>Used Margin</strong></td>
+    <td><strong>Free Margin</strong></td>
+    <td><strong>Balance</strong></td>
+    <td><strong>Floating P/L</strong></td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.15000</td>
+    <td><strong>435%</strong></td>
+    <td>$1,000</td>
+    <td>$230</td>
+    <td>$770</td>
+    <td>$1,000</td>
+    <td>$0</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <h2>EUR/USD drops 500 pips!</h2>
+    <p><img src="https://bpcdn.co/images/2019/02/24235617/price-goes-against-you.png" alt="" /></p>
+    <p>There are reports of a zombie outbreak in Paris.</p>
+    <p>EUR/USD falls 500 pips and is now trading at&nbsp;<strong>1.10000</strong>.</p>
+    <p>Let&rsquo;s see how your account is affected.<img src="https://bpcdn.co/images/2019/02/15171436/scenario-1-recalc-required-margin-example-eurusd.png" alt="" /></p>
+    <h3>Used Margin</h3>
+    <p>You&rsquo;ll notice that the&nbsp;<strong>Used Margin has changed</strong>.</p>
+    <p>Because the exchange rate has changed, the Notional Value of the position has changed.&nbsp;</p>
+    <p>This requires recalculating the Required Margin.</p>
+    <p>Whenever there&rsquo;s a change in&nbsp;the price for EUR/USD, the Required Margin changes.</p>
+    <p>With EUR/USD now trading at&nbsp;<strong>1.1000&nbsp;</strong>(instead of 1.15000), let&rsquo;s see how much Required Margin is needed to keep the position open.</p>
+    <p>Since our trading account is denominated in USD, we need to convert the value of the EUR to USD to determine the Notional Value of the trade.</p>
+    <pre>$1.10 = &euro;1
+    $11,000 = &euro;10,000
+    </pre>
+    <p>The Notional Value is&nbsp;<strong>$11,000</strong>.</p>
+    <p>Previously, the Notional Value was $11,500. Since EUR/USD has fallen, this means that EUR has&nbsp;<em>weakened</em>. And since your account is denominated in USD, this causes the position&rsquo;s Notional Value to decrease.</p>
+    <p>Now we can calculate the Required Margin:</p>
+    <pre>Required Margin = Notional Value x Margin Requirement
+    $220 = $11,000 x .02</pre>
+    <p>Notice that because the Notional Value has decreased, so has the Required Margin.</p>
+    <p>Since the Margin Requirement is&nbsp;<strong>2%</strong>, the Required Margin will be&nbsp;<strong>$220</strong>.</p>
+    <p>Previously, the Required Margin was $230 (when EUR/USD was trading at 1.15000).</p>
+    <p>The Used Margin is updated to reflect changes in Required Margin for every position open.</p>
+    <p>In this example, since you only have one position open, the Used Margin will be equal to the new Required Margin.</p>
+    <h3>Floating P/L</h3>
+    <p>EUR/USD has fallen from&nbsp;<strong>1.15000 to 1.10000</strong>, a difference of&nbsp;<strong>500 pips.</strong></p>
+    <p>Since you&rsquo;re trading 1 mini lot, a 1 pip move equals $1.</p>
+    <p>This means that you have a&nbsp;<strong>Floating Loss of $500</strong>.</p>
+    <pre>Floating P/L = (Current Price - Entry Price) x 10,000 x $X/pip
+    -$500 = (1.1000 - 1.15000) x 10,000 x $1/pip</pre>
+    <h3>Equity</h3>
+    <p>Your Equity is now&nbsp;<strong>$500</strong>.</p>
+    <pre>Equity = Balance + Floating P/L
+    $500 = $1,000 + (-$500)</pre>
+    <h3>Free Margin</h3>
+    <p>Your Free Margin is now&nbsp;<strong>$280</strong>.</p>
+    <pre>Free Margin = Equity - Used Margin
+    $280 = $500 - $220</pre>
+    <h3>Margin Level</h3>
+    <p>Your Margin Level has decreased to&nbsp;<strong>227%</strong>.</p>
+    <pre>Margin Level = (Equity / Used Margin) x 100%
+    227% = ($500 / $220) x 100%</pre>
+    <p>Your Margin Level is still above 100% so all is still well.</p>
+    <h3>Account Metrics</h3>
+    <p>This is how your account metrics would look in your trading platform:</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td><strong>Long / Short</strong></td>
+    <td><strong>FX Pair</strong></td>
+    <td><strong>Position Size</strong></td>
+    <td><strong>Entry Price</strong></td>
+    <td><strong>Current Price</strong></td>
+    <td><strong>Margin Level</strong></td>
+    <td><strong>Equity</strong></td>
+    <td><strong>Used Margin</strong></td>
+    <td><strong>Free Margin</strong></td>
+    <td><strong>Balance</strong></td>
+    <td><strong>Floating P/L</strong></td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.15000</td>
+    <td><strong>435%</strong></td>
+    <td>$1,000</td>
+    <td>$230</td>
+    <td>$770</td>
+    <td>$1,000</td>
+    <td>$0</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.10000</td>
+    <td><strong>227%</strong></td>
+    <td>$500</td>
+    <td>$220</td>
+    <td>$280</td>
+    <td>$1,000</td>
+    <td>-$500</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <h2>EUR/USD drops another 288 pips!</h2>
+    <p><img src="https://bpcdn.co/images/2019/02/24235617/price-goes-against-you.png" alt="" /></p>
+    <p>EUR/USD falls another 288 pips and is now trading at&nbsp;<strong>1.07120</strong>.<img src="https://bpcdn.co/images/2019/02/15181216/scenario-1-recalc-2-required-margin-example-eurusd.png" alt="" /></p>
+    <h3>Used Margin</h3>
+    <p>With EUR/USD now trading at&nbsp;<strong>1.07120&nbsp;</strong>(instead of 1.10000), let&rsquo;s see how much Required Margin is needed to keep the position open.</p>
+    <p>Since our trading account is denominated in USD, we need to convert the value of the EUR to USD to determine the Notional Value of the trade.</p>
+    <pre>$1.07120 = &euro;1
+    $10,712 = &euro;10,000
+    </pre>
+    <p>The Notional Value is&nbsp;<strong>$10,712</strong>.</p>
+    <p>Now we can calculate the Required Margin:</p>
+    <pre>Required Margin = Notional Value x Margin Requirement
+    $214 = $10,712 x .02</pre>
+    <p>Notice that because the Notional Value has decreased, so has the Required Margin.</p>
+    <p>Since the Margin Requirement is&nbsp;<strong>2%</strong>, the Required Margin will be&nbsp;<strong>$214</strong>.</p>
+    <p>Previously, the Required Margin was $220 (when EUR/USD was trading at 1.10000).</p>
+    <p>The Used Margin is updated to reflect changes in Required Margin for every position open.</p>
+    <p>In this example, since you only have one position open, the Used Margin will be equal to the new Required Margin.</p>
+    <h3>Floating P/L</h3>
+    <p>EUR/USD has now fallen from&nbsp;<strong>1.15000 to 1.07120</strong>, a difference of&nbsp;<strong>788 pips.</strong></p>
+    <p>Since you&rsquo;re trading 1 mini lot, a 1 pip move equals $1.</p>
+    <p>This means that you have a&nbsp;<strong>Floating Loss of $788</strong>.</p>
+    <pre>Floating P/L = (Current Price - Entry Price) x 10,000 x $X/pip
+    -$788 = (1.07120 - 1.15000) x 10,000 x $1/pip</pre>
+    <h3>Equity</h3>
+    <p>Your Equity is now&nbsp;<strong>$212</strong>.</p>
+    <pre>Equity = Balance + Floating P/L
+    $212 = $1,000 + (-$788)</pre>
+    <h3>Free Margin</h3>
+    <p>Your Free Margin is now &ndash;<strong>$2</strong>.</p>
+    <pre>Free Margin = Equity - Used Margin
+    -$2 = $212 - $214</pre>
+    <h3>Margin Level</h3>
+    <p>Your Margin Level has decreased to&nbsp;<strong>99%</strong>.</p>
+    <pre>Margin Level = (Equity / Used Margin) x 100%
+    99% = ($212 / $214) x 100%</pre>
+    <p>At this point, your Margin Level is now below the&nbsp;<strong>Margin Call Level!</strong></p>
+    <h3>Account Metrics</h3>
+    <p>This is how your account metrics would look in your trading platform:</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td><strong>Long / Short</strong></td>
+    <td><strong>FX Pair</strong></td>
+    <td><strong>Position Size</strong></td>
+    <td><strong>Entry Price</strong></td>
+    <td><strong>Current Price</strong></td>
+    <td><strong>Margin Level</strong></td>
+    <td><strong>Equity</strong></td>
+    <td><strong>Used Margin</strong></td>
+    <td><strong>Free Margin</strong></td>
+    <td><strong>Balance</strong></td>
+    <td><strong>Floating P/L</strong></td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.15000</td>
+    <td><strong>435%</strong></td>
+    <td>$1,000</td>
+    <td>$230</td>
+    <td>$770</td>
+    <td>$1,000</td>
+    <td>$0</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.10000</td>
+    <td><strong>227%</strong></td>
+    <td>$500</td>
+    <td>$220</td>
+    <td>$280</td>
+    <td>$1,000</td>
+    <td>-$500</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.07120</td>
+    <td><strong>99%</strong></td>
+    <td>$212</td>
+    <td>$214</td>
+    <td>-$2</td>
+    <td>$1,000</td>
+    <td>-$788</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <h2>MARGIN CALL!</h2>
+    <p><img src="https://bpcdn.co/images/2019/02/26005853/margin-call-alert.png" alt="Margin Call Alert!" width="343" height="269" /></p>
+    <p>Your trading platform will&nbsp;<strong>automatically close out your trade</strong>!</p>
+    <p>Two things will happen when your trade is closed:</p>
+    <ol>
+    <li>Your&nbsp;<strong>Used Margin</strong>&nbsp;will be &ldquo;released&rdquo;.</li>
+    <li>Your&nbsp;<strong>Floating Loss</strong>&nbsp;will be &ldquo;realized&rdquo;.</li>
+    </ol>
+    <p>Your Balance will be updated to reflect the Realized Loss.</p>
+    <p>Now that your account has no open positions and is &ldquo;flat&rdquo;, your Free Margin, Equity, and Balance will be the same.</p>
+    <p>There is no Margin Level or Floating P/L because there are no open positions.<img src="https://bpcdn.co/images/2019/02/15182436/scenario-1-tradtional-margin-call-end-result-example-eurusd.png" alt="" /></p>
+    <p>Let&rsquo;s see how your trading account changed from start to finish.</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td><strong>Long / Short</strong></td>
+    <td><strong>FX Pair</strong></td>
+    <td><strong>Position Size</strong></td>
+    <td><strong>Entry Price</strong></td>
+    <td><strong>Current Price</strong></td>
+    <td><strong>Margin Level</strong></td>
+    <td><strong>Equity</strong></td>
+    <td><strong>Used Margin</strong></td>
+    <td><strong>Free Margin</strong></td>
+    <td><strong>Balance</strong></td>
+    <td><strong>Floating P/L</strong></td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    <td>$1,000</td>
+    <td>$1,000</td>
+    <td>&ndash;</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.15000</td>
+    <td><strong>435%</strong></td>
+    <td>$1,000</td>
+    <td>$230</td>
+    <td>$770</td>
+    <td>$1,000</td>
+    <td>$0</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.10000</td>
+    <td><strong>227%</strong></td>
+    <td>$500</td>
+    <td>$220</td>
+    <td>$280</td>
+    <td>$1,000</td>
+    <td>-$500</td>
+    </tr>
+    <tr>
+    <td>Long</td>
+    <td>EUR/USD</td>
+    <td>10,000</td>
+    <td>1.15000</td>
+    <td>1.07120</td>
+    <td><strong>99%</strong></td>
+    <td>$212</td>
+    <td>$214</td>
+    <td>-$2</td>
+    <td>$1,000</td>
+    <td>-$788</td>
+    </tr>
+    <tr>
+    <td>&ndash;</td>
+    <td>$212</td>
+    <td>&ndash;</td>
+    <td>$212</td>
+    <td>$212</td>
+    <td>&ndash;</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <p>Before the trade, you had $1,000 in cash. Now you&rsquo;re left with&nbsp;<strong>$212</strong>!</p>
+    <p>You&rsquo;ve lost&nbsp;<strong>79%</strong>&nbsp;of your capital.</p>
+    <pre>% Gain/Loss = ((Ending Balance - Starting Balance) / Starting Balance) x 100%
+    -79% = (($212 - $1,000) / $1,000) x 100%</pre>
+    <p>Some traders suffer a terrible side effect when finding out their trade has been automatically liquidated.</p>
+    <p><img src="https://bpcdn.co/images/2019/02/16002240/trade-liquidation-warning.png" alt="" /></p>
+    <p>In the next lesson, we provide a different trading scenario where your broker has a&nbsp;<em>separate</em>&nbsp;Margin Call AND Stop Out Level.</p>
+    <p>Let&rsquo;s see the difference between happens there versus what happened here.</p>
+
+   
+</body>
+
+</html>
