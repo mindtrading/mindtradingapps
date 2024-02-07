@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+   
+    <h2><strong>Option Chain Analysis in Trading</strong></h2>
+    <p>In this article, I am going to discuss the&nbsp;<strong>Option Chain Analysis&nbsp;</strong>in Trading. Please read our previous article where we discussed Opening Range Breakout<a href="https://dotnettutorials.net/lesson/opening-range-breakout/"><strong>&nbsp;</strong></a>with examples. At the end of this article, you will understand the following pointers<strong>&nbsp;</strong>in detail which are related to Option Chain Analysis.</p>
+    <ol>
+    <li><strong>What is Option Chain Analysis in Trading?</strong></li>
+    <li><strong>What is open interest?</strong></li>
+    <li><strong>How to study option chain table</strong></li>
+    <li><strong>The element of the option chain table</strong></li>
+    <li><strong>How to interpret option open interest</strong></li>
+    <li><strong>Use of open interest</strong></li>
+    </ol>
+    <h4><strong>Market Structure Principles</strong></h4>
+    <p>Price moves within a structural framework of the supply and demand zone.&nbsp;A breakout of the structural framework supply and demand zone will lead to price movement in the next area of the framework of the supply and demand zone</p>
+    <p><img class="alignnone wp-image-8604 ezlazyloaded" title="Market Structure Principles" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155.png?ezimgfmt=rs:839x382/rscb8/ng:webp/ngcb8" sizes="(max-width: 1056px) 100vw, 1056px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155.png?ezimgfmt=ng:webp/ngcb8 1056w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-300x137.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-1024x466.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-768x350.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Market Structure Principles" width="1056" height="481" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155.png?ezimgfmt=ng:webp/ngcb8 1056w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-300x137.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-1024x466.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155-768x350.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-155.png?ezimgfmt=rs:839x382/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>OPTION CHAIN COMPONENT</strong></h4>
+    <p><img class="alignnone wp-image-8605 ezlazyloaded" title="OPTION CHAIN COMPONENT" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156.png?ezimgfmt=rs:839x489/rscb8/ng:webp/ngcb8" sizes="(max-width: 1469px) 100vw, 1469px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156.png?ezimgfmt=ng:webp/ngcb8 1469w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-300x175.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-1024x597.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-768x448.png?ezimgfmt=ng:webp/ngcb8 768w" alt="OPTION CHAIN COMPONENT" width="1469" height="857" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156.png?ezimgfmt=ng:webp/ngcb8 1469w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-300x175.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-1024x597.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156-768x448.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-156.png?ezimgfmt=rs:839x489/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>WHAT are ITM (IN THE MONEY) OPTIONS?</strong></h4>
+    <ol>
+    <li>A call option is said to be in ITM if the strike price is less than the current spot price of the security.</li>
+    <li>A put option is said to be ITM if the strike price is more than the current spot price of the security.</li>
+    </ol>
+    <h4><strong>What are ATM (AT THE MONEY) OPTIONS?</strong></h4>
+    <ol>
+    <li>A call option is said to be in ATM if the strike price is equal to the current spot price of the security.</li>
+    <li>A put option is said to be ATM if the strike price is equal to the current spot price of the security.</li>
+    </ol>
+    <h4><strong>WHAT are OTM (OUT OF THE MONEY) OPTIONS?</strong></h4>
+    <ol>
+    <li>A call option is said to be in OTM if the strike price is more than the current spot price of the security.</li>
+    <li>A put option is said to be OTM if the strike price is less than the current spot price of the security.</li>
+    </ol>
+    <p><strong>Open interest</strong></p>
+    <h4><strong>How Changes in Open Interest Occur</strong></h4>
+    <ul>
+    <li>If both participants in trade are initiating a new position, the open interest will increase. If both participants are liquidating an old position, the open interest will decline.</li>
+    <li>If, however, one participant is initiating a new trade while the other is liquidating an old trade, open interest will remain unchanged.</li>
+    </ul>
+    <h4><strong>Misconception about open interest</strong></h4>
+    <p>Never think that since the PRICE is rising, more LONGS are being created than SHORTS. LONGS will always be equal to SHORTS just that LONGS are dominating SHORTS in the transaction, that is why PRICE is rising</p>
+    <div class="default-creative-container">&nbsp;</div>
+    <p>The number of shares bought is ALWAYS EQUAL to the number of shares sold. Then why does the PRICE rise or fall? because of buying pressure or selling pressure. So, if buyers of a contract are dominating the sellers, PRICE will rise and if sellers are dominating the buyers, PRICE will fall. But BUYERS will always be equal to SELLERS. So, open interest is rising, which means new contracts are being added. But since PRICE is rising with it, it means that LONGS are DOMINATING the transactions. Thus, the market/share is STRONGLY BULLISH. Opposite of bearish trend</p>
+    <h4><strong>WRITING/Selling(Sellers) is more important here&hellip;.. Why&hellip;?</strong></h4>
+    <ul>
+    <li>It takes conviction to sell as there is Unlimited risk and more money required</li>
+    <li>Sellers are usually someone with Big money like Big Institutions</li>
+    <li>Buyers are usually retail traders as it is convenient with the less required capital</li>
+    <li>Institutions are usually right</li>
+    <li>Large option open interest means a massive bet against that strike price</li>
+    </ul>
+    <p><img class="alignnone wp-image-8606 ezlazyloaded" title="WRITING/Selling(Sellers) is more important here&hellip;.. Why&hellip; ?" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157.png?ezimgfmt=rs:839x232/rscb8/ng:webp/ngcb8" sizes="(max-width: 1567px) 100vw, 1567px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157.png?ezimgfmt=ng:webp/ngcb8 1567w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-300x83.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-1024x283.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-768x212.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-1536x424.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="WRITING/Selling(Sellers) is more important here&hellip;.. Why&hellip; ?" width="1567" height="433" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157.png?ezimgfmt=ng:webp/ngcb8 1567w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-300x83.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-1024x283.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-768x212.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157-1536x424.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-157.png?ezimgfmt=rs:839x232/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Use of open interest data</strong></h4>
+    <ul>
+    <li>To identify support and resistance</li>
+    <li>To find out when support resistance will break</li>
+    <li>Direction of trend</li>
+    </ul>
+    <h4><strong>Identifying Support and Resistance based on option chain open interest</strong></h4>
+    <p><img class="alignnone wp-image-8607 ezlazyloaded" title="Identifying Support and Resistance based on option chain open interest" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158.png?ezimgfmt=rs:839x374/rscb8/ng:webp/ngcb8" sizes="(max-width: 1343px) 100vw, 1343px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158.png?ezimgfmt=ng:webp/ngcb8 1343w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-1024x457.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-768x343.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Identifying Support and Resistance based on option chain open interest" width="1343" height="599" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158.png?ezimgfmt=ng:webp/ngcb8 1343w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-1024x457.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158-768x343.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-158.png?ezimgfmt=rs:839x374/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>How do identify support and resistance levels or zone?</strong></h4>
+    <ul>
+    <li>STEP 1 find the highest OI column on both sides (call and put side)</li>
+    <li>STEP 2 note the corresponding change in OI</li>
+    <li>SUPPORT (PE) biggest open interest number + positive change in open interest</li>
+    <li>RESISTANCE(CE) biggest open interest number + positive change in open interest</li>
+    </ul>
+    <p><img class="alignnone wp-image-8608 ezlazyloaded" title="How to identify support and resistance level or zone?" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159.png?ezimgfmt=rs:839x390/rscb8/ng:webp/ngcb8" sizes="(max-width: 1535px) 100vw, 1535px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159.png?ezimgfmt=ng:webp/ngcb8 1535w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-300x139.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-1024x476.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-768x357.png?ezimgfmt=ng:webp/ngcb8 768w" alt="How to identify support and resistance level or zone?" width="1535" height="713" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159.png?ezimgfmt=ng:webp/ngcb8 1535w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-300x139.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-1024x476.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159-768x357.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-159.png?ezimgfmt=rs:839x390/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>How to know where is the resistance in an all-time high price?</strong></h4>
+    <ul>
+    <li>By analyzing the option chain data</li>
+    </ul>
+    <h4><strong>PARTICULAR STRIKE PRICE in Option Chain Analysis</strong></h4>
+    <p>Now we will study what is a particular strike price showing us.</p>
+    <table>
+    <tbody>
+    <tr>
+    <td>
+    <p><strong>CALLS</strong></p>
+    </td>
+    <td>
+    <p><strong>PUTS</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <ul>
+    <li>+ve change in OI implies that call writers are selling because they feel the stock will not rise above the respective level</li>
+    <li>-ve change in OI implies that call writers are squaring up because they feel the stock will rise above the respective level</li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>+ve change in OI implies that put writers are selling because they feel the stock will not fall below the respective level</li>
+    <li>-ve change in OI implies that put writers are squaring up because they feel the stock will fall below the respective level</li>
+    </ul>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2">&nbsp;</td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>&ldquo;STRIKE PRICE&rdquo; will show any of the following:</strong></p>
+    <ol>
+    <li>LONG BUILDUP</li>
+    <li>LONG LIQUIDATION</li>
+    <li>SHORT BUILDUP</li>
+    <li>SHORT COVERING</li>
+    </ol>
+    <h4><strong>LONG BUILDUP in Option Chain Analysis</strong></h4>
+    <p><strong>If the PRICE is rising and open interest is rising, it means the market is STRONGLY BULLISH.&nbsp;</strong>LONG BUILDUP</p>
+    <ul>
+    <li>If PRICE and OI both are rising, it means that the new contract that is being added is dominated by bulls, that&rsquo;s why PRICE is rising with every new contract addition.</li>
+    </ul>
+    <h4><strong>Short-covering in Option Chain Analysis</strong></h4>
+    <p><strong>If the PRICE is rising but open interest is falling, it means the market is WEAKLY BULLISH. Short covering</strong></p>
+    <ul>
+    <li>If the PRICE is rising but&nbsp;<strong>open interest</strong>&nbsp;is falling, it means that the rise in price is due to SHORT COVERING and not bullishness. See why is OI falling? It&rsquo;s falling because positions are being squared off and the number of open contracts in the market is reducing. But since PRICE is rising with it, it means that SHORTS are SQUARING OFF and dominating LONGS in the transaction. See, how would SHORTS square off? They will square off by BUYING. That is why PRICE is rising. So, PRICE is not rising because LONGS are dominating. It is rising because SHORTS are dominating the squaring-off process. Thus, it can not be called BULLISH. It is WEAKLY BULLISH. It can be a TRAP for new LONGS.</li>
+    <li>Rally Extrapolating from the general rule, price up with high volume is bullish. However, if open interest drops during this same trading session, a bearish reading of that variable results. The internal condition of the market during such a trading session would be that of short covering. A short-covering rally is a very weak technical situation. The technician can state that the decline in open interest is more bearish than the high volume is bullish. In fact, if the volume is so high that it can be considered to be of blowoff proportion, the volume reading would also be bearish-signaling at least a temporary reversal of the price uptrend</li>
+    </ul>
+    <h4><strong>SHORT BUILDUP in Option Chain Analysis</strong></h4>
+    <p><strong>If the PRICE is falling, open interest is rising, the market is STRONGLY BEARISH.</strong></p>
+    <ul>
+    <li>If the price is falling and&nbsp;<strong>open interest</strong>&nbsp;is rising, it means that SHORTS are dominating the LONGS. And since&nbsp;<strong>open interest</strong>&nbsp;is rising, it means that new contracts are being added. But, since the price is falling, it means the new contracts which are being added are dominated by SHORTS, not LONGS. Hence, it is STRONGLY BEARISH.</li>
+    </ul>
+    <h4><strong>LONG LIQUIDATION in Option Chain Analysis</strong></h4>
+    <p><strong>If the PRICE is falling and open interest is falling, the market is WEAKLY BEARISH.</strong></p>
+    <ul>
+    <li>If PRICE is falling and&nbsp;<strong>open interest</strong>&nbsp;is falling, it means that the fall in price is due to LONG COVERING or also called LONG UNWINDING. See why is&nbsp;<strong>open interest</strong>&nbsp;falling? It&rsquo;s falling because positions are being squared off and the number of open contracts in the market is reducing. But since PRICE is falling with it, it means that LONGS are SQUARING OFF &amp; dominating SHORTS in the transaction. how would LONGS square off? They will square off by SELLING. That is why PRICE is falling. So, PRICE is not falling because SHORTS are dominating and creating new positions. It is falling because LONGS are dominating the squaring-off process. Thus, it can not be called BEARISH. It is WEAKLY BEARISH. It can be a TRAP for new SHORTS.</li>
+    </ul>
+    <h4><strong>MARKET DIRECTION BASED ON OPTION OI</strong></h4>
+    <ul>
+    <li>In which direction both support and resistance are shifting. If both shiftings are higher is indicated bullishly</li>
+    </ul>
+    <h4><strong>HOW TO KNOW?</strong></h4>
+    <ul>
+    <li>BY CHANGE IN OPEN INTEREST IN PARTICULAR STRIKE PRICE</li>
+    </ul>
+    <h4><strong>Let&rsquo;s study call open interest (CE OI)</strong></h4>
+    <p><img class="alignnone wp-image-8609 ezlazyloaded" title="MARKET DIRECTION BASED ON OPTION OI" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160.png?ezimgfmt=rs:839x453/rscb8/ng:webp/ngcb8" sizes="(max-width: 1364px) 100vw, 1364px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160.png?ezimgfmt=ng:webp/ngcb8 1364w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-300x162.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-1024x553.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-768x415.png?ezimgfmt=ng:webp/ngcb8 768w" alt="MARKET DIRECTION BASED ON OPTION OI" width="1364" height="737" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160.png?ezimgfmt=ng:webp/ngcb8 1364w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-300x162.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-1024x553.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160-768x415.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-160.png?ezimgfmt=rs:839x453/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-8610 ezlazyloaded" title="Option Chain Analysis" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161.png?ezimgfmt=rs:839x270/rscb8/ng:webp/ngcb8" sizes="(max-width: 1505px) 100vw, 1505px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161.png?ezimgfmt=ng:webp/ngcb8 1505w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-300x97.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-1024x330.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-768x247.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis" width="1505" height="485" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161.png?ezimgfmt=ng:webp/ngcb8 1505w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-300x97.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-1024x330.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161-768x247.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-161.png?ezimgfmt=rs:839x270/rscb8/ng:webp/ngcb8" />&nbsp;<img class="alignnone wp-image-8611 ezlazyloaded" title="Option Chain Analysis in Trading" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162.png?ezimgfmt=rs:839x343/rscb8/ng:webp/ngcb8" sizes="(max-width: 1427px) 100vw, 1427px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162.png?ezimgfmt=ng:webp/ngcb8 1427w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-300x123.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-1024x418.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-768x314.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis in Trading" width="1427" height="583" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162.png?ezimgfmt=ng:webp/ngcb8 1427w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-300x123.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-1024x418.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162-768x314.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-162.png?ezimgfmt=rs:839x343/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Let&rsquo;s discuss putting open interest (PE OI)</strong></h4>
+    <p><img class="alignnone wp-image-8612 ezlazyloaded" title="put open interest (PE OI)" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163.png?ezimgfmt=rs:839x461/rscb8/ng:webp/ngcb8" sizes="(max-width: 1362px) 100vw, 1362px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163.png?ezimgfmt=ng:webp/ngcb8 1362w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-300x165.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-1024x563.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-768x422.png?ezimgfmt=ng:webp/ngcb8 768w" alt="put open interest (PE OI)" width="1362" height="749" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163.png?ezimgfmt=ng:webp/ngcb8 1362w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-300x165.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-1024x563.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163-768x422.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-163.png?ezimgfmt=rs:839x461/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-8613 ezlazyloaded" title="Option Chain Analysis Trading" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164.png?ezimgfmt=rs:839x376/rscb8/ng:webp/ngcb8" sizes="(max-width: 1508px) 100vw, 1508px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164.png?ezimgfmt=ng:webp/ngcb8 1508w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-1024x459.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-768x344.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis Trading" width="1508" height="676" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164.png?ezimgfmt=ng:webp/ngcb8 1508w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-1024x459.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164-768x344.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-164.png?ezimgfmt=rs:839x376/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Let&rsquo;s combine both calls and put</strong></h4>
+    <ul>
+    <li>Call writer adding(increasing) and put writer exiting(decreasing)=bearish</li>
+    <li>Put buyers adding(increasing) and call buyers exiting(decreasing) = bearish</li>
+    <li>Call writer decreasing(exiting)and put writer adding(increasing)=bullish.</li>
+    <li>Call buyers increasing(adding) and put buyers decreasing (exiting )=bullish</li>
+    </ul>
+    <p><img class="alignnone wp-image-8614 ezlazyloaded" title="Option Chain Analysis in Intraday Trading" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165.png?ezimgfmt=rs:839x314/rscb8/ng:webp/ngcb8" sizes="(max-width: 1348px) 100vw, 1348px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165.png?ezimgfmt=ng:webp/ngcb8 1348w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-300x112.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-1024x384.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-768x288.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis in Intraday Trading" width="1348" height="505" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165.png?ezimgfmt=ng:webp/ngcb8 1348w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-300x112.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-1024x384.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165-768x288.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-165.png?ezimgfmt=rs:839x314/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>OPTION CHAIN TABLE FOR ABOVE CHART</strong></h4>
+    <p><img class="alignnone wp-image-8615 ezlazyloaded" title="OPTION CHAIN TABLE FOR ABOVE CHART" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166.png?ezimgfmt=rs:839x264/rscb8/ng:webp/ngcb8" sizes="(max-width: 1623px) 100vw, 1623px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166.png?ezimgfmt=ng:webp/ngcb8 1623w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-300x94.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-1024x322.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-768x242.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-1536x484.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="OPTION CHAIN TABLE FOR ABOVE CHART" width="1623" height="511" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166.png?ezimgfmt=ng:webp/ngcb8 1623w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-300x94.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-1024x322.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-768x242.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166-1536x484.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-166.png?ezimgfmt=rs:839x264/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>WHAT HAPPEN NEXT</strong></h4>
+    <p><img class="alignnone wp-image-8616 ezlazyloaded" title="Option Chain Analysis Intraday Trading" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167.png?ezimgfmt=rs:839x382/rscb8/ng:webp/ngcb8" sizes="(max-width: 1352px) 100vw, 1352px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167.png?ezimgfmt=ng:webp/ngcb8 1352w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-300x136.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-1024x466.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-768x349.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis Intraday Trading" width="1352" height="615" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167.png?ezimgfmt=ng:webp/ngcb8 1352w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-300x136.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-1024x466.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167-768x349.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-167.png?ezimgfmt=rs:839x382/rscb8/ng:webp/ngcb8" /></p>
+    <p><strong>Let&rsquo;s see the option chain data for this chart</strong></p>
+    <p><img class="alignnone wp-image-8617 ezlazyloaded" title="option chain data" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168.png?ezimgfmt=rs:839x360/rscb8/ng:webp/ngcb8" sizes="(max-width: 1563px) 100vw, 1563px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168.png?ezimgfmt=ng:webp/ngcb8 1563w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-300x129.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-1024x440.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-768x330.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-1536x659.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="option chain data" width="1563" height="671" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168.png?ezimgfmt=ng:webp/ngcb8 1563w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-300x129.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-1024x440.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-768x330.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168-1536x659.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-168.png?ezimgfmt=rs:839x360/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>BREAKOUT/REVERSAL</strong></h4>
+    <p>Let&rsquo;s study bullish breakout and&nbsp;Bull-to-bear reversal</p>
+    <h4><strong>REVERSAL STUDY</strong></h4>
+    <ul>
+    <li>If near CE OTM strike price has the highest open interest and positive change in open interest, then the price will not break that level. means call writers to feel that the price will not move above that level</li>
+    <li>PUT WRITER exiting means open interest decreasing in ATM and ITM PE, THEY FEEL THA PRICE WILL MOVE BELOW THAT LEVEL</li>
+    </ul>
+    <h4><strong>BREAKOUT STUDY</strong></h4>
+    <ul>
+    <li>If near CE OTM strike price has changed in negative open interest, then the price will break that level. call writer is exiting means they are feeling the price will move up</li>
+    <li>The addition of ATM AND ITM PE means put writers are bullish</li>
+    </ul>
+    <p><img class="alignnone wp-image-8618 ezlazyloaded" title="BREAKOUT STUDY" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169.png?ezimgfmt=rs:839x264/rscb8/ng:webp/ngcb8" sizes="(max-width: 1623px) 100vw, 1623px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169.png?ezimgfmt=ng:webp/ngcb8 1623w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-300x94.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-1024x322.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-768x242.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-1536x484.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="BREAKOUT STUDY" width="1623" height="511" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169.png?ezimgfmt=ng:webp/ngcb8 1623w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-300x94.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-1024x322.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-768x242.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169-1536x484.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-169.png?ezimgfmt=rs:839x264/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-8619 ezlazyloaded" title="REVERSAL STUDY" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170.png?ezimgfmt=rs:839x360/rscb8/ng:webp/ngcb8" sizes="(max-width: 863px) 100vw, 863px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170.png?ezimgfmt=ng:webp/ngcb8 863w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170-300x129.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170-768x329.png?ezimgfmt=ng:webp/ngcb8 768w" alt="REVERSAL STUDY" width="863" height="370" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170.png?ezimgfmt=ng:webp/ngcb8 863w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170-300x129.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170-768x329.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-170.png?ezimgfmt=rs:839x360/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-8620 ezlazyloaded" title="BREAKOUT/REVERSAL Study" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171.png?ezimgfmt=rs:839x355/rscb8/ng:webp/ngcb8" sizes="(max-width: 1637px) 100vw, 1637px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171.png?ezimgfmt=ng:webp/ngcb8 1637w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-300x127.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-1024x433.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-768x325.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-1536x650.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="BREAKOUT/REVERSAL Study" width="1637" height="693" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171.png?ezimgfmt=ng:webp/ngcb8 1637w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-300x127.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-1024x433.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-768x325.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171-1536x650.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-171.png?ezimgfmt=rs:839x355/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-8621 ezlazyloaded" title="Option Chain Analysis" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172.png?ezimgfmt=rs:839x374/rscb8/ng:webp/ngcb8" sizes="(max-width: 1489px) 100vw, 1489px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172.png?ezimgfmt=ng:webp/ngcb8 1489w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-1024x456.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-768x342.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Option Chain Analysis" width="1489" height="663" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172.png?ezimgfmt=ng:webp/ngcb8 1489w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-300x134.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-1024x456.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172-768x342.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-172.png?ezimgfmt=rs:839x374/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Put Call Ratio (PCR)</strong></h4>
+    <p>HIGH PCR =BULLISH</p>
+    <ul>
+    <li>More puts than calls</li>
+    <li>Big sellers are selling puts, more than calls</li>
+    <li>This means they are saying the market won&rsquo;t go down much</li>
+    </ul>
+    <p><img class="alignnone wp-image-8622 ezlazyloaded" title="Put Call Ratio (PCR)" src="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173.png?ezimgfmt=rs:839x295/rscb8/ng:webp/ngcb8" sizes="(max-width: 1321px) 100vw, 1321px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173.png?ezimgfmt=ng:webp/ngcb8 1321w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-300x106.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-1024x360.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-768x270.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Put Call Ratio (PCR)" width="1321" height="465" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173.png?ezimgfmt=ng:webp/ngcb8 1321w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-300x106.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-1024x360.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173-768x270.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-173.png?ezimgfmt=rs:839x295/rscb8/ng:webp/ngcb8" /></p>
+    
+</body>
+
+</html>
