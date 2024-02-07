@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+   
+    <h2><strong>Fibonacci Trading Strategy</strong></h2>
+    <p>In this article, I will discuss the&nbsp;<strong>Fibonacci Trading Strategy</strong>&nbsp;with Real-Time Examples. Please read our previous article discussing the Volume Spike Trading Strategy&nbsp;with Real-Time Examples. The following Key pointers are going to be covered in this article.</p>
+    <ul>
+    <li><strong>What Fibonacci Retracement Levels Should I Use?</strong></li>
+    <li><strong>Should the price touch the retracement levels?</strong></li>
+    <li><strong>What confluence factor to check for more reliable entry?</strong></li>
+    <li><strong>How to take entry (aggressive /conservative/safe entry)?</strong></li>
+    <li><strong>Where to put the stop loss-based Fibonacci retracement ratio?</strong></li>
+    <li><strong>Where to take profit based on Fibonacci?</strong></li>
+    <li><strong>Trailing stop loss and profit booking method based on the Fibonacci extension tool</strong></li>
+    </ul>
+    <p>You will find some answers to the following common questions related to Fibonacci trading.</p>
+    <ul>
+    <li><strong>Does Fibonacci work in trading?</strong></li>
+    <li><strong>How successful is Fibonacci trading?</strong></li>
+    <li><strong>What is 61.8 Fibonacci?</strong></li>
+    <li><strong>What is the best time frame for Fibonacci?</strong></li>
+    </ul>
+    <h4><strong>Introduction to Fibonacci vs any other indicator</strong></h4>
+    <p>Moving average trend following system vs Fibonacci trading system.&nbsp;The initial trader bases his choices on a trend-following strategy. He is employing two 9- and 21-period simple moving averages. When the 9 MA crosses the 21 MA, a buy signal is generated. When 9 MA crosses back below 21 MA, it is time to leave the trade. Here is an example of a moving average trend following strategy.</p>
+    <div class="ahover"><img class="alignnone wp-image-34715 ezlazyloaded" title="Introduction to Fibonacci vs any other indicator" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1.png?ezimgfmt=rs:839x472/rscb8/ng:webp/ngcb8" sizes="(max-width: 1836px) 100vw, 1836px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1.png?ezimgfmt=ng:webp/ngcb8 1836w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-300x169.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-1024x576.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-768x432.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-1536x863.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Introduction to Fibonacci vs any other indicator" width="1836" height="1032" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1.png?ezimgfmt=ng:webp/ngcb8 1836w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-300x169.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-1024x576.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-768x432.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1-1536x863.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-1.png?ezimgfmt=rs:839x472/rscb8/ng:webp/ngcb8" /></div>
+    <p>Due to the rapid price movement and the late MA cross, the entry point was relatively late. The exit signal arrived far too late. And if the price gives deep retracement, then you will be out of trade irrespective of the price move in your direction. In this example, the deep retracement happens.</p>
+    <p>Other traders are using the Fibonacci method. He decides to trade swing, plots the Fibonacci retracement levels, and watches for an entrance signal at the level of retracement. Enter the deal as soon as the signal appears. To determine when to end the trade, he also draws the Fibonacci extension level.</p>
+    <div class="default-creative-container">&nbsp;</div>
+    <p><img class="alignnone wp-image-34716 ezlazyloaded" title="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2.png?ezimgfmt=rs:839x473/rscb8/ng:webp/ngcb8" sizes="(max-width: 1798px) 100vw, 1798px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2.png?ezimgfmt=ng:webp/ngcb8 1798w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-300x169.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-1024x577.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-768x433.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-1536x866.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" width="1798" height="1014" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2.png?ezimgfmt=ng:webp/ngcb8 1798w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-300x169.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-1024x577.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-768x433.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2-1536x866.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-2.png?ezimgfmt=rs:839x473/rscb8/ng:webp/ngcb8" /></p>
+    <p>When the moving average trend follows the system, the initial trader decides to enter the trade. To make a profit, it was far too late.&nbsp;Examine the second trader (Fibonacci). He made his entry and exit decisions well before the first trader did. He increased his profit on the same chart and closed it out while the initial trader was still holding out for the trend to continue.</p>
+    <h4><strong>What Are the Different Fibonacci Trading Tools and How to Apply Them?</strong></h4>
+    <p>The Fibonacci tools are used to identify entries, support &amp; resistance, targets, and exits. These two are the most widely used:</p>
+    <div class="default-creative-container">&nbsp;</div>
+    <ul>
+    <li>Fibonacci retracement</li>
+    <li>Fibonacci extension</li>
+    </ul>
+    <h4><strong>What is a Fibonacci Retracement, and how do you use it?</strong></h4>
+    <p>The underlying principle of the Fibonacci retracement trading method. According to the theory, the price will retrace after starting a new trend direction before continuing in the trend&rsquo;s direction. So, to determine the next potential support and resistance levels, we use the Fibonacci tool.</p>
+    <p>The retracement level predicts the highest level at which retracement is possible. These retracement levels offer traders a great chance to open new trades in the trend&rsquo;s direction.</p>
+    <ul>
+    <li>The Fibonacci retracement levels are 23.6%, 38.2%, 50%,61.8%, 78.6%, and 100%.</li>
+    </ul>
+    <p>Next possible support levels are marked if the stock moves up</p>
+    <p><img class="alignnone wp-image-34717 ezlazyloaded" title="What is a Fibonacci Retracement and how to use it?" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3.png?ezimgfmt=rs:839x412/rscb8/ng:webp/ngcb8" sizes="(max-width: 1253px) 100vw, 1253px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3.png?ezimgfmt=ng:webp/ngcb8 1253w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-300x147.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-1024x503.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-768x377.png?ezimgfmt=ng:webp/ngcb8 768w" alt="What is a Fibonacci Retracement and how to use it?" width="1253" height="615" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3.png?ezimgfmt=ng:webp/ngcb8 1253w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-300x147.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-1024x503.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3-768x377.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-3.png?ezimgfmt=rs:839x412/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Basic Fibonacci Trading Strategy</strong></h4>
+    <h4><img class="alignnone wp-image-34718 ezlazyloaded" title="Basic Fibonacci Trading Strategy" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4.png?ezimgfmt=rs:839x445/rscb8/ng:webp/ngcb8" sizes="(max-width: 1850px) 100vw, 1850px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4.png?ezimgfmt=ng:webp/ngcb8 1850w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-1536x815.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Basic Fibonacci Trading Strategy" width="1850" height="982" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4.png?ezimgfmt=ng:webp/ngcb8 1850w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4-1536x815.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-4.png?ezimgfmt=rs:839x445/rscb8/ng:webp/ngcb8" /><strong>How to draw Fibonacci Retracement?</strong></h4>
+    <p><strong>EXAMPLE FIBONACCI RETRACEMENT IN A DOWNTREND</strong></p>
+    <p>You must locate the most recent important Swing Highs and Swing Lows to determine these Fibonacci retracement levels. Find the recent swing HIGH (starting point) and recent swing LOW (ending point), then join the 2 lines. Drag the pointer to the most recent Swing LOW to swing HIGH and find all retracement level</p>
+    <ul>
+    <li>0.618 is the golden retracement level</li>
+    <li>.0.5 to .618 is the imp retracement level in the trend</li>
+    <li>Use the Fibonacci tool along with the confluence factor for entry</li>
+    </ul>
+    <p><img class="alignnone wp-image-34719 ezlazyloaded" title="How to draw Fibonacci Retracement?" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5.png?ezimgfmt=rs:839x557/rscb8/ng:webp/ngcb8" sizes="(max-width: 987px) 100vw, 987px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5.png?ezimgfmt=ng:webp/ngcb8 987w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5-300x199.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5-768x510.png?ezimgfmt=ng:webp/ngcb8 768w" alt="How to draw Fibonacci Retracement?" width="987" height="655" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5.png?ezimgfmt=ng:webp/ngcb8 987w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5-300x199.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5-768x510.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-5.png?ezimgfmt=rs:839x557/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-34720 ezlazyloaded" title="EXAMPLE FIBONACCI RETRACEMENT IN A DOWNTREND" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6.png?ezimgfmt=rs:839x417/rscb8/ng:webp/ngcb8" sizes="(max-width: 1697px) 100vw, 1697px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6.png?ezimgfmt=ng:webp/ngcb8 1697w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-300x149.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-1024x509.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-768x382.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-1536x763.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="EXAMPLE FIBONACCI RETRACEMENT IN A DOWNTREND" width="1697" height="843" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6.png?ezimgfmt=ng:webp/ngcb8 1697w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-300x149.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-1024x509.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-768x382.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6-1536x763.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-6.png?ezimgfmt=rs:839x417/rscb8/ng:webp/ngcb8" /></p>
+    <p>The above chart price retraces the 61.8% level. THE BELOW CHART is the continuation of the above chart. but retrace 50%</p>
+    <p><img class="alignnone wp-image-34721 ezlazyloaded" title="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7.png?ezimgfmt=rs:839x463/rscb8/ng:webp/ngcb8" sizes="(max-width: 1641px) 100vw, 1641px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7.png?ezimgfmt=ng:webp/ngcb8 1641w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-300x165.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-1024x565.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-768x424.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-1536x847.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" width="1641" height="905" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7.png?ezimgfmt=ng:webp/ngcb8 1641w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-300x165.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-1024x565.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-768x424.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7-1536x847.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-7.png?ezimgfmt=rs:839x463/rscb8/ng:webp/ngcb8" /></p>
+    <p>Again, the below chart is the continuation of the above chart and retraces 78.6%</p>
+    <h4><img class="alignnone wp-image-34722 ezlazyloaded" title="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8.png?ezimgfmt=rs:839x530/rscb8/ng:webp/ngcb8" sizes="(max-width: 1421px) 100vw, 1421px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8.png?ezimgfmt=ng:webp/ngcb8 1421w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-300x189.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-1024x646.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-768x485.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Fibonacci Trading Strategy - Complete Tutorial with Real-Time Examples" width="1421" height="897" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8.png?ezimgfmt=ng:webp/ngcb8 1421w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-300x189.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-1024x646.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8-768x485.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-8.png?ezimgfmt=rs:839x530/rscb8/ng:webp/ngcb8" /><strong>What is the Fibonacci extension, and how do you use it? How to draw Fibonacci Extensions?</strong></h4>
+    <p>Fibonacci Expansion is based on three points. Here are the steps for a downtrend</p>
+    <p><strong>Step 1</strong>&nbsp;&ndash; Identify the direction of the market: downtrend. To draw it, we must identify the impulse swing (A and B points) and retracement end (point C).</p>
+    <p><strong>Step 2</strong>&nbsp;&ndash; Attach the Fibonacci extension tool on the swing high and drag it to the right, all the way to the swing low.&nbsp;</p>
+    <p><strong>Step 3</strong>&nbsp;&ndash; Now, drag back to the retracement end (point C).</p>
+    <p><img class="alignnone wp-image-34723 ezlazyloaded" title="What is the Fibonacci extension and how to use it? How to draw Fibonacci Extensions?" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9.png?ezimgfmt=rs:839x579/rscb8/ng:webp/ngcb8" sizes="(max-width: 1235px) 100vw, 1235px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9.png?ezimgfmt=ng:webp/ngcb8 1235w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-300x207.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-1024x707.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-768x530.png?ezimgfmt=ng:webp/ngcb8 768w" alt="What is the Fibonacci extension and how to use it? How to draw Fibonacci Extensions?" width="1235" height="853" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9.png?ezimgfmt=ng:webp/ngcb8 1235w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-300x207.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-1024x707.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9-768x530.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-9.png?ezimgfmt=rs:839x579/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-34724 ezlazyloaded" title="What is the Fibonacci extension and how to use it? How to draw Fibonacci Extensions?" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10.png?ezimgfmt=rs:839x446/rscb8/ng:webp/ngcb8" sizes="(max-width: 1695px) 100vw, 1695px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10.png?ezimgfmt=ng:webp/ngcb8 1695w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-1536x816.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="What is the Fibonacci extension and how to use it? How to draw Fibonacci Extensions?" width="1695" height="901" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10.png?ezimgfmt=ng:webp/ngcb8 1695w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10-1536x816.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-10.png?ezimgfmt=rs:839x446/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Why use Fibonacci Extensions in Trading?</strong></h4>
+    <p>Opening a trade is significantly less significant than closing it. Extension tool for exit price goal. Traders can use Fibonacci extensions to set profit targets or predict how far a market may rise when a retracement is complete. Extension levels are yet another potential location for a price reversal.</p>
+    <p>Fibonacci extension levels are quite helpful in deciphering market reversals and potential roadblocks. Simply put, Fibonacci extension levels are the critical points from which the price of an instrument may change.</p>
+    <div class="default-creative-container">&nbsp;</div>
+    <p>To fully exit a trade or book a partial profit, traders must adhere to certain guidelines. They are aware that there is a good likelihood the movement will come to an end or pause for a while.</p>
+    <p>Divide your position into three parts, which is the basic profit booking strategy traders use. At 100% extension, the first part is immediately closed. You close the second part at the 161.8% extension if the price continues to move in the direction of the trend. You let the third component increase before manually closing it using either a technical trigger or a different extension level.</p>
+    <p><img class="alignnone wp-image-34725 ezlazyloaded" title="Why use Fibonacci Extensions in Trading?" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11.png?ezimgfmt=rs:839x448/rscb8/ng:webp/ngcb8" sizes="(max-width: 1655px) 100vw, 1655px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11.png?ezimgfmt=ng:webp/ngcb8 1655w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-300x160.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-1024x546.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-768x410.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-1536x820.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Why use Fibonacci Extensions in Trading?" width="1655" height="883" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11.png?ezimgfmt=ng:webp/ngcb8 1655w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-300x160.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-1024x546.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-768x410.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11-1536x820.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-11.png?ezimgfmt=rs:839x448/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Difference Between Fibonacci Retracement and Fibonacci Extension</strong></h4>
+    <table>
+    <tbody>
+    <tr>
+    <td><strong>Fibonacci Retracement</strong></td>
+    <td><strong>Fibonacci Extension</strong></td>
+    </tr>
+    <tr>
+    <td>Indicates the depth of retracement after impulse move.</td>
+    <td>Indicates where the price may go following a retracement in the trend</td>
+    </tr>
+    <tr>
+    <td>Measures Pullbacks Within a Trend. price correction or time correction</td>
+    <td>Measures the trend impulses waves in the direction of the trend</td>
+    </tr>
+    <tr>
+    <td>Provide effective stop-loss levels and entry orders for a trend trading strategy.</td>
+    <td>Gives good take-profit points in trend trading and reversal points for trend reversal techniques.</td>
+    </tr>
+    <tr>
+    <td>With other confluences, it can be effectively used as a profitable approach.</td>
+    <td>It can be applied to a strategy for taking profits and may also indicate promising points for trend reversals.</td>
+    </tr>
+    <tr>
+    <td>Fibonacci Numbers are within the initial trend. (38.2%, 61.8%, 50%, etc.)</td>
+    <td>Fibonacci Numbers are beyond the 100% Fibonacci level. (1.618%, 123.60%, etc.)</td>
+    </tr>
+    </tbody>
+    </table>
+    <h4><strong>Fibonacci Trading Strategy</strong></h4>
+    <p><img class="alignnone wp-image-34726 ezlazyloaded" title="Fibonacci Trading Strategy" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12.png?ezimgfmt=rs:839x445/rscb8/ng:webp/ngcb8" sizes="(max-width: 1850px) 100vw, 1850px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12.png?ezimgfmt=ng:webp/ngcb8 1850w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-1536x815.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Fibonacci Trading Strategy" width="1850" height="982" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12.png?ezimgfmt=ng:webp/ngcb8 1850w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-300x159.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-1024x544.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-768x408.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12-1536x815.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-12.png?ezimgfmt=rs:839x445/rscb8/ng:webp/ngcb8" /></p>
+    <p>The Fibonacci technique works best when the market is trending, which is the first thing you should know about. When the market moves upward, the plan is to buy a retracement at a Fibonacci support level. Additionally, when the market is trending downward, it is advisable to sell a retracement at a Fibonacci resistance level. Since Fibonacci retracement levels try to foretell where the price might be, they are regarded as a technical indicator.</p>
+    <ul>
+    <li>What Fibonacci retracement levels should I use?</li>
+    <li>Should the price touch the retracement levels?</li>
+    <li>What confluence factor to check for more reliable entry?</li>
+    <li>How to take entry (aggressive /conservative/safe entry)?</li>
+    <li>Where to put stop loss based on entry?</li>
+    <li>Where to take entry?</li>
+    </ul>
+    <h4><strong>What Fibonacci Retracement Levels Should I Use?</strong></h4>
+    <p>Because there are so many Fibonacci retracement levels, it is initially highly confusing. Fibonacci Retracements are not entry signals; they are target areas where an entry signal may occur. Trading simply because the price has reached a Fibonacci retracement ratio level is not a wise strategy. Another confluence is required before trades can be taken.</p>
+    <ul>
+    <li>If u use Fibonacci Retracements level with other concepts confirming like trend line, pivot point, or any dynamic support or resistance</li>
+    </ul>
+    <h4><strong>Should the price touch the retracement levels?</strong></h4>
+    <p>This is always a problem for beginners. They think the retracement to any fibo level is only valid when the price touches this level. They are wrong. Fibonacci retracements are a great tool, but there is no 100% accuracy. Sometimes, the price closes near the retracement level, and it can still be a valid move.</p>
+    <h4><strong>How do you take entry?</strong></h4>
+    <p>Basically, 3 types of entry can be taken after a Fibonacci retracement.</p>
+    <ul>
+    <li>Aggressive entry</li>
+    <li>Conservative entry</li>
+    <li>Safe entry</li>
+    </ul>
+    <p>Which entry is the best for you? It is your decision. It depends on risk, reward, and probability.&nbsp;</p>
+    <h4><strong>Aggressive entry after deep retracement</strong></h4>
+    <p>This is the riskiest entry but a small loss and high reward setup. You are willing to take a small risk in turn for a possible bigger return. When the price near/reaches the 61.8% retracement, you go long at this level or a little above it.</p>
+    <ol>
+    <li>Identify the trend and level of Fibonacci retracement level.</li>
+    <li>Look for the confluence factor</li>
+    <li>Wait for a reversal candlestick pattern for entry</li>
+    <li>Draw extension lines for the possible target level</li>
+    <li>Put stop loss beyond recent high in downtrend also beyond Fibonacci retracement level</li>
+    </ol>
+    <p><img class="alignnone wp-image-34727 ezlazyloaded" title="Aggressive entry after deep retracement" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13.png?ezimgfmt=rs:839x422/rscb8/ng:webp/ngcb8" sizes="(max-width: 1707px) 100vw, 1707px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13.png?ezimgfmt=ng:webp/ngcb8 1707w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-300x151.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-1024x515.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-768x386.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-1536x773.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Aggressive entry after deep retracement" width="1707" height="859" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13.png?ezimgfmt=ng:webp/ngcb8 1707w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-300x151.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-1024x515.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-768x386.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13-1536x773.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-13.png?ezimgfmt=rs:839x422/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-34728 ezlazyloaded" title="Fibonacci Trading Strategy with Real-Time Examples" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14.png?ezimgfmt=rs:839x465/rscb8/ng:webp/ngcb8" sizes="(max-width: 1753px) 100vw, 1753px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14.png?ezimgfmt=ng:webp/ngcb8 1753w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-300x166.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-1024x568.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-768x426.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-1536x852.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Fibonacci Trading Strategy with Real-Time Examples" width="1753" height="972" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14.png?ezimgfmt=ng:webp/ngcb8 1753w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-300x166.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-1024x568.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-768x426.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14-1536x852.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-14.png?ezimgfmt=rs:839x465/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Conservative Entry</strong></h4>
+    <p>The conservative entry is when you wait and watch how the price reacts toward the retracement levels. If you see that 61.8% is probably the retracement which a bounce back may occur from, you are ready to take a long position. But unlike the aggressive entry case, you wait for another confirmation. Break of minor swing low in the bearish entry. confirmation signals are not always 100% correct, but in that case, you have a lower chance of failure. The ratio between risk and possible profit is good. In this example, the trader decided the signal would be close below support.</p>
+    <ol>
+    <li>Identify the trend and level of Fibonacci retracement level.</li>
+    <li>Look for the confluence factor</li>
+    <li>Wait for the break of minor support for entry for a bearish trade</li>
+    <li>Draw extension lines for the possible target level</li>
+    <li>Put stop loss beyond recent high in downtrend also beyond Fibonacci retracement level</li>
+    </ol>
+    <p><img class="alignnone wp-image-34729 ezlazyloaded" title="Conservative Entry" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15.png?ezimgfmt=rs:839x474/rscb8/ng:webp/ngcb8" sizes="(max-width: 1527px) 100vw, 1527px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15.png?ezimgfmt=ng:webp/ngcb8 1527w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-300x170.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-1024x579.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-768x434.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Conservative Entry" width="1527" height="863" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15.png?ezimgfmt=ng:webp/ngcb8 1527w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-300x170.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-1024x579.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15-768x434.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-15.png?ezimgfmt=rs:839x474/rscb8/ng:webp/ngcb8" /></p>
+    <p><img class="alignnone wp-image-34730 ezlazyloaded" title="Conservative Entry" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16.png?ezimgfmt=rs:839x535/rscb8/ng:webp/ngcb8" sizes="(max-width: 1567px) 100vw, 1567px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16.png?ezimgfmt=ng:webp/ngcb8 1567w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-300x191.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-1024x653.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-768x490.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-1536x980.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Conservative Entry" width="1567" height="1000" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16.png?ezimgfmt=ng:webp/ngcb8 1567w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-300x191.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-1024x653.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-768x490.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16-1536x980.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-16.png?ezimgfmt=rs:839x535/rscb8/ng:webp/ngcb8" /><strong>One more example of both entry</strong></p>
+    <p><img class="alignnone wp-image-34731 ezlazyloaded" title="Fibonacci Trading Strategy with Real-Time Examples" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17.png?ezimgfmt=rs:839x450/rscb8/ng:webp/ngcb8" sizes="(max-width: 1603px) 100vw, 1603px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17.png?ezimgfmt=ng:webp/ngcb8 1603w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-300x161.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-1024x549.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-768x412.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-1536x823.png?ezimgfmt=ng:webp/ngcb8 1536w" alt="Fibonacci Trading Strategy with Real-Time Examples" width="1603" height="859" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17.png?ezimgfmt=ng:webp/ngcb8 1603w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-300x161.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-1024x549.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-768x412.png?ezimgfmt=ng:webp/ngcb8 768w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17-1536x823.png?ezimgfmt=ng:webp/ngcb8 1536w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-17.png?ezimgfmt=rs:839x450/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Safe Entry</strong></h4>
+    <p>This way of trading is the safest one compared to the other two entry methods, but your possible profit is the smallest. The main idea is to buy a breakout after a price contraction.</p>
+    <p>&nbsp;</p>
+    <p>In theory, it should look like in the picture below:</p>
+    <ol>
+    <li>Identify the trend and level of Fibonacci retracement level.</li>
+    <li>Look for price contraction before the breakout</li>
+    <li>Wait for the break of support for entry for a bearish trade</li>
+    <li>Draw extension lines for the possible target level</li>
+    <li>Put stop loss beyond contraction high in a downtrend</li>
+    </ol>
+    <p><img class="alignnone wp-image-34732 ezlazyloaded" title="Safe Entry" src="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18.png?ezimgfmt=rs:839x536/rscb8/ng:webp/ngcb8" sizes="(max-width: 1059px) 100vw, 1059px" srcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18.png?ezimgfmt=ng:webp/ngcb8 1059w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-300x192.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-1024x655.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-768x491.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Safe Entry" width="1059" height="677" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18.png?ezimgfmt=ng:webp/ngcb8 1059w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-300x192.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-1024x655.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18-768x491.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2023/02/word-image-34712-18.png?ezimgfmt=rs:839x536/rscb8/ng:webp/ngcb8" /></p>
+    <h4><strong>Fibonacci Trading Strategy Summary:</strong></h4>
+    <p>The Fibonacci trading strategy involves using Fibonacci retracement levels to identify potential reversal levels, support and resistance areas, and set target prices or stop losses. Fibonacci retracements are created by taking two extreme points (usually a major peak and trough) on a stock chart and dividing the vertical distance by the key Fibonacci ratios of 23.6%, 38.2%, 50%, 61.8%, and sometimes 100%.</p>
+    <p>Here is a step-by-step guide to using the Fibonacci trading strategy:</p>
+    <h4><strong>Step 1: Identifying the Trend</strong></h4>
+    <ul>
+    <li>Determine the trend direction by using a larger time frame chart.</li>
+    <li>The Fibonacci retracement is typically used in a trending market, so identifying a clear uptrend or downtrend is the first step.</li>
+    </ul>
+    <h4><strong>Step 2: Applying the Fibonacci Retracement Tool</strong></h4>
+    <ul>
+    <li>Once a significant movement in the market has been identified, apply the Fibonacci retracement tool.</li>
+    <li>For an uptrend, you draw the Fibonacci lines from the bottom to the top of the trend. For a downtrend, you draw from the top to the bottom.</li>
+    </ul>
+    <h4><strong>Step 3: Looking for Confluence</strong></h4>
+    <ul>
+    <li>Find areas where the Fibonacci retracement levels align with other technical indicators, like moving averages, trend lines, or candlestick patterns.</li>
+    <li>The more confluence you find at a Fibonacci level, the higher the chance it will act as strong support or resistance.</li>
+    </ul>
+    <p><strong>Step 4: Entry Point</strong></p>
+    <ul>
+    <li>Wait for the price to reach a Fibonacci level.</li>
+    <li>Look for signs of price stalling or reversing with candlestick patterns (like a Pin Bar) or other indicators signaling a reversal at these levels.</li>
+    </ul>
+    <h4><strong>Step 5: Placing the Trade</strong></h4>
+    <ul>
+    <li>Enter a buy order if the price finds support at a Fibonacci level in an uptrend.</li>
+    <li>Enter a sell order if the price finds resistance at a Fibonacci level in a downtrend.</li>
+    </ul>
+    <h4><strong>Step 6: Stop Loss and Take Profit</strong></h4>
+    <ul>
+    <li>Place a stop loss just below the recent swing low in an uptrend or above the swing high in a downtrend.</li>
+    <li>Your take profit can be placed at the next Fibonacci level, up in an uptrend, or down in a downtrend.</li>
+    <li>Alternatively, traders may use a risk-reward ratio to set targets.</li>
+    </ul>
+    <h4><strong>Step 7: Managing the Trade</strong></h4>
+    <ul>
+    <li>Adjust your stop loss to break even when the market moves in your favor.</li>
+    <li>Consider taking partial profits at various Fibonacci levels.</li>
+    </ul>
+    <h4><strong>Important Considerations Fibonacci Trading Strategy</strong></h4>
+    <ul>
+    <li>The 50% level is not a Fibonacci ratio, but it is included because markets tend to retrace about half of a major movement before continuing the trend.</li>
+    <li>The 61.8% level is often considered the &ldquo;golden ratio&rdquo; and is watched by many traders.</li>
+    <li>Fibonacci retracement levels are not foolproof; they are better used as a tool within a broader trading strategy that includes other forms of analysis and risk management.</li>
+    </ul>
+    <h4><strong>Risk Management in Fibonacci Trading Strategy:</strong></h4>
+    <ul>
+    <li>Only risk a small percentage of your trading account on any single trade.</li>
+    <li>Be mindful of economic news releases that could cause volatility and deviate the price action from your analysis.</li>
+    </ul>
+    <h4><strong>Backtesting and Practice</strong></h4>
+    <ul>
+    <li>Test the Fibonacci trading strategy on historical data to see its effectiveness.</li>
+    <li>Practice in a demo account to understand how the Fibonacci levels can play out in real market conditions.</li>
+    </ul>
+    <p>Fibonacci trading requires patience and discipline, as not all levels will hold or result in a trend continuation. Additionally, it is important to note that Fibonacci levels are more like zones than precise levels and may require a trader to be flexible with their interpretations.&nbsp;In the next section, we will discuss the following Fibonacci confluence strategies in detail.</p>
+    <div class="default-creative-container">&nbsp;</div>
+    <ul>
+    <li>Fibonacci with support resistance entry method</li>
+    <li>Fibonacci with trendline entry method</li>
+    <li>Fibonacci with moving average entry method</li>
+    <li>Fibonacci with price pattern entry method</li>
+    <li>The Fibonacci convergence entry method</li>
+    </ul>
+    
+</body>
+
+</html>
