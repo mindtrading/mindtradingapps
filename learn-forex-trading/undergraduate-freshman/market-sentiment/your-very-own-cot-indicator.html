@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+    <p>Having your very own COT indicator is like having your own pony.</p>
+    <p>Using the COT report can be quite useful as a tool for spotting potential reversals in the market.</p>
+    <p><img src="https://bpcdn.co/images/2016/05/freshman-pony.png" alt="" /></p>
+    <p>There&rsquo;s one problem though, we cannot simply look at the absolute figures printed on the COT report and say, &ldquo;Aha, it looks like the market has hit an extreme&hellip; I will short and buy myself 10,000,000 pairs of socks with my easy profits.&rdquo;</p>
+    <p>Determining extremes can be difficult because the net long and short positions are not all relevant.</p>
+    <p><strong>What may have been an extreme level five years ago may no longer be an extreme level this year.</strong></p>
+    <p>How do you deal with this problem?</p>
+    <p>What you want to do is create an index that will help you gauge whether the markets are at extreme levels.</p>
+    <h3>How to Create an Index That Measures Market Extremes</h3>
+    <p>Below is a step-by-step process on how to create this index.</p>
+    <ol>
+    <li><strong>Decide how long of a period we want to cover</strong>. The more values we input into the index, the less sentiment extreme signals we will receive, but the more reliable it will be. Having fewer input values will result in more signals, although it might lead to more false positives.</li>
+    <li><strong>Calculate the difference between the positions of large speculators and commercial traders for each week</strong>.</li>
+    </ol>
+    <p>The formula for calculating this difference is:</p>
+    <p><strong>Difference = Net position of Large Speculators &ndash; Net position of Commercials</strong></p>
+    <p>Take note that if large speculators are extremely long, this would imply that commercial traders are extremely short.</p>
+    <p>This would result in a positive figure.</p>
+    <p>On the other hand, if large speculators are extremely short, that would mean that commercial traders are most likely extremely long. this would result in a negative figure.</p>
+    <p>This would result in a negative figure.</p>
+    <ol>
+    <li>Rank these results in ascending order, from most negative to most positive.</li>
+    <li>Assign a value of 100 to the largest number and 0 to the smallest figure.</li>
+    </ol>
+    <p>And now we have a COT indicator!</p>
+    <p>This is very similar to the RSI and Stochastic indicators that we&rsquo;ve discussed in earlier lessons.</p>
+    <p>Once we have assigned values to each of the calculated differences, we should be alerted whenever new data inputted into the index shows an extreme:&nbsp;<strong>0 or 100</strong>.</p>
+    <p>This would indicate that the difference between the positions of the two groups is largest and that a reversal may be imminent.</p>
+    <p>Remember, we are interested in knowing whether the trend is going to continue or if it is going to end.</p>
+    <p>If the COT report reveals that the markets are at extreme levels, it would help pinpoint those tops and bottoms that we all love so much.</p>
+    <p>You can download the COT indicator if you&rsquo;re trading on an MT4 platform and you can find the link in our COT data to indicator forum thread!</p>
+  
+   
+</body>
+
+</html>
