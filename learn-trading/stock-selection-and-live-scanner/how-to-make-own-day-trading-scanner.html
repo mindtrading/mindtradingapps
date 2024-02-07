@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+
+    <h2><strong>How to Make Your Own Day Trading Scanner</strong></h2>
+<p>In this article, I am going to discuss&nbsp;<strong>how to make your own day trading scanner</strong>&nbsp;step by step. Please read our previous article where we discussed&nbsp;3 Techniques for Risk Management in Trading. Here, you will learn how to get the stock market data such as price, volume, and open interest data, using a Google Spreadsheet and how to analyze it.&nbsp;After reading this, you will be able to:</p>
+<ol>
+<li><strong>Analyze the End of Data</strong></li>
+<li><strong>How do you create your own Google spreadsheet for data analysis?</strong></li>
+<li><strong>How do you use this sheet?</strong></li>
+</ol>
+<h4><strong>What is the end of data in stock?</strong></h4>
+<p>This means what the price did on that day. It shows open, close, high, low, open interest, option chain data, etc.</p>
+<h4><strong>Where to get this data?</strong></h4>
+<p>After the market closed. NSEINDIA published this report in bhavcopy file</p>
+<h4><strong>What to download?</strong></h4>
+<p>Download the capital market bhavcopy file and the Derivatives market bhavcopy file. The link is given below</p>
+<p><a href="https://www1.nseindia.com/products/content/all_daily_reports.htm"><strong>h</strong><strong>ttps://www1.nseindia.com/products/content/all_daily_reports.htm</strong></a></p>
+<h4><strong>Use of scanner</strong></h4>
+<ol>
+<li>Can we predict the stock trend by analyzing the end of the data?</li>
+<li>Can we find stock for the next day?</li>
+</ol>
+<h4><strong>What is contained in this sheet?</strong></h4>
+<p><strong>Buy/sell column</strong></p>
+<p>So for long stock should have high volume, high OI, and PCR&gt;1.&nbsp;So, we make our buy column by giving the above condition</p>
+<h4><strong>Change in Volume and Change in the open interest column</strong></h4>
+<p>If ultra-high volume, we find. Then something unusual happened. By checking the chart, we can determine whether the stock for tradable or not. Whether it breaks out from any support or resistance level with high volume. then we must keep it on our watch list</p>
+<h4><strong>Change in price</strong></h4>
+<p>Here, we will find top gainer or top looser stock. Check in&nbsp;the chart why the top gainer and a top loser.</p>
+<p><strong>Change in PCR column</strong></p>
+<p><img class="alignnone wp-image-6569 ezlazyloaded" title="How to make own Day Trading Scanner" src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=rs:829x191/rscb8/ng:webp/ngcb8" sizes="(max-width: 829px) 100vw, 829px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=ng:webp/ngcb8 829w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-300x69.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-768x177.png?ezimgfmt=ng:webp/ngcb8 768w" alt="How to make own Day Trading Scanner" width="829" height="191" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=ng:webp/ngcb8 829w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-300x69.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-768x177.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=rs:829x191/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>Gap up and gap down the column</strong></h4>
+<p>This column updates aftermarket open.&nbsp;Have a look at this sheet</p>
+<p><img class="alignnone wp-image-6570 ezlazyloaded" title="Gap up and gap down column" src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=rs:839x395/rscb8/ng:webp/ngcb8" sizes="(max-width: 1312px) 100vw, 1312px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=ng:webp/ngcb8 1312w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-300x141.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-1024x482.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-768x361.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Gap up and gap down column" width="1312" height="617" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=ng:webp/ngcb8 1312w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-300x141.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-1024x482.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-768x361.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=rs:839x395/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>How do I use this scanner?</strong></h4>
+<p>Let me tell you some basic information.</p>
+<p>For the trading purpose, avoid stocks with lower volumes and lower open interest.</p>
+<h4><strong>Why?</strong></h4>
+<p>The analogy of volume and open interest in the market is like that of fuel to a fire. If the fuels are removed from a fire, the fire will go out. If fuel (volume and open interest) is removed from a price trend, the trend will change or move will stop. When open interest and volume decline, fuel is removed, and the prevailing price trend is running on borrowed time. For a healthy, strong price trend (either up or down) to continue, open interest and volume ideally should increase, or at least not decline.</p>
+<p><img class="alignnone wp-image-6571 ezlazyloaded" title="How to use own Day Trading Scanner" src="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=rs:839x384/rscb8/ng:webp/ngcb8" sizes="(max-width: 1379px) 100vw, 1379px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=ng:webp/ngcb8 1379w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--300x137.jpeg?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--1024x469.jpeg?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--768x351.jpeg?ezimgfmt=ng:webp/ngcb8 768w" alt="How to use own Day Trading Scanner" width="1379" height="631" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=ng:webp/ngcb8 1379w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--300x137.jpeg?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--1024x469.jpeg?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--768x351.jpeg?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=rs:839x384/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>Option chain analysis</strong></h4>
+<p>PCR=put to call ratio</p>
+<p>Buy Rule: 1. Change in PCR(OI) is positive.</p>
+<p>Sell Rule: 1. Change PCR(OI) is negative.</p>
+<p>In the video, I explain live how to select stock for the next day based on day data analysis.&nbsp;Here is the list of stock that showing buy condition</p>
+<p><img src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-24.png?ezimgfmt=rs:839x393/rscb8/ng:webp/ngcb8" alt="How to create your own Google spread sheet for data analysis?" /></p>
+<p>Even our scanner shows buy condition. After the market opens, if our trading setup doesn&rsquo;t tell, then I am happy to avoid trading.</p>
+<p><strong>Tips:</strong>&nbsp;If the index and sector are bullish, trade with strong stock on the bullish side.</p>
+<div class="default-creative-container">&nbsp;</div>
+<h4><strong>How to Make Your Own Day Trading Scanner?</strong></h4>
+<p>Creating your own day trading scanner involves setting up software or a platform to filter stocks or other financial instruments according to specific criteria that align with your trading strategy. Here&rsquo;s a step-by-step guide to setting up a basic day trading scanner:</p>
+<h4><strong>1. Choose a Trading Platform or Software:</strong></h4>
+<ul>
+<li>Select a trading platform that offers built-in scanning tools. Examples include Thinkorswim, TradeStation, Interactive Brokers, and various others.</li>
+<li>Some platforms are free with a brokerage account, while others may require a subscription.</li>
+</ul>
+<h4><strong>2. Determine Your Criteria</strong></h4>
+<p>Decide on the parameters that align with your trading strategy. Common criteria for day traders include:</p>
+<ul>
+<li><strong>Price Range:</strong>&nbsp;e.g., stocks priced between $10 and $50.</li>
+<li><strong>Volume:</strong>&nbsp;e.g., stocks with a minimum average daily volume, such as over 500,000 shares.</li>
+<li><strong>Volatility:</strong>&nbsp;e.g., stocks with a certain percentage of intraday price movement.</li>
+<li><strong>Gappers:</strong>&nbsp;e.g., stocks gapping up or down from the previous day&rsquo;s close by a certain percentage.</li>
+<li><strong>Sector/Industry:</strong>&nbsp;if you want to focus on specific sectors.</li>
+<li><strong>Market Cap:</strong>&nbsp;to filter out small-cap or micro-cap stocks if desired.</li>
+<li><strong>News Catalysts:</strong>&nbsp;stocks with recent news releases or earnings reports.</li>
+<li><strong>Technical Indicators:</strong>&nbsp;such as stocks above a 20-day moving average or with an RSI below 30.</li>
+</ul>
+<h4><strong>3. Configure Scanner Settings</strong></h4>
+<ul>
+<li>Access the scanner feature on your chosen platform.</li>
+<li>Enter your criteria into the scanner&rsquo;s filters. Most platforms allow you to input specific values, select from drop-down menus, or use sliders.</li>
+<li>Some platforms may allow you to write custom scripts for more complex scanning logic if you&rsquo;re proficient in coding.</li>
+</ul>
+<h4><strong>4. Test and Refine Your Scanner</strong></h4>
+<ul>
+<li>Run the scanner during market hours to see if it returns the types of stocks that fit your strategy.</li>
+<li>Refine your criteria based on the results. This might involve adjusting thresholds or adding/removing filters.</li>
+<li>Please record the stocks that meet your criteria and how they perform after they appear on your scan. This will help you to fine-tune the scanner settings.</li>
+</ul>
+<h4><strong>5. Save and Automate</strong></h4>
+<ul>
+<li>Once you&rsquo;re satisfied with the settings, save your scanner setup for future use.</li>
+<li>Some platforms will allow you to set alerts based on scanner results to be notified in real time when a new stock meets your criteria.</li>
+</ul>
+<h4><strong>6. Continuous Monitoring and Updating</strong></h4>
+<ul>
+<li>Regularly review the performance of your scanner. As market conditions change, you may need to adjust your criteria.</li>
+<li>Stay informed about market trends that may affect the relevance of your criteria.</li>
+</ul>
+<h4><strong>7. Compliance with Hardware and Software</strong></h4>
+<ul>
+<li>Ensure your computer and internet connection are reliable and fast enough to handle real-time scanning and trading.</li>
+<li>Consider using multiple monitors to track scanner outputs while managing other trading tasks effectively.</li>
+</ul>
+<h4><strong>Additional Considerations:</strong></h4>
+<ul>
+<li><strong>Backtesting:</strong>&nbsp;If possible, backtest your criteria against historical data to see how well your scanner would have identified potential trades in the past.</li>
+<li><strong>Risk Management:</strong>&nbsp;A scanner is just a tool for identifying potential trades. Always apply solid risk management techniques to any trade you enter.</li>
+<li><strong>Education:</strong>&nbsp;Use educational resources, often provided by trading platforms, to learn more about the features of your scanning tool and how to use them effectively.</li>
+</ul>
+<p>Remember, a day trading scanner aims to increase efficiency by quickly identifying trading opportunities that fit your specific criteria. It&rsquo;s an essential tool in a day trader&rsquo;s arsenal but should be used with a comprehensive trading plan and strategy.</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>
