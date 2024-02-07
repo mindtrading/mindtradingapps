@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful School List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    input[type="checkbox"] + label {
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked + label + a {
+        text-decoration: underline;
+    }
+    span {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <ul>
+        <li>
+            <input type="checkbox" id="preschool">
+            <label for="preschool"></label>
+            <a href="preschool.html">Preschool</a>
+        </li>
+        <li>
+            <input type="checkbox" id="kindergarten">
+            <label for="kindergarten"></label>
+            <a href="kindergarten.html">Kindergarten</a>
+        </li>
+        <li>
+            <input type="checkbox" id="elementary">
+            <label for="elementary"></label>
+            <a href="elementary.html">Elementary</a>
+        </li>
+        <li>
+            <input type="checkbox" id="middle-school">
+            <label for="middle-school"></label>
+            <a href="middle-school.html">Middle School</a>
+        </li>
+        <li>
+            <input type="checkbox" id="summer-school">
+            <label for="summer-school"></label>
+            <a href="summer-school.html">Summer School</a>
+        </li>
+        <li>
+            <input type="checkbox" id="high-school">
+            <label for="high-school"></label>
+            <a href="high-school.html">High School</a>
+        </li>
+        <li>
+            <input type="checkbox" id="undergraduate-freshman">
+            <label for="undergraduate-freshman"></label>
+            <a href="undergraduate-freshman.html">Undergraduate - Freshman</a>
+        </li>
+        <li>
+            <input type="checkbox" id="undergraduate-sophomore">
+            <label for="undergraduate-sophomore"></label>
+            <a href="undergraduate-sophomore.html">Undergraduate - Sophomore</a>
+        </li>
+        <li>
+            <input type="checkbox" id="undergraduate-junior">
+            <label for="undergraduate-junior"></label>
+            <a href="undergraduate-junior.html">Undergraduate - Junior</a>
+        </li>
+        <li>
+            <input type="checkbox" id="undergraduate-senior">
+            <label for="undergraduate-senior"></label>
+            <a href="undergraduate-senior.html">Undergraduate - Senior</a>
+        </li>
+        <li>
+            <input type="checkbox" id="graduation">
+            <label for="graduation"></label>
+            <a href="graduation.html">Graduation</a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
