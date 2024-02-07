@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>As we said in the previous lesson, simple moving averages can be distorted by spikes. We&rsquo;ll start with an example.</p>
+    <p>Let&rsquo;s say we plot a 5-period SMA on the daily chart of EUR/USD.</p>
+    <p><img title="5-SMA on EUR/USD" src="https://bpcdn.co/images/2016/05/grade4-sma-spike2.png" alt="5-SMA on EUR/USD" width="525" height="285" border="0" /></p>
+    <p>The closing prices for the last 5 days are as follows:</p>
+    <p>Day 1: 1.3172</p>
+    <p>Day 2: 1.3231</p>
+    <p>Day 3: 1.3164</p>
+    <p>Day 4: 1.3186</p>
+    <p>Day 5: 1.3293</p>
+    <p>The simple moving average would be calculated as follows:</p>
+    <pre>(1.3172 + 1.3231 + 1.3164 + 1.3186 + 1.3293) / 5 = 1.3209</pre>
+    <p>Simple enough, right?</p>
+    <p>Well, what if there was a news report on Day 2 that causes the euro to drop across the board.</p>
+    <p>This causes EUR/USD to plunge and close at 1.3000. Let&rsquo;s see what effect this would have on the 5-period SMA.</p>
+    <p>Day 1: 1.3172</p>
+    <p>Day 2:&nbsp;<strong>1.3000</strong></p>
+    <p>Day 3: 1.3164</p>
+    <p>Day 4: 1.3186</p>
+    <p>Day 5: 1.3293</p>
+    <p>The simple moving average would be calculated as follows:</p>
+    <pre>(1.3172 + <strong>1.3000</strong> + 1.3164 + 1.3186 + 1.3293) / 5 = <strong>1.3163</strong></pre>
+    <p>The result of the simple moving average would be a lot lower and it would give you the notion that the price was actually going down when in reality, Day 2 was just a one-time event caused by the poor results of an economic report.</p>
+    <p>The point we&rsquo;re trying to make is that sometimes the simple moving average might be&nbsp;<em>too</em>&nbsp;simple.</p>
+    <p>If only there was a way that you could filter out these spikes so that you wouldn&rsquo;t get the wrong idea.</p>
+    <p>Hmm&hellip; Wait a minute&hellip; Yep, there is a way!</p>
+    <p>It&rsquo;s called the&nbsp;<strong>Exponential Moving Average</strong>!</p>
+    <p>Exponential moving averages (EMA) give more weight to the most recent periods.</p>
+    <p>In our example above, the EMA would put more weight on the prices of the most recent days, which would be Days 3, 4, and 5.</p>
+    <p>This would mean that the spike on Day 2 would be of lesser value and wouldn&rsquo;t have as big an effect on the moving average as it would if we had calculated for a simple moving average.</p>
+    <p>If you think about it, this makes a lot of sense because what this does is it puts more emphasis on what traders are doing recently.</p>
+    <h2>Exponential Moving Average (EMA) vs. Simple Moving Average (SMA)</h2>
+    <p>Let&rsquo;s take a look at the 4-hour chart of USD/JPY to highlight how a&nbsp;simple moving average (SMA) and exponential moving average (EMA) would look side by side on a chart.</p>
+    <p><img title="Exponential Moving Average" src="https://bpcdn.co/images/2016/05/grade4-exponential-moving-averages.png" alt="Exponential Moving Average" width="525" height="285" border="0" /></p>
+    <p>Notice how the red line (the 30 EMA) seems to be a closer price than the blue line (the 30 SMA).</p>
+    <p>This means that it more accurately represents recent price action. You can probably guess why this happens.</p>
+    <p>It&rsquo;s because the exponential moving average&nbsp;places more emphasis on what has been happening lately.</p>
+    <p>When trading, it is far more important to see what traders are doing NOW rather than what they were doing last week or last month.</p>
+   
+</body>
+
+</html>
