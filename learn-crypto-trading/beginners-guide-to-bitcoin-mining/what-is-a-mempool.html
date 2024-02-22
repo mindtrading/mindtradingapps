@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+    <p>Bitcoin answers the question, &ldquo;<strong>Which transaction to keep?</strong>&rdquo;</p>
+    <p>The way Bitcoin answers this question is brilliant.</p>
+    <p>Here&rsquo;s how&hellip;</p>
+    <p>Every node on the Bitcoin network shares information about new transactions.</p>
+    <p>Transactions made on the Bitcoin network are NOT directly added to the blockchain. They are first collected and stored in what&rsquo;s called the&rdquo;<strong>memory poo</strong>l&rdquo;.</p>
+    <p>EVERY computer running the Bitcoin program creates a&nbsp;<strong>temporary storage area for transactions</strong>&nbsp;called the &ldquo;<strong>memory pool</strong>&rdquo;. Also known as &ldquo;<strong>mempool</strong>&rdquo; for short.</p>
+    <p>Each Bitcoin node has its own mempool, where it stores the queue of transactions that it has checked and considers&nbsp;<strong>valid</strong>.<img src="https://bpcdn.co/images/2022/02/18124523/bitcoin-mining-mempool.png" /></p>
+    <p>Broadly speaking, a mempool is an&nbsp;<strong>organized queue where transactions are stored and sorted before being added to a newly created block</strong>.</p>
+    <ul>
+    <li>The memory pool holds &ldquo;<strong>fresh</strong>&rdquo; or unconfirmed transactions (stored as individual transactions).</li>
+    <li>The blockchain holds &ldquo;<strong>archived</strong>&rdquo; or confirmed transactions (packaged in &ldquo;blocks&rdquo;).</li>
+    </ul>
+    <p>All bitcoin transactions are simply &ldquo;unconfirmed&rdquo; transactions and only exist in the mempool before they&rsquo;re &ldquo;confirmed&rdquo; and added to the blockchain.</p>
+    <p>In the Bitcoin network, all full nodes have a memory pool.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18125038/bitcoin-mining-mempool-all-nodes-1.png" /></p>
+    <p>Let&rsquo;s say you initiate a transaction on this side of the network (<strong>purple</strong>&nbsp;transaction).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18125304/bitcoin-mining-mempool-purple-transaction-1.png"  /></p>
+    <p>And then go over here, and use the&nbsp;<strong>same bitcoin</strong>&nbsp;and insert the&nbsp;<strong>red</strong>&nbsp;transaction in this computer.</p>
+    <p>If you notice, these two transactions are&nbsp;<strong>NOT written directly to the file</strong>. Both transactions are simply stored in the&nbsp;<strong>memory pool</strong>&nbsp;of each computer first.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18125549/bitcoin-mining-mempool-stores-both-transactions.png" /></p>
+    <p>So both transactions will propagate across the network.</p>
+    <p>This computer will REJECT the&nbsp;<strong>red</strong>&nbsp;transaction because they&rsquo;ve already received the&nbsp;<strong>purple</strong>&nbsp;one.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18131442/bitcoin-mining-node-rejects-transaction-from-mempool.png" /></p>
+    <p>So now BOTH transactions are on the network.</p>
+    <p>But they are NOT written to the file yet, so&nbsp;<strong>the file still hasn&rsquo;t been updated</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18131800/bitcoin-mining-transactions-in-mempool.png" /></p>
+    <p>What will happen then is all of these computers will work and try to&nbsp;<strong>get their transactions from their memory pool onto the file</strong>.</p>
+    <p>They will compete to be the first ones to get their memory pool transactions added to the top of the file.<img src="https://bpcdn.co/images/2022/02/18132141/bitcoin-mining-none-competes.png" /></p>
+    <p>Let&rsquo;s say this computer (in yellow) is the first one to be able to do it.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18132648/bitcoin-mining-none-is-first.png" /></p>
+    <p>It&nbsp;<strong>adds its transaction from the memory pool into the file</strong>:</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18133113/bitcoin-mining-none-adds-to-blockchain.png" /></p>
+    <p>And when it&rsquo;s done that&hellip;.</p>
+    <p>It will&nbsp;<strong>pass their updated copy of the file</strong>&nbsp;to everyone else they are connected to&hellip;.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18133326/bitcoin-mining-node-shares-blockchain-copy.png" /></p>
+    <p>And they will&nbsp;<strong>update their copies</strong>.</p>
+    <p>In the illustration below, this node here receives the updated file that contains the&nbsp;<strong>purple</strong>&nbsp;transaction spending the same bitcoin.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18133914/bitcoin-mining-node-kicks-out-conflicting-transaction.png" /></p>
+    <p>What happens to the conflicting&nbsp;<strong>red</strong>&nbsp;transaction in its memory pool?</p>
+    <p>Since the same bitcoin has already been spent in the&nbsp;<strong>purple</strong>&nbsp;transaction, it will kick out the red transaction from their memory pool!</p>
+    <p>This node will then pass on the updated file.</p>
+    <p>And the other node(s) will do the same thing&hellip;it will kick out any conflicting transactions in its memory pool.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18134101/bitcoin-mining-node-kicks-out-conflicting-transaction-again.png" /></p>
+    <p>All computers now have the updated file.</p>
+    <p>So that&rsquo;s how you solve the problem of having two conflicting transactions on the network.</p>
+    <p>You literally just have a &ldquo;waiting area&rdquo; (mempool) for pending transactions and&nbsp;<strong>nodes compete and try to add their transactions to the file</strong>.</p>
+    <p>In this example, the&nbsp;<strong>purple</strong>&nbsp;dude would receive the bitcoin&hellip;<img src="https://bpcdn.co/images/2022/02/18134849/successful-bitcoin-transaction.png" /></p>
+    <p>But when yo shady self tries to spend the same bitcoin with the&nbsp;<strong>red</strong>&nbsp;dude, it&rsquo;s not going to work.<img src="https://bpcdn.co/images/2022/02/18135050/failed-bitcoin-transaction.png" /></p>
+    <p>This process of nodes competing to try and get their transactions from their memory pool onto the file (&ldquo;the blockchain&rdquo;) is called&nbsp;<strong>MINING</strong>.</p>
+   
+   
+</body>
+
+</html>

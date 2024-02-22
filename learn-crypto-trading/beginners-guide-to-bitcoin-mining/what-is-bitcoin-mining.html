@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is mining in Bitcoin?</p>
+    <p>&ldquo;Mining&rdquo; is the process of&nbsp;<strong>confirming transactions</strong>&nbsp;and&nbsp;<strong>adding them to the blockchain</strong>.</p>
+    <p>Nodes that participate in mining are known as&nbsp;<strong>miners</strong>&nbsp;and form a critical part of the Bitcoin network. As part of the mining process,<strong>&nbsp;new bitcoins</strong>&nbsp;are&nbsp;<em>created</em>, which are &ldquo;paid&rdquo; to miners.</p>
+    <p>A nice way to better understand mining is to first see how BItcoin would work&nbsp;<strong>if it did NOT have mining</strong>.</p>
+    <p>Here&rsquo;s how it&rsquo;d work.</p>
+    <p>Let&rsquo;s say this is a&nbsp;<strong>file</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18102503/blockchain-file-360x192.png" /></p>
+    <p>It is stored on a computer.</p>
+    <p>Think of this file kind of like a Word doc.</p>
+    <p>And let&rsquo;s call this file, the &ldquo;<strong>blockchain</strong>&ldquo;.</p>
+    <p>A blockchain is a distributed ledger of &ldquo;<strong>blocks</strong>&rdquo;.</p>
+    <p>I&rsquo;ll dive deeper into blockchain in a later lesson, but for now, just know that each block contains a&nbsp;<strong>bundle of transactions</strong>.</p>
+    <p>Now imagine this is the&nbsp;<strong>Bitcoin Network.</strong></p>
+    <p><img src="https://bpcdn.co/images/2022/02/18102714/bitcoin-mining-bitcoin-network-diagram.png" /></p>
+    <p>These are all computers, connected together across the internet, and they&rsquo;re running the&nbsp;<strong>Bitcoin software</strong>.</p>
+    <p>They&rsquo;re all sharing a copy of the same file, which is the&nbsp;<strong>blockchain</strong>.</p>
+    <p>If you want to send a bitcoin to someone, or&nbsp;<strong>transfer&nbsp;<em>ownership</em>&nbsp;of a bitcoin to someone else</strong>, you would initiate a&nbsp;<strong>transaction</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18103047/bitcoin-mining-send-bitcoin.png" /></p>
+    <p>The transaction is just a&nbsp;<strong>line</strong>&nbsp;of data (in purple).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18104636/bitcoin-mining-transaction-line.png"  /></p>
+    <p>When you initiate a transaction, it gets&nbsp;<strong>sent to a node</strong>&nbsp;of the Bitcoin network.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18105007/bitcoin-mining-transactio-sent-to-node.png"  /></p>
+    <p>If Bitcoin did NOT have mining, the way this would work is that this computer would&nbsp;<strong>record the transaction straight to the blockchain</strong>, the shared file.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18105220/bitcoin-mining-transaction-written-straight-to-blockchain.png" /></p>
+    <p>Then the computer would&nbsp;<strong>pass on that transaction to the other nodes</strong>&nbsp;it is connected to and they will&nbsp;<strong>write the transaction data to their own file</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18105451/bitcoin-mining-transaction-written-straight-to-blockchain-other-nodes.png" /></p>
+    <p>Those nodes would pass the transaction to every node they&rsquo;re connected to and would also write the transaction data to their own file.</p>
+    <p>And so on&hellip;.<br /><img src="https://bpcdn.co/images/2022/02/18105559/bitcoin-mining-transaction-written-straight-to-blockchain-other-nodes-and-so-on.png" /></p>
+    <p>This would continue until the transaction has&nbsp;<strong>propagated the ENTIRE Bitcoin network</strong>.</p>
+    <p>And&nbsp;<em>every</em>&nbsp;node has written it to their file.</p>
+    <p>So that&rsquo;s a simple way of having a shared file or a&nbsp;<strong>shared &ldquo;ledger&rdquo; of transactions</strong>&nbsp;or a &ldquo;<strong>distributed ledger</strong>&rdquo;.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18110421/bitcoin-mining-transaction-written-straight-to-blockchain-fully-propogated.png" /></p>
+    <p>Notice how ALL computers now have the&nbsp;<strong>purple line</strong>&nbsp;(transaction) stored on their&nbsp;<strong>file</strong>&nbsp;(blockchain).</p>
+    <p>When all the nodes have updated their copy of the file,<strong>&nbsp;the ownership of the bitcoin will have changed from one person to the next person</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18110628/bitcoin-mining-transaction-written-straight-to-blockchain-tx-completed.png" /></p>
+    <p>And that&rsquo;s an example of a simple Bitcoin transaction. Congratulations!</p>
+    <p><strong>But we have a problem&hellip;</strong></p>
+    <p>There&rsquo;s a problem that needs to be solved if we were to do it this way.</p>
+    <p>Let&rsquo;s say you want to sell your bitcoin to this&nbsp;<strong>purple dude</strong>.</p>
+    <p>So you create a transaction to send bitcoin to the purple dude.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18113346/bitcoin-mining-purple-dude.png" /></p>
+    <p>Then you send this transaction to the node on&nbsp;<strong>this side of the Bitcoin network</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18113449/bitcoin-mining-purple-dude-send-to-node.png" /></p>
+    <p>But let&rsquo;s say you&rsquo;re the shady type, and since you can&rsquo;t help it, you try to do something shady.</p>
+    <p>Because it&rsquo;s a network of connected computers, you create a SECOND transaction that sends the SAME bitcoin to a different person like this&nbsp;<strong>red dude</strong>&nbsp;(on the right side).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18113619/bitcoin-mining-red-dude.png" /></p>
+    <p>Then you send this transaction with the&nbsp;<strong>red dude</strong>&nbsp;into another node on the network.</p>
+    <p>WTF?!</p>
+    <p><strong>You&rsquo;ve just inserted TWO separate transactions into the network</strong>&nbsp;that involves trying to&nbsp;<strong>spend the SAME bitcoin</strong>!</p>
+    <p>You can do this because it&rsquo;s a network of computers located in different places all over the world.</p>
+    <p>What a sneaky jerk. Congratulations! You are shady as hell!</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18113807/bitcoin-mining-red-dude-send-to-node.png" /></p>
+    <p>So what will happen from here is that these&nbsp;<strong>two transactions</strong>&nbsp;will start propagating across the network.</p>
+    <p>Some nodes will receive the&nbsp;<strong>purple&nbsp;</strong>transaction. Other nodes will receive the&nbsp;<strong>red&nbsp;</strong>transaction.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18114001/bitcoin-mining-nodes-receive-different-transactions.png" /></p>
+    <p>In the illustration below, when a computer tries to pass on its&nbsp;<strong>red&nbsp;</strong>transaction, this computer has already received the&nbsp;<strong>purple&nbsp;</strong>transaction spending this bitcoin so it would&nbsp;<strong>reject</strong>&nbsp;it</p>
+    <p>Which is good, but here lies the problem&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18130058/bitcoin-mining-node-rejects-transaction-1.png" /><br />Now you have two CONFLICTING transactions on the network.</p>
+    <p>Remember,&nbsp;<strong>every computer on the network needs to share the SAME EXACT file</strong>.</p>
+    <p>Some computers can&rsquo;t hold a file with the&nbsp;<strong>purple&nbsp;</strong>transaction, while others hold a file with the&nbsp;<strong>red&nbsp;</strong>transaction. They all have to pick one.</p>
+    <p>ALL computers have to pick the&nbsp;<strong>red&nbsp;</strong>transaction OR the&nbsp;<strong>purple&nbsp;</strong>transaction.</p>
+    <p><strong>If Bitcoin were to operate this way where transactions are written directly to the file, you would create this DOUBLE SPEND problem.</strong></p>
+    <p><img src="https://bpcdn.co/images/2022/02/18114430/bitcoin-mining-conflicting-transactions.png"  /></p>
+    <p>Bitcoin solves this problem!</p>
+    <p>So how do the computers&nbsp;<strong>come to an agreement</strong>&nbsp;on which transaction is the legit one?</p>
+    <p><strong>Mining is the solution.</strong></p>
+    <p>Bitcoin solves this problem of not having conflicting transactions written to the blockchain, the shared &ldquo;file&rdquo;.</p>
+    <p>And this is where mining comes in.</p>
+   
+</body>
+
+</html>

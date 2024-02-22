@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is a Bitcoin miner?</p>
+    <p>Does it involve any picks, shovels, or caves?</p>
+    <p><img title="BTC Miner" src="https://bpcdn.co/images/2022/08/11131623/btc-miner.png" alt="" /></p>
+    <p><strong>NOPE.</strong></p>
+    <p>In this lesson, I will explain what a Bitcoin miner is.</p>
+    <p>Here, we have the Bitcoin network again that contains conflicting transactions mentioned in the example. from the previous lesson.</p>
+    <p>Some nodes contain a &ldquo;<strong>purple</strong>&nbsp;&rdquo; transaction while others contain a &ldquo;<strong>red</strong>&nbsp;&rdquo; transaction.</p>
+    <p>But both transactions are trying to spend the same bitcoin.</p>
+    <p><strong>How do the computers come to an AGREEMENT on which transaction is the legit one?</strong></p>
+    <p>This is where &ldquo;<strong>mining&rdquo;</strong>&nbsp;comes in.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18144614/bitcoin-mining-which-is-legit-transaction.png" alt="" /></p>
+    <p>Let&rsquo;s go inside this computer and take a deeper look. 👇</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18144737/bitcoin-mining-deeper-look.png" alt="" /></p>
+    <p>This node is a &ldquo;<strong>miner</strong>&ldquo;.</p>
+    <h2>What is a Bitcoin miner?</h2>
+    <p>A miner node is a Bitcoin full node that does additional work by&nbsp;<strong><em>confirming</em>&nbsp;transactions.</strong></p>
+    <p>All miners are nodes, but not all nodes are miners. A Bitcoin miner can&rsquo;t operate without running a node. But a full node is not necessarily a miner.</p>
+    <p>While a full node will receive, store and broadcast transactions to other nodes, a miner node will do the same but it will also try to&nbsp;<strong>create new blocks</strong>&nbsp;of transactions and then attempt to broadcast them to other nodes who will then either accept or reject the new block.</p>
+    <p>As you&rsquo;ll see in the next lesson, due to the way &ldquo;mining&rdquo; works, a miner requires the use of&nbsp;<strong>specialized hardware</strong>.</p>
+    <p>If you&rsquo;re curious, here&rsquo;s an example of a mining machine. Isn&rsquo;t it beautiful? 😍</p>
+    <p><img src="https://bpcdn.co/images/2022/08/11132227/antminer-1.png" alt="" /></p>
+    <h2>How does a Bitcoin miner &ldquo;mine&rdquo;?</h2>
+    <p>Let&rsquo;s now go deeper and take a look inside a miner and see how it &ldquo;mines&rdquo; the transactions from the memory pool onto its file (the &ldquo;blockchain&rdquo;).<br /><img src="https://bpcdn.co/images/2022/02/18150534/bitcoin-mining-node-deeper-look.png" alt="" /></p>
+    <p>We&rsquo;re now looking inside a miner&rsquo;s&nbsp;<strong>memory pool</strong>.</p>
+    <p>It has the&nbsp;<strong>purple</strong>&nbsp;transaction in there.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151013/bitcoin-miner-memory-pool-one-tx.png" alt="" /></p>
+    <p>But with a memory pool, you can have&nbsp;<strong>more than one transaction</strong>&nbsp;in there.</p>
+    <p>So let&rsquo;s pretend there are more fresh transactions.</p>
+    <p>For example, this memory pool contains&nbsp;<strong>four transactions</strong>. (In reality, a memory pool can hold thousands.)</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151304/bitcoin-miner-memory-pool-four-tx.png" alt="" /></p>
+    <p>So what does miner do with all these transactions in its memory pool?</p>
+    <p>It will create a container called a &ldquo;<strong>candidate block</strong>&rdquo;.</p>
+    <p>Which is just a container for transactions.</p>
+    <p>The miner will fill this candidate block with transactions from the memory pool.</p>
+    <h2>What is a candidate block?</h2>
+    <p>Think of a candidate block as a<strong><em>&nbsp;temporary</em>&nbsp;block</strong>&nbsp;that&rsquo;s created using transactions selected from the memory pool.</p>
+    <p>This temporary block is called a &ldquo;candidate block&rdquo; because it&rsquo;s&nbsp;<strong>not yet a valid block</strong>. Only blocks that have actually been a<strong>dded to the blockchain</strong>&nbsp;(which is what the miner is trying to do) are considered valid blocks.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151548/bitcoin-miner-candidate-block.png" alt="" /></p>
+    <p>So what this miner will do is&nbsp;<strong>fill this candidate block with transactions</strong>&nbsp;from the memory pool.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151651/bitcoin-miner-candidate-block-fill.png" alt="" /></p>
+    <p>Like so&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151733/bitcoin-miner-candidate-block-filled-with-tx.png" alt="" /></p>
+    <p>Since space is limited, only a limited number of transactions can be included in each block. Miners are incentivized to prioritize the transaction with the highest fees.</p>
+    <p>And then, it will try and add this &ldquo;block&rdquo; of transactions to the file (the &ldquo;blockchain&rdquo;).</p>
+    <p>So how does the candidate block actually get added to the blockchain?</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18151944/bitcoin-miner-add-candidate-block-to-blockchain.png" alt="" /></p>
+    <p>Let&rsquo;s take a closer look at the candidate block&hellip;</p>
+</body>
+
+</html>

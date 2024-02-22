@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>Before diving into the subject of Bitcoin mining, we need to take a quick detour and learn about a certain concept that&rsquo;s foundational to cryptocurrencies.</p>
+    <p>In order to truly understand how Bitcoin and other cryptocurrencies work, it&rsquo;s crucial to first understand the concept of &ldquo;<strong>hashing</strong>&ldquo;.</p>
+    <p>When you see the word, &ldquo;hash&rdquo;, some folks might think of hash browns, a popular American breakfast food, while other folks like Snoop Dogg, might think of the cannabis concentrate product. 🌿</p>
+    <p><img src="https://bpcdn.co/images/2022/08/11120630/not-hashing.png" alt="" /></p>
+    <p>In this lesson, I will be talking about&nbsp;<strong>a different kind of hash</strong>!</p>
+    <p>It&rsquo;s a technical concept, but one you must be familiar with so I will break it down for you nice and easy.</p>
+    <p>Being familiar with the concept of hashing is also needed to&nbsp;<strong>understand how Bitcoin mining works</strong>&nbsp;(which is the next guide) so&nbsp;<strong>please don&rsquo;t skip over these lessons</strong>. 👁️</p>
+    <h2>What is hashing?</h2>
+    <p><strong>Hashing</strong>&nbsp;is a method of cryptography that converts any form of data into a unique string of text of fixed length.</p>
+    <blockquote>
+    <p><strong>Cryptography</strong>&nbsp;is the practice and study of techniques for secure communication from outside observers. In the internet era, cryptography is used to protect computer information or &ldquo;data&rdquo;.</p>
+    </blockquote>
+    <p>If it wasn&rsquo;t already obvious, the &ldquo;crypto&rdquo; in cryptocurrencies stands for&nbsp;<em>cryptography</em>.</p>
+    <p><strong>Hashing is a fundamental part of cryptography</strong>. And plays a huge role behind the &ldquo;crypto&rdquo; in cryptocurrencies.</p>
+    <p>In simple terms, hashing means&nbsp;<strong>inputting text</strong>&nbsp;of ANY length through a&nbsp;<strong>hash function</strong>&nbsp;which produces an&nbsp;<strong>output of a FIXED length</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14151523/hahs-function.png" alt="" /></p>
+    <p>Any piece of data can be &ldquo;<strong>hashed</strong>&rdquo;, no matter its size, type, or length.</p>
+    <p>The hash that is produced is&nbsp;<strong>always the same length</strong>.</p>
+    <p>In the examples below, using the SHA-1 hash&nbsp;function, regardless of the length of the &ldquo;input&rdquo;, the &ldquo;output&rdquo; is always&nbsp;<strong>40 characters long</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14152139/hashing-example-hello.png" alt="" /></p>
+    <p><img src="https://bpcdn.co/images/2022/02/14152638/hashing-example-babypips.png" alt="" /></p>
+    <p><img src="https://bpcdn.co/images/2022/02/14152657/hashing-example-i.png" alt="" /></p>
+    <p>Here&rsquo;s a quick comparison of the three examples:</p>
+    <div>
+    <div>
+    <table border="1px">
+    <thead>
+    <tr>
+    <th>INPUT</th>
+    <th>HASH</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Hello</td>
+    <td>f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0</td>
+    </tr>
+    <tr>
+    <td>I</td>
+    <td>ca73ab65568cd125c2d27a22bbd9e863c10b675d</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <p>Notice that even though the &ldquo;inputs&rdquo; varied, all three hashes were still&nbsp;<strong>40 characters long</strong>.</p>
+    <p>In this specific example, the fixed length is 40 characters long, which is determined by the specific&nbsp;<strong>hash function</strong>&nbsp;used (&ldquo;SHA-1&rdquo;), which will be explained later.</p>
+    <p>For now, just know that&nbsp;<em>other</em>&nbsp;hash functions may output different fixed lengths. Most have fixed lengths that are longer than 40 characters.</p>
+    <h2>A hash acts as a digital fingerprint.</h2>
+    <p>A unique piece of data will always produce the same hash.</p>
+    <p>For example, if you run &ldquo;Hello&rdquo; a million times through a hash function, the above hash is what will appear a million times.</p>
+    <p>For the word, &ldquo;Hello&rdquo;, its SHA-1 hash will always be:</p>
+    <p>f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0</p>
+    <p>And only &ldquo;Hello&rdquo; will ever produce that hash.</p>
+    <p>Any change to &ldquo;Hello&rdquo; even if it&rsquo;s just changing it to &ldquo;hello&rdquo; and the hash function will produce a&nbsp;<strong>totally different</strong>&nbsp;hash value.</p>
+    <p>This is why hashes are known as digital &ldquo;<strong>fingerprints</strong>&ldquo;.</p>
+    <p>Just like your fingerprint is unique to you, a hash is unique to a specific input of data.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/24214236/fingerprint.png" alt="" /></p>
+    <h2>A hash can&rsquo;t be reversed.</h2>
+    <p>The INPUT into a hash function is called a &ldquo;<strong>preimage</strong>&rdquo; But to keep things simple, I just stick with &ldquo;input&rdquo;.</p>
+    <p>The OUTPUT of the hash function is called &ldquo;<strong>hash value</strong>&rdquo; or &ldquo;<strong>digest</strong>&rdquo; or simply as a &ldquo;<strong>hash</strong>&rdquo;.</p>
+    <p>A hash function is designed to act in a&nbsp;<strong>one-way manner</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14153349/hashing-example-irreversible.png" alt="" /></p>
+    <p>Since a hash function is a one-way function, the output, the &ldquo;hash&rdquo;, can&rsquo;t be used to reveal the input, the &ldquo;preimage&rdquo;.</p>
+    <p>This means that if all you see is the hash, you will NOT be able to decipher the original data (the &ldquo;preimage&rdquo;) that the hash represents.</p>
+    <p>Hash functions produce&nbsp;<strong>irreversible hashes.</strong></p>
+    <p><strong>Irreversible</strong>&nbsp;means that if you only had the hash you couldn&rsquo;t use that to figure out what the original piece of data was. This allows the original data to remain&nbsp;<strong>secure and unknown</strong>.</p>
+    <h2>What is a hash function?</h2>
+    <p>A&nbsp;<strong>hash function</strong>&nbsp;is a&nbsp;<strong>mathematical operation</strong>&nbsp;that converts input data of&nbsp;<em>arbitrary</em>&nbsp;length into an output of&nbsp;<em>fixed</em>&nbsp;length that is executed using a certain&nbsp;<strong>algorithm</strong>.</p>
+    <p>An&nbsp;<strong>algorithm</strong>&nbsp;is just a step-by-step set of instructions for performing calculations that are done by a software program.</p>
+    <p>It doesn&rsquo;t matter if the input is a single letter, a word, a full sentence, a page from a book, or an entire book, That&rsquo;s the&nbsp;<em>arbitrary</em>&nbsp;part.</p>
+    <p>Each input will produce a unique output expressed as an alphanumeric string of&nbsp;<em>fixed</em>&nbsp;length.</p>
+    <blockquote>
+    <p>Alphanumeric just means that something consists of both letters and numbers.</p>
+    </blockquote>
+    <p>A useful hash function&nbsp;<strong>conceals any clues about what the input may have looked like</strong>.</p>
+    <p>For example, it needs to be impossible to determine whether the input was long or short or contained numbers or letters. Also, changing just one character in the input should result in a radically different output.</p>
+    <h3>Popular Hash Functions</h3>
+    <p>All hash functions work in a similar manner. You input data, and the hash function &ldquo;scrambles&rdquo; the data and outputs a hash.</p>
+    <p>Common hash functions include:</p>
+    <ul>
+    <li><strong>MD-5:&nbsp;</strong>Message Digest 5 (MD5) is a common hash function. In the past, it was considered secure but nowadays, hackers have discovered how to decode the algorithm and are able to do so in seconds.</li>
+    <li><strong>SHA:&nbsp;</strong>Secure Hash Algorithm (SHA) is another type of hash function. There are several variations of SHA grouped into four&nbsp;<em>families</em>: SHA-0, SHA-1, SHA-2, and SHA-3: In general, the higher the number, the more recent the release and the more secure the algorithm.</li>
+    </ul>
+    <p>For our purposes, the only hash function you need to know about right now is the&nbsp;<strong>Secure Hash Algorithm (SHA</strong>). More specifically, the SHA-2 family since it contains a special member in the family named&nbsp;<strong>SHA-256</strong>.</p>
+    <blockquote>
+    <p>SHA-256 is a hash function that converts a string of text into another string that is always the same length: 64 alphanumeric characters long. This is equivalent to 256 bits, which is where the &ldquo;256&rdquo; in its name comes from.</p>
+    </blockquote>
+    <p>It&rsquo;s special because it&rsquo;s the hash function used in several parts of the Bitcoin system, which you&rsquo;ll learn about in later lessons. For now, it&rsquo;s important to just know that&nbsp;<strong>SHA-256 is a type of hash function and the one used by Bitcoin</strong>.</p>
+    <p>Whether the input is a page from a Harry Potter book or the&nbsp;<em>entire</em>&nbsp;series of Harry Potter books. the output of the SHA-256 hash function will always be the SAME length displayed as&nbsp;<strong>64 alphanumeric characters</strong>.</p>
+    <p>Let&rsquo;s now take a look at how hashing works in crypto.</p>  
+   
+</body>
+
+</html>

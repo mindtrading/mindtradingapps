@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+    <p>So far, in earlier lessons, you&rsquo;ve learned what hashing is and how hashing works.</p>
+    <p>But in order to truly understand just what these specialized programs do, it&rsquo;s helpful to see actual examples in&nbsp;<strong>action</strong>!</p>
+    <p><img src="https://bpcdn.co/images/2022/04/05164602/see-hashing-in-action-360x360.png" alt="" /></p>
+    <p>Let&rsquo;s see how the hashing process works using an actual&nbsp;<strong>hash function</strong>.</p>
+    <p>Since&nbsp;<strong>SHA-256</strong>&nbsp;is the chosen hash function of Bitcoin, let&rsquo;s use it for our example.</p>
+    <p>This is our first example input:</p>
+    <p>MindTrading is cool as ice.</p>
+    <p>When put through the SHA-256 hash function, this sentence creates the following hash value, also known as a &ldquo;<strong>digest&rdquo;</strong>&nbsp;or simply as a &ldquo;<strong>hash&rdquo;</strong>:</p>
+    <p>A58E12FAC905B8F84EA2F64F888191A4B66A67CC45F8E7B7B0F94C37A134CB57</p>
+    <p>You can see that the digest is a combination of letters and numbers. And it is exactly 64 characters in length.</p>
+    <p>Aside from that, there&rsquo;s really not much else you can learn from looking at this digest. There are no patterns or clues as to what the input is. It just looks like a bunch of gibberish.</p>
+    <p>The output may seem random. But there&rsquo;s no way you could guess the input just by looking at the output.</p>
+    <p>If you run the input through the SHA-256 hash function again, you will get the exact same output (&ldquo;hash&rdquo;) again.</p>
+    <p><strong>The same input will ALWAYS produce the same output.</strong></p>
+    <p>Now, let&rsquo;s make one subtle change to the first example&rsquo;s input and see what happens:</p>
+    <pre>MindTrading is cool as lice.</pre>
+    <p>Notice that the letter &ldquo;l&rdquo; has been added to the beginning of the word &ldquo;ice&rdquo; to spell &ldquo;lice&rdquo;. have been</p>
+    <p>Here&rsquo;s the new digest:</p>
+    <p>B8784EAEB1FC50719B2041FB1AEE30FF91516529CCB65B4B446CC4D5F6B4EB95</p>
+    <p>Now let&rsquo;s compare the two:</p>
+    <div>
+    <div>
+    <table style="width: 100%;" border="1px">
+    <thead>
+    <tr>
+    <th>INPUT</th>
+    <th>DIGEST</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>MindTrading is cool as ice.</td>
+    <td>A58E12FAC905B8F84EA2F64F888191A4B66A67CC45F8E7B7B0F94C37A134CB57</td>
+    </tr>
+    <tr>
+    <td>MindTrading is cool as lice.</td>
+    <td>B8784EAEB1FC50719B2041FB1AEE30FF91516529CCB65B4B446CC4D5F6B4EB95</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <p>You can see that this is a radically different result from the first digest!</p>
+    <p>Even though the inputs were practically identical, changing a single character generated a completely&nbsp;<strong>different output</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/24170642/lice-is-cool-360x360.png" alt="" /></p>
+</body>
+
+</html>

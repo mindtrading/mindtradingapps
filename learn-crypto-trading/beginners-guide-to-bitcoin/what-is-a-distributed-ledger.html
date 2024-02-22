@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is a distributed ledger?</p>
+    <p>The first step to understanding how Bitcoin works is to become familiar with the concept of a &ldquo;<strong>distributed ledger</strong>&ldquo;.</p>
+    <p>In the previous lesson,&nbsp;I explained how Bitcoin is a&nbsp;<strong>new type of recordkeeping system</strong>&nbsp;that Satoshi Nakamoto created to be able to move money around on the internet.</p>
+    <p>Bitcoin is a new kind of system that creates digital money designed to achieve two major goals:</p>
+    <ol>
+    <li>Prevent the double spending problem</li>
+    <li>Achieve the first goal without a centralized financial institution like a bank.</li>
+    </ol>
+    <p>Bitcoin achieves these two goals by using an innovative approach on h<strong>ow it keeps a record of transactions and constantly maintains its accuracy</strong>.</p>
+    <h2>What is a ledger?</h2>
+    <p>In order to understand Bitcoin&rsquo;s approach, let&rsquo;s review how digital transactions work with a&nbsp;<strong>traditional bank</strong>.<img src="https://bpcdn.co/images/2022/02/17110721/online-bank-payment-1.png" /></p>
+    <p>In order to prevent double spending, a&nbsp;<strong>ledger</strong>&nbsp;is needed.</p>
+    <p>The ledger keeps track of account balances.</p>
+    <p>Before Bitcoin, this ledger was always stored by a centralized financial institution like a bank.</p>
+    <p>Let&rsquo;s dig a tad bit deeper into WHY a bank is even needed in the first place.</p>
+    <p>A cool way to explain this is to show an example that attempts to perform a digital transaction&nbsp;<em>without</em>&nbsp;a bank and see how a potential sh*tshow can occur.</p>
+    <p>Rather than rely on a bank, what if Ursula and Molly keep their<strong>&nbsp;own copy of the ledger on their own computers</strong>?</p>
+    <p>This ledger is simply a&nbsp;<strong>text file</strong>&nbsp;stored on their computer&rsquo;s hard drive.<img src="https://bpcdn.co/images/2022/02/17112659/p2p-electronic-payment.png" /></p>
+    <p>When Molly the Mermaid pays Ursula the Unicorn for her magical cupcakes, they both update their digital ledgers (the text file).</p>
+    <p>If Ursula and Molly both&nbsp;<strong>trust</strong>&nbsp;each other and promise to keep their ledgers accurate, then this approach could work.</p>
+    <p>But what if Ursula and Molly do NOT trust each other?</p>
+    <p>What if Ursula is shady and edits her ledger to show that she never received payment from Molly and tries to ask for another $1?</p>
+    <p>Imagine Ursula accusing Molly of not paying and showing&nbsp;<strong>proof</strong>&nbsp;by taking a screenshot of her ledger and sending it to Ned.</p>
+    <p>Molly rejects her accusation and claims she is lying and shows proof by sending a screenshot of her ledger that clearly shows that $1 was transferred to her.</p>
+    <p>Whose ledger is correct?!</p>
+    <p>This will be a never-ending argument. They will never come to an&nbsp;<strong>agreement</strong>&nbsp;on who is telling the&nbsp;<strong>truth</strong>.</p>
+    <p>This is why you need a trusted third party<strong>&nbsp;like a bank</strong>.</p>
+    <p>The bank handles the record-keeping of transactions so all parties can agree on who really owns what.</p>
+    <p><strong>But we don&rsquo;t want to rely on a bank.</strong>&nbsp;We need a different solution.</p>
+    <p>Here&rsquo;s an idea&hellip;</p>
+    <p>What if they share the ledger with another friend?</p>
+    <p>So let&rsquo;s add Pablo the Polar Bear.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/17122628/pablo-bear.png"/></p>
+    <p>Now we have a&nbsp;<strong>network</strong>&nbsp;of three friends, instead of just two.</p>
+    <p>When Molly pays Ursula, everyone&rsquo;s ledgers get updated at the same time.<img src="https://bpcdn.co/images/2022/02/17122256/simple-distributed-ledger.png" /></p>
+    <p>In this scenario, if Ursula tries to accuse Molly of not paying, by showing her ledger with a&nbsp;<strong>$0 balance</strong>, it will be&nbsp;<strong>different from Molly&rsquo;s and Pablo&rsquo;s ledgers</strong>.</p>
+    <p>Ursula will have a tougher time proving she&rsquo;s right because Molly can ask Pablo to share his screenshot of the ledger with both of them.</p>
+    <p>Two out of three ledgers show that Ursula has a $1 balance.</p>
+    <p>Their ledgers&nbsp;<strong>do not agree</strong>&nbsp;with her ledger.</p>
+    <p>Seeing that a&nbsp;<strong>majority</strong>&nbsp;of all ledgers show that Ursula has a $1 balance, Molly and Pablo come to a&nbsp;<strong>consensus</strong>&nbsp;and agree that their ledgers are the correct ones and Ursula&rsquo;s ledger is incorrect.</p>
+    <p>Sensing defeat, Ursula confesses that she&nbsp;<strong>tampered</strong>&nbsp;with her ledger.</p>
+    <p>Now everybody is in&nbsp;<strong>consensus</strong>&nbsp;that Molly really did transfer ownership of her $1 to Ursula, which means that Ursula does indeed have a $1 balance.</p>
+    <p>In hopes that both Molly and Pablo would still buy cupcakes from her in the future and to win back their trust, she deletes her ledger and asks them for a copy of their version of the ledger so all three ledgers are back in&nbsp;<strong>sync</strong>.<img src="https://bpcdn.co/images/2022/02/17124944/distributed-ledgers-sync.png" /></p>
+    <p>This is an example of a&nbsp;<strong>distributed ledger</strong>.</p>
+    <p>Not just one person holds the ledger, it&rsquo;s&nbsp;<em>distributed</em>&nbsp;across multiple people in&nbsp;<em>different</em>&nbsp;locations.</p>
+    <p>(Technically, since the ledger is stored on a computer, it&rsquo;s distributed across multiple computers which are owned by the people. 🤓)</p>
+    <h2>What is a distributed ledger?</h2>
+    <p>A distributed ledger works because&nbsp;<strong>everyone is holding a copy of the SAME ledger</strong>. The more trusted people that hold the ledger, the stronger it becomes.</p>
+    <blockquote>
+    <p>A &ldquo;distributed ledger&rdquo; is a ledger that is replicated and stored across&nbsp;<em>multiple</em>&nbsp;locations instead of a&nbsp;<em>single</em>&nbsp;central location.</p>
+    </blockquote>
+    <p>With a distributed ledger, there is no more need for a bank to keep records. Instead, everyone (collectively) is the bank!</p>
+    <p>This is the approach that Bitcoin takes.</p>
+    <p><strong>The core idea behind Bitcoin was to create a single distributed ledger of transactions that is accessible to everyone, where anyone in the world can view balances and submit transactions at any time, but where the ledger is not controlled by any single person, corporation, or government.</strong></p>
+    <p>In other words, a &ldquo;<strong>distributed ledger</strong>&rdquo; that is &ldquo;<strong>permissionless</strong>&rdquo; and is maintained on a &ldquo;<strong>decentralized</strong>&rdquo; basis.</p>
+    <p>In reality, this is easier said than done. Let&rsquo;s see why&hellip;.</p>
+    <p>In the example above, because they were all friends, Pablo the Panda held a copy of the ledger, even though he wasn&rsquo;t part of the transaction.</p>
+    <p>Without him though, there would be no agreement on the correct ledger. And shady Ursula might attempt more&nbsp;<strong>dishonest transactions</strong>.</p>
+    <p>But what if they weren&rsquo;t friends? Why would Pablo make the effort to store a copy of the ledger on his computer and help validate transactions with no benefit for himself?</p>
+    <p>While keeping track of transactions on a distributed ledger with just three people on a network is pretty manageable, what if there are thousands of people who want to join the network and send each other money?</p>
+    <p>You can start to imagine the challenge that arises.</p>
+    <p><strong>Bitcoin&rsquo;s network is entirely public, and anyone can participate</strong>. While a public ledger allows for many more participants. which potentially strengthens the ledger, it also opens itself up to more shady participants trying to corrupt the ledger.</p>
+    <p>When a lot of people have a copy of the same ledger, it makes it hard to cheat. But it doesn&rsquo;t mean cheaters still won&rsquo;t try.</p>
+    <p>Within those thousands of people, there are probably going to be a bunch of shady Ursulas so you&rsquo;re going to need a lot of Pablos to ensure an accurate ledger is used by everyone.</p>
+    <p>What if there were more people like Ursula? What if there were thousands of shady Ursulas editing their ledgers?</p>
+    <p>Unlike Ursula, Molly, and Pablo who may know and trust each other, with a totally open and public network like Bitcoin&rsquo;s, you pretty much can NOT trust anybody.</p>
+    <p>So with a distributed ledger, the challenges are this:</p>
+    <ul>
+    <li><strong>How do you incentivize other people who aren&rsquo;t making transactions to hold a copy of the ledger on their computer and constantly check to make sure transactions are accurate and nobody is cheating?</strong></li>
+    <li><strong>And if you have copies of the same ledger floating around on a thousand different computers and no one is in charge, how do you make sure all copies are identical, are updated synchronously, and reflect only honest transactions?</strong></li>
+    </ul>
+    <p>In other words, how do you get a bunch of people who&nbsp;<strong>don&rsquo;t know each other</strong>, who&nbsp;<strong>don&rsquo;t trust each other&nbsp;</strong>to coordinate and&nbsp;<strong>come to a consensus&nbsp;</strong>on which ledger is accurate and true?</p>
+    <p>Consensus is defined as a general agreement on the answer to the following question:</p>
+    <p>&ldquo;<em>Which version of the ledger does everyone follow?</em>&rdquo;</p>
+    <p>With thousands of people all holding their own copy of the ledger, some of which, like Ursula, may have made malicious edits, what is the&nbsp;<strong>consensus mechanism</strong>&nbsp;needed to get everyone to agree on the &ldquo;correct ledger&rdquo; to keep a copy of and follow?</p>
+    <p>What makes Bitcoin special is how it figured out how to get these thousands of computers to AGREE in real-time which ledger to hold.</p>
+    <p>Satoshi Nakamoto figured out a technical solution to overcome these challenges of using a distributed ledger and it was considered a game-changer!</p>
+    <p>In order to understand HOW, we&rsquo;ll need to look under the hood of Bitcoin. In the next lesson, we&rsquo;ll start with a high-level overview of the Bitcoin system.</p> 
+   
+</body>
+
+</html>

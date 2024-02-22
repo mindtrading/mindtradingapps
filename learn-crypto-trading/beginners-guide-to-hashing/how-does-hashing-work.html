@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>How does hashing work?</p>
+    <p>In the previous lesson, I introduced the concept of hashing and relevant terms. Now, let&rsquo;s learn how it works!</p>
+    <p>Hashing is a mathematical operation that is&nbsp;<strong>easy to perform</strong>, but&nbsp;<strong>extremely difficult to reverse</strong>.</p>
+    <p>The hashing process turns a piece of data into binary code, which is just a&nbsp;<strong>bunch of 0s and 1s</strong>.</p>
+    <p>Then it breaks up the numbers and applies some secret &ldquo;<strong>jumbling&rdquo;</strong>, which is done by something called the &ldquo;hash function&rdquo;.</p>
+    <h2>How does hashing work in crypto?</h2>
+    <p>When used in Bitcoin and other cryptocurrencies, the end result is typically a&nbsp;<strong>64-digit long string of numbers and letters</strong>.</p>
+    <p>Because the conversion is done by a cryptographic algorithm (the &ldquo;hash function&rdquo;), the jumbling formula is unknown so the 64-digit string can&rsquo;t be reversed.</p>
+    <p><img title="Hashing Concept" src="https://bpcdn.co/images/2022/02/14154523/hashing-concept.png" /></p>
+    <p>A&nbsp;<strong>string&nbsp;</strong>is a sequence of characters.</p>
+    <p>Strings are like sentences. They are formed by a combination of characters.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14154836/hashing-string.png" /></p>
+    <p>Think of a hash as a bunch of&nbsp;<strong>random letters and numbers</strong>.</p>
+    <h2>A unique piece of data will always produce the&nbsp;<strong>same hash</strong>.</h2>
+    <p>For example, every time the string above is run through the hash function, it will&nbsp;<strong>always</strong>&nbsp;produce the same hash.</p>
+    <p>But what happens if we make just a&nbsp;<strong>tiny change</strong>&nbsp;to the string? (Highlighted in yellow.)</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14155150/hashing-string-slight-change.png" /></p>
+    <p>The sentence ends with a&nbsp;<strong>question mark</strong>&nbsp;instead of a period.</p>
+    <p>Even though it was a TINY change in the sentence, the hash is TOTALLY different.</p>
+    <p>You can see how using hashes can be used to&nbsp;<strong>detect tampering</strong>&nbsp;since even a small change to that input to the hash function results in a totally different output.</p>
+    <p>It&rsquo;s very important you remember this point because, in a later lesson, you&rsquo;ll see how this is used to prevent previous transactions from being tampered with.</p>
+    <h2>The hash function is ONE-WAY only.</h2>
+    <p><img src="https://bpcdn.co/images/2022/02/14155714/hashing-one-way-function.png" /></p>
+    <p>You can&rsquo;t take an existing hash and try to reverse it to find the input string.</p>
+    <p>So if all you know is the hash,&nbsp;<strong>there&rsquo;s no way to know what the original input is</strong>. You can&rsquo;t &ldquo;reverse engineer&rdquo; or hack the hash.</p>
+    <p>Lastly, the&nbsp;<strong>length</strong>&nbsp;of the output (the &ldquo;hash&rdquo;) does NOT grow with an increase in information in the input. A hash function takes input data of ANY length and returns a value that has a FIXED length.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14155918/hashing-harry-potter.png" /></p>
+    <p>If you put the entire text of a Harry Potter book, which has over 76,000 words, the hash output will STILL only be 64 characters long.</p>
+    <p>And again, if you misspell&nbsp;<strong>even a single letter&nbsp;</strong>in the Harry Potter book, and ran it through the hash function, it would produce a&nbsp;<strong>totally different hash</strong>&nbsp;from above.</p>
+    <p>This would allow you to instantly know that the book had been modified without you having to manually inspect the entire book! Pretty neat huh?</p> 
+   
+</body>
+
+</html>

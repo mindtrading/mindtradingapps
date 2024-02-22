@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>The Bitcoin network is a peer-to-peer (P2P) network of&nbsp;<strong>&ldquo;nodes&rdquo;</strong>.</p>
+    <p>In previous lessons, you learned what a&nbsp;<strong>network</strong>&nbsp;does and what a<strong>&nbsp;P2P network</strong>&nbsp;is.</p>
+    <p>But what exactly is a Bitcoin node? What does a Bitcoin node do? How does a Bitcoin node work?</p>
+    <p>A&nbsp;<strong>Bitcoin node,&nbsp;</strong>or more specifically, a&nbsp;<strong>Bitcoin &ldquo;full node&rdquo;,&nbsp;</strong>is simply a computer that runs the&nbsp;<strong>Bitcoin software&nbsp;</strong>(known as a &ldquo;Bitcoin client&rdquo; or &ldquo;Bitcoin client software&rdquo;).</p>
+    <p>It could be a desktop PC or laptop as long as it has enough hard drive storage to store historical data.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/17205530/computer-as-bitcoin-node.png" /></p>
+    <blockquote>
+    <p>The terms &ldquo;node and &ldquo;full node&rdquo; are often used synonymously, but there&rsquo;s actually a difference between the two. That&rsquo;s because there are two types of nodes: &ldquo;<strong>full node</strong>&rdquo; and &ldquo;<strong>light node</strong>&rdquo; (or &ldquo;lighweight node&rdquo;). Full nodes form the backbone of the Bitcion network, while light nodes&nbsp;<em>depend</em>&nbsp;on full nodes for functioning. Since light nodes can&rsquo;t function on their own, I consider them more as a &ldquo;barnacle&rdquo; or a &ldquo;parasite&rdquo; since they need to attach themselves to a full node. Going forward, unless specified, when I use the word &ldquo;node&rdquo;, I mean &ldquo;full node&rdquo;.</p>
+    </blockquote>
+    <h2>What does a Bitcoin node do?</h2>
+    <p>A node does three things:</p>
+    <ol>
+    <li>Follow rules</li>
+    <li>Share information</li>
+    <li>Keep a copy of confirmed transactions</li>
+    </ol>
+    <h3>1. Follow Rules</h3>
+    <p>Each&nbsp;<strong>node</strong>&nbsp;(a computer running the Bitcoin software) has been programmed to follow a set of rules.</p>
+    <p>This is called the&nbsp;<strong>Bitcoin protocol</strong>.</p>
+    <p>A protocol is a set of predefined&nbsp;<em>rules</em>&nbsp;that dictates how the network operates, and that all network participants must abide by in order for the network to function.</p>
+    <blockquote>
+    <p><strong>Each Bitcoin node is autonomous</strong>. If you have a computer that runs a Bittcoin client, the network doesn&rsquo;t &ldquo;tell you what to do&rdquo;. Instead, the Bitcoin client already knows what to do, and it makes its own decisions based on the Bitcoin protocol (rules).</p>
+    </blockquote>
+    <p>Because the rules are predefined and coded into the Bitcoin software, this prevents any disagreement on the Bitcoin network.</p>
+    <p>By following these rules, a node is able to check the transactions it receives and only relay them if everything is legit.</p>
+    <p>If there are any problems, the transaction isn&rsquo;t passed on.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/17195723/bitcoin-transaction-validation.png" /></p>
+    <p>A transaction that does not follow the rules will be&nbsp;<strong>rejected</strong>&nbsp;by the P2P network of computers.</p>
+    <p>For example, one rule is that a person must own an equal or greater amount of bitcoins than they are trying to send.</p>
+    <p>If your node receives a transaction where someone has tried to send more bitcoins than they own, the transaction won&rsquo;t be passed on to other nodes.</p>
+    <p>If any member of the Bitcoin network attempts to broadcast false information, all nodes on the network will immediately recognize it as invalid and reject it.</p>
+    <p>Because&nbsp;<strong>each and every node can verify all information on the network&nbsp;<em>itself</em></strong>, there is no need to trust other members of the network. This makes Bitcoin a&nbsp;<strong>trustless system</strong>.</p>
+    <h3>2. Share information</h3>
+    <p>The primary job of a node is to&nbsp;<em>gossip</em>&hellip;.<strong>to share information with other nodes</strong>.</p>
+    <p>This &ldquo;information&rdquo; a node shares are&nbsp;<strong>transactions</strong>.</p>
+    <p>There are TWO types of transactions that nodes share:</p>
+    <ol>
+    <li><strong>Fresh transactions</strong>: transactions that have recently entered the network.</li>
+    <li><strong>Confirmed transactions</strong>: transactions that have been &ldquo;confirmed&rdquo; and written to a file. These transactions are not shared individually but are first packaged into&nbsp;<strong>BLOCKS</strong>&nbsp;before they are shared.</li>
+    </ol>
+    <p><img src="https://bpcdn.co/images/2022/02/17201845/fresh-vs-confirmed-bitcoin-transactions-1.png" /></p>
+    <p><strong>A node shares both &ldquo;fresh&rdquo; transactions and&nbsp;<em>blocks</em>&nbsp;of &ldquo;confirmed&rdquo; transactions.</strong></p>
+    <p>What&rsquo;s a block?</p>
+    <p>Let&rsquo;s pretend you go to your local coffee shop and after you pay, you get a receipt that signifies a &ldquo;<em>transaction</em>&rdquo; with the barista. You really love going to this coffee shop and after multiple visits, you now have a stack of receipts. You bundle them together. That&rsquo;s a &ldquo;<em>block</em>&ldquo;.</p>
+    <p>So in Bitcoin, transactions that are bundled together is called a &ldquo;<strong>block&rdquo;</strong>.</p>
+    <p>Don&rsquo;t worry too much about blocks or the differences between fresh and confirmed transactions right now. It will all become clear in later lessons.</p>
+    <h3>3. Keep a copy of confirmed transactions</h3>
+    <p>As mentioned above, each node also keeps&nbsp;<strong>blocks of &ldquo;confirmed&rdquo; transactions</strong>.</p>
+    <p>These are held together in a file called the &ldquo;<strong>blockchain</strong>&ldquo;.</p>
+    <p>What&rsquo;s a chain?</p>
+    <p>For the purposes of this lesson, a &ldquo;<strong>chain</strong>&rdquo; just means that when you create a new&nbsp;<strong>block</strong>&nbsp;(another bundle of transactions), you hook it onto the previous block. And once hooked, it&rsquo;s permanent. You can&rsquo;t &ldquo;unhook&rdquo; it.</p>
+    <p>It&rsquo;s forever attached to that previous block. So using the coffee shop example I mentioned earlier, imagine a chain of multiple bundles of receipts&hellip;that&rsquo;s a &ldquo;chain of blocks&rdquo; or a&nbsp;<em>blockchain</em>.<br /><img src="https://bpcdn.co/images/2022/02/17202107/bitcoin-node-stores-blockchain-1.png" /></p>
+    <p>Fresh transactions travel around the network until they are added to the blockchain, which is just a&nbsp;<strong>ledger of&nbsp;<em>confirmed</em>&nbsp;transactions</strong>.</p>
+    <p>There is no&nbsp;<em>single</em>&nbsp;blockchain.<strong>&nbsp;Every node has its own copy of the blockchain.</strong></p>
+    <p>All nodes do their best to&nbsp;<strong>stay in sync</strong>. If some nodes have outdated copies of the blockchain, other nodes who have the most recent copy of the blockchain will share their copy with them.</p>
+    <p>The cool thing about each node having its own copy of the blockchain is if one (or more) nodes go offline, the Bitcoin network can continue to still operate!&nbsp;<strong>The more nodes that are running, the more difficult it is to shut down Bitcoin</strong>.</p>
+    <p>The network is NOT dependent on any single node. There is no central point of failure. In order to actually kill Bitcoin, every single copy of the blockchain must be destroyed.</p>
+    <p>Every node is independent. Nodes (computers) can leave and rejoin the network at will.</p>
+    <p>If a node disconnects from the network and returns, the computer will just download the freshest copy of Bitcoin&rsquo;s blockchain and it becomes a node again.</p>
+    <p>Nodes are a critical part of the Bitcoin system.&nbsp;<strong>Without nodes, there is no Bitcoin network</strong>.</p>
+    <p>And without the Bitcoin network, there is no blockchain since nodes are needed to store copies of the blockchain.</p>
+    <p>And with no blockchain, there is no Bitcoin system.</p>
+    <h2>Summary</h2>
+    <p>So far, you&rsquo;ve learned that the Bitcoin network is:</p>
+    <ul>
+    <li>a leaderless peer-to-peer network of&nbsp;<strong>nodes</strong>&nbsp;(computers running Bitcoin software),</li>
+    <li>in which&nbsp;<em>every</em>&nbsp;node independently checks that all rules are being followed,</li>
+    <li>verifies<strong>&nbsp;fresh transactions</strong>&nbsp;and</li>
+    <li>stores a copy of the&nbsp;<strong>blockchain</strong>&nbsp;(the ledger of confirmed transactions).</li>
+    </ul>
+    <p>Because every node is doing the same work, there is no central point of failure. There is no centralized server.</p>
+    <p>In order for&nbsp;<strong><em>fresh</em>&nbsp;transactions to be ADDED to the blockchain</strong>, they go through a process called &ldquo;<strong>mining&rdquo;</strong>&nbsp;which is done by a special type of node known as &ldquo;<strong>miners</strong>&ldquo;.</p>
+    <p>But in order to learn how Bitcoin mining works, we need to take a quick detour.</p>
+   
+</body>
+
+</html>

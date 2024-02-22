@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>How does Bitcoin mining work?</p>
+    <p>In the previous lesson, you learned what a Bitcoin&nbsp;<strong>miner</strong>&nbsp;is, how it stores fresh transactions in its&nbsp;<strong>memory pool</strong>, and then starts the &ldquo;mining&rdquo; process by creating a&nbsp;<strong>candidate block</strong>.</p>
+    <p>If what I just wrote sounds like a foreign language to you, I strongly recommend you start with the first lesson of my Beginner&rsquo;s Guide to Bitcoin Mining.</p>
+    <p>If you&rsquo;re still with me, let&rsquo;s take a closer look at the candidate block&hellip;</p>
+    <p>Just like you can be separated into two basic parts with a head and a body, a candidate block can be broken down into two parts:</p>
+    <ol>
+    <li><strong>Block&nbsp;<em>header</em></strong>&nbsp;(yellow area)</li>
+    <li><strong>Block&nbsp;<em>body</em></strong>&nbsp;(gray area)<br /><img src="https://bpcdn.co/images/2022/02/18154614/bitcoin-candidate-block-two-parts.png"  /></li>
+    </ol>
+    <p>If we look closer at a candidate block, it actually does NOT just contain transactions.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18153156/bitcoin-candidate-block-anatomy.png"/></p>
+    <p>When a miner creates a candidate block, it includes a &ldquo;<strong>block header</strong>&rdquo; (yellow area).</p>
+    <p>The &ldquo;body&rdquo; of the block (gray area)&nbsp;<em>holds</em>&nbsp;the transactions.</p>
+    <p>Aside from a candidate block containing a bunch of transactions, it also contains some metadata that provides a &ldquo;summary&rdquo; of the block.</p>
+    <p><strong>Metadata</strong>&nbsp;is just data that provide information about other data. In this case, the metadata provides information about the block itself. This information is known as the &ldquo;block header&rdquo;.</p>
+    <p>Inside the&nbsp;<strong>block header</strong>, there are several pieces of data.</p>
+    <p>For the purpose of this lesson, I&rsquo;m going to simplify what&rsquo;s inside the block header.</p>
+    <h2>Timestamp</h2>
+    <p>The first piece of data inside the Block Header is the &ldquo;<strong>Timestamp</strong>&rdquo;.</p>
+    <p>The timestamp indicates when the block was created.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18155417/bitcoin-candidate-block-timestamp.png" /></p>
+    <h2>Previous Block Hash</h2>
+    <p>The next piece of data is called the &ldquo;Previous Block&rdquo; or more specifically, the &ldquo;<strong>Previous Block Hash</strong>&rdquo;.</p>
+    <p>The Previous Block Hash is the&nbsp;<strong>block hash of the prior block in the blockchain</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18155532/bitcoin-candidate-block-previous-block-hash.png"  /></p>
+    <p>In order to understand what this means, we need to take a look at the file.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18155745/look-inside-blockcahin.png" /></p>
+    <p>Now that we&rsquo;re looking inside the file, we can see that the data is structured in a specific way.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18160210/blockchain-structure.png" /></p>
+    <p>Let&rsquo;s visualize this as the&nbsp;<strong>blockchain.</strong></p>
+    <p>The candidate block that the miner has created has to be added&nbsp;<strong>on top of the most recent block</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18160451/add-block-top-of-blockchain.png"  /></p>
+    <p>Let&rsquo;s say the most recent block is the one colored in&nbsp;<strong>blue</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18160656/most-recent-block-in-blockchain.png" /></p>
+    <p>Since the&nbsp;<strong>Block Hash</strong>&nbsp;of block colored in&nbsp;<strong>blue&nbsp;</strong>is the most recent block in the file (the &ldquo;blockchain&rdquo;), then that&rsquo;s the block that the miner wants to build on top of.</p>
+    <p>Think of the Block Hash as like a<strong>&nbsp;custom-generated ID number</strong>&nbsp;for a block.</p>
+    <p>So what the miner will do is add this as the &ldquo;<strong>Previous Block Hash</strong>&rdquo; in the&nbsp;<strong>Block Header of its OWN candidate block</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18161013/block-hash-addedas-previousl-block-hash.png"  /></p>
+    <h2>&ldquo;Transaction Summary&rdquo; Hash</h2>
+    <p>The next piece of data is what I&rsquo;ll call the&nbsp;<strong>&ldquo;Transaction Summary&rdquo; Hash.</strong></p>
+    <p>As the name suggests, it provides a &ldquo;summary&rdquo; of all the transactions in the block expressed as a string of characters.</p>
+    <p>Without going into specifics, what happens is that all the transactions in the block (highlighted in&nbsp;<strong>red</strong>) are put into a hash function and hashed in a certain order and you end up with a&nbsp;<strong>single hash</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18162406/merkle-root-hash-function.png" /></p>
+    <p><strong>This hash is what is used as the &ldquo;Transaction Summary&rdquo; Hash.</strong><img src="https://bpcdn.co/images/2022/02/18162302/merkle-root-hash-1.png" /></p>
+    <p>What this hash provides is a unique &ldquo;<strong>fingerprint</strong>&rdquo; based on all the transactions included in a block.</p>
+    <p>This helps to ensure that transactions&nbsp;<strong>haven&rsquo;t been tampered with</strong>.</p>
+    <blockquote>
+    <p>This &ldquo;Transaction Summary&rdquo; Hash is actually known as the &ldquo;<strong>Merkle Root</strong>&ldquo;. 🤓</p>
+    </blockquote>
+    <p>Remember,&nbsp;<strong>one tiny change in data will totally change the hash</strong>. This means if someone were to try to alter any transaction in the block in the future, it would cause the &ldquo;Transaction Summary&rdquo; Hash to change and be totally different from the original value that&rsquo;s in the Block Header.<img src="https://bpcdn.co/images/2022/02/18162457/transaction-hash-summary-as-fingerprint.png" /></p>
+    <p>Basically, changing the transaction would create a totally different &ldquo;fingerprint&rdquo; and wouldn&rsquo;t match the original &ldquo;fingerprint&rdquo;.</p>
+    <p>This change would let everyone instantly know that a transaction(s) was tampered with.</p>
+    <h2>Block Hash</h2>
+    <p>So far, the Block Header contains three pieces of data:</p>
+    <ol>
+    <li>Timestamp</li>
+    <li>Previous Block Hash</li>
+    <li>&ldquo;Transaction Summary&rdquo; Hash</li>
+    </ol>
+    <p>The next step then is to put this Block Header data into a hash function.</p>
+    <p>This will produce a random number called the &ldquo;<strong>Block Hash</strong>&rdquo;.</p>
+    <p>(Although a more accurate name would be the &ldquo;Block&nbsp;<em>Header</em>&nbsp;Hash&rdquo; since it&rsquo;s the hash of just the block header, not the entire block.)</p>
+    <p>Just like the Previous Block Hash mentioned earlier, think of the Block Hash as a custom-generated ID number that will be assigned to the candidate block.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18163634/run-block-header-through-hash-function.png" /><br />Why does the miner do this?</p>
+    <p>In order for the miner to get its block added to the blockchain, it must<strong>&nbsp;find a Block Hash that meets a certain requirement</strong>.</p>
+    <p>If it can NOT meet this requirement, then the block will NOT be considered valid and the miner can&rsquo;t add its block to the blockchain.</p>
+    <p>More specifically, the Block Hash must be&nbsp;<strong>a number that starts with a certain number of zeros</strong>.</p>
+    <p>How many zeros exactly?</p>
+    <p>It varies. The software of the Bitcoin system determines the&nbsp;<strong>minimum number of zeros</strong>&nbsp;that the Block Hash should begin with.</p>
+    <p>Originally, the requirement was for only a small number of zeros, but as more and more miners joined, the Bitcoin software started requiring a greater number of zeros.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18164059/bitcoin-mining-process-no-nonce.png" /></p>
+    <p>A miner must generate an output (the &ldquo;Block Hash&rdquo;) that satisfies the output threshold set by the Bitcoin software.</p>
+    <p>This &ldquo;threshold&rdquo; just specifies the numbers of zeros that the Block Hash must begin with.</p>
+    <p>It&rsquo;s like the &ldquo;limbo&rdquo; dance.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18164307/bitcoin-mining-like-limbo-dance.png" /></p>
+    <p>The&nbsp;<strong>lower the threshold, the more zeros</strong>&nbsp;that are required.</p>
+    <p>The&nbsp;<strong>more zeros that are required, the higher the difficulty</strong>&nbsp;to find a &ldquo;correct&rdquo; Block Hash.</p>
+    <p>This is because more leading zeros means fewer possible solutions, which means more time is required to &ldquo;find&rdquo; a correct Block Hash.</p>
+    <p>Finding a value that starts with three zeros like &ldquo;<strong>000123&hellip;</strong>&rdquo; is much harder than trying to find a value with six zeros like &ldquo;<strong>000000123&hellip;</strong>&rdquo;</p>
+    <p>Here&rsquo;s a recent example of an actual valid Block Hash:</p>
+    <pre>0000000000000000000586b367c292dfd274bf2e67575cf8b4d00735fc1df6ff</pre>
+    <p>Notice how many zeros it starts with.</p>
+    <blockquote>
+    <p>The &ldquo;certain number of zeros&rdquo; comes from what&rsquo;s called the &ldquo;<strong>mining difficulty</strong>&rdquo;. This is automatically adjusted up or down by the software running the Bitcoin network. The difficulty changes based on the number of miners. The more computers that are mining, the greater the difficulty and the more zeros are needed at the start making it harder to find the winning nonce.</p>
+    </blockquote>
+    <blockquote>
+    <p>A Block Hash can be interpreted as&nbsp;<strong>a very large numbe</strong>r and must be below a certain threshold. This is why block hashes start with a series of zeros followed by an alphanumeric string. Some blocks have as many as twenty leading zeros, while earlier blocks have as few as eight. The number of zeros required roughly demonstrates the difficulty of mining at the time the block was published.</p>
+    </blockquote>
+    <p>What happens if the Block Hash doesn&rsquo;t start with the required number of zeros?</p>
+    <p>Then the block can NOT be added to the file (the &ldquo;blockchain&rdquo;).</p>
+    <p>Fortunately, the&nbsp;<strong>miner can have multiple attempts</strong>.</p>
+    <p>But if a miner ran just the Block Header containing just the Timestamp, Previous Block Hash, and &ldquo;Transaction Summary&rdquo; Hash through the hash function again,&nbsp;<strong>it would always get the same result</strong>.</p>
+    <p>The miner needs to alter the data somehow before trying to hash the Block Header&nbsp;<em>again</em>.</p>
+    <p>Bitcoin provides a way!</p>
+    <h2>The Nonce</h2>
+    <p>In the Block Header, there is an extra field called the &ldquo;<strong>nonce</strong>&rdquo; (light blue box)</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18164859/block-header-contains-nonce.png" /></p>
+    <p>There is a&nbsp;<strong>special part of the Bock Header</strong>&nbsp;that miners can populate with an arbitrary number.</p>
+    <p>The miner is free to put any number it wants in.</p>
+    <p>The nonce is completely separate from the transactions in the block. Its only purpose is to allow miners to fill it with a number, and&nbsp;<strong>change the number</strong>&nbsp;if the Block Hash doesn&rsquo;t meet the requirement of starting with a certain number of zeros.</p>
+    <p>By using a nonce, a miner can manipulate the output of the hash function to &ldquo;guess&rdquo; the desired output.</p>
+    <p>Since the other pieces of data in the Block Header can&rsquo;t be changed, the only piece of data that can be altered is the nonce.</p>
+    <p>So if the first hashing attempt of the Block Hader fails, the miner changes the value of the nonce.</p>
+    <p>You can think of this process as like trying to find the combination of a&nbsp;<strong>combination padlock.</strong></p>
+    <p><img src="https://bpcdn.co/images/2022/03/17092853/combination-lock.png" /></p>
+    <p>There are no shortcuts possible when trying to find the combination of numbers that unlocks it. You have to try every possible combination until at some point, you find the correct one&nbsp;<strong>by chance</strong>.</p>
+    <p>You have to guess over and over until you get lucky!</p>
+    <p>And just as it&rsquo;s extremely easy and&nbsp;<strong>quick to check</strong>&nbsp;that a lock combination is the correct one (it either unlocks or doesn&rsquo;t), it is extremely easy and quick for the miner, and for other nodes after, to check that the nonce is indeed the right one.</p>
+    <p>The miner is also&nbsp;<strong>competing</strong>&nbsp;against other miners. The first miner to find a nonce that results in a valid Block Hash is granted the right to add its block into the blockchain and is rewarded for doing so.</p>
+    <p>For example, let&rsquo;s say the Block Hash needs to&nbsp;<strong>start with at least four zeros</strong>.</p>
+    <p>The only way to find a Block Hash with the required number of initial zeros is to&nbsp;<strong>randomly pick a nonce value</strong>&nbsp;and run the Block Header through the hash function.</p>
+    <p>In this scenario, the miner starts with &ldquo;0&rdquo; for the nonce value (light blue box).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18165221/nonce-at-zero.png" /></p>
+    <p>If that fails to produce the desired result, then all the mincer can do is to try again&nbsp;<strong>with a&nbsp;<em>different</em>&nbsp;nonce</strong>.</p>
+    <p>The miner changes the nonce, then starts over again until it manages to find a Block Hash with at least the required minimum number of zeros. In this case,&nbsp;<strong>four zeros</strong>.</p>
+    <p>Remember, even though you&rsquo;ve only made a small adjustment, with a hash function,&nbsp;<strong>even the tiniest change will produce completely different results</strong>.</p>
+    <p>So the miner&rsquo;s first attempt was to use the number &ldquo;0&rdquo; in the nonce. It then runs the Block Header through the hash function and sees if the Block Hash starts with four zeros.</p>
+    <p>As you can see, the Bloch Hash only starts with<strong>&nbsp;two zeros</strong>&nbsp;so it does NOT meet the criteria needed to add the block to the blockchain.</p>
+    <p>If the output is not valid, the miner keeps trying with different nonce values.</p>
+    <p>Since the value of &ldquo;0&rdquo; didn&rsquo;t work, the miner can change the value of the Nonce to&ldquo;<strong>1</strong>&rdquo; (light blue box) and then run the Block Header through the hash function again.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18165539/nonce-changed-to-1.png" /></p>
+    <p>As you can see, the Block Hash starts with&nbsp;<strong>no zeros</strong>&nbsp;so this doesn&rsquo;t work either.</p>
+    <p>Since the value of &ldquo;1&rdquo; didn&rsquo;t work, the miner can change the value of the Nonce to&ldquo;<strong>2</strong>&rdquo; (light blue box) and then run the Block Header through the hash function again.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18165903/nonce-changed-to-2.png" /></p>
+    <p>In this case, the Block Hash<strong>&nbsp;finally starts with four zeros</strong>&nbsp;and meets the criteria.</p>
+    <p>It&rsquo;s a successful Block Hash result! 🎉</p>
+    <p>As you can see, it&rsquo;s unpredictable which nonce will produce a Block Hash with the correct number of zeros, so the miner has to&nbsp;<strong>keep trying different nonces to find the right value</strong>.</p>
+    <p>Miners can mine for long periods of time with no guarantee that they will ever find a correct nonce. Most never will!</p>
+    <p>The nonce is used as a counter, where its value is just constantly incremented until either it finds the correct Block Hash or some other miner does.</p>
+    <p><strong>It&rsquo;s like a number guessing game!</strong></p>
+    <p>You&rsquo;re simply trying to find a hash that begins with a certain number of zeros by changing the value of the nonce.</p>
+    <p>Miners do this repeatedly&hellip;.HOPING that the result will produce a Block Hash that meets the criteria.</p>
+    <p>The more powerful their computers are, the more &ldquo;guesses&rdquo; they can make.</p>
+    <p>This &ldquo;guessing&rdquo; process is known as&nbsp;<strong>mining</strong>.</p>
+    <p>The &ldquo;winning&rdquo; miner is rewarded with a set number of bitcoin (plus transaction fees) called the &ldquo;<strong>block reward</strong>.&rdquo;</p>
+    <p>One miner wins the block reward roughly&nbsp;<strong>every 10 minutes</strong>.</p>
+    <div>
+    <p><strong>Block Reward</strong></p>
+    <p>Since miners expend so much time and energy to &ldquo;guess&rdquo; the correct nonce and confirm transactions on the Bitcoin blockchain, the Bitcoin software rewards them for their effort with:</p>
+    <ol>
+    <li><strong>Newly created bitcoin</strong>&nbsp;When a miner confirms transactions, they are bundled in a block and added to the Bitcoin blockchain. For every new block that gets added to the blockchain, new bitcoins are paid out to the miner. This is known as the&nbsp;<strong>block subsidy</strong>. The specific amount of bitcoins is based on an issuance schedule determined by the protocol at the time of the block creation. Currently, the new issuance is 6.25 BTC per block and will decrease to 3.125 BTC per block around May 2024.</li>
+    <li><strong>Transaction fees.</strong>&nbsp;When people transact with bitcoin, they pay a fee to the miners to incentivize them further to confirm their transaction. When a miner confirms a bundle of transactions, it also collects all the fees from each individual transaction.</li>
+    </ol>
+    </div>
+    <p><strong>Mining is a monotonous and repetitive process:</strong></p>
+    <p><img src="https://bpcdn.co/images/2022/02/18171217/bitcoin-mining-process.png"  /></p>
+    <p>Take a Block Header with the nonce, hash it, see if the hash starts with a certain number of zeros, and if not, repeat the process with a different nonce.</p>
+    <p>I&rsquo;m getting sleepy just thinking about it. 😴</p>
+    <p>So when you read or hear that mining involves &lsquo;&ldquo;solving complex mathematical problems&rdquo;, now you know that&rsquo;s not a correct description.</p>
+    <p><strong>There is nothing complex about mining!&nbsp;</strong>&nbsp;The process itself is pretty simple. You&rsquo;re just trying to&nbsp;<strong>guess a correct number as fast as possible</strong>&nbsp;or just fast enough to be the FIRST miner to guess right so your candidate block is the one that gets added to the blockchain. That&rsquo;s it!</p>
+    <blockquote>
+    <p>&ldquo;<strong>Hash rate&rdquo;</strong>&nbsp;indicates the &ldquo;guessing power&rdquo; of a mining computer. The more hashes you can guess per second, the higher your hash rate. For example, 1 trillion (1,000,000,000) guesses per second is equal to a hash rate of&nbsp;<strong>1 terrahash</strong>&nbsp;(TH/s).</p>
+    </blockquote>
+    <p>Just because the process is simple, it doesn&rsquo;t mean it&rsquo;s easy. That&rsquo;s why it&rsquo;s called &ldquo;mining&rdquo;. You&rsquo;re trying to &ldquo;dig&rdquo; up the correct number which requires a lot of effort, similar to actual mining in the real world.</p>
+    <p>Now that the miner has found a nonce to be able to generate a Block Hash that meets the requirements (starts with at least 4 zeros), the block is added to the miner&rsquo;s copy of the file (the &ldquo;blockchain&rdquo;).</p>
+    <p>Remember how the blue block was the most recent block in the miner&rsquo;s blockchain? Not anymore.</p>
+    <p>Since the miner was able to guess the correct nonce, it was able to add its block to the blockchain (colored in green).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18171721/mined-block.png" /></p>
+    <p>So from a high-level view, the file on the miner&rsquo;s computer has been updated (denoted in&nbsp;<strong>green</strong>).</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18171820/bitcoin-node-blockchain-updated.png" /></p>
+    <p>And then, the node will transmit this block to nearby nodes to which it is directly connected.</p>
+    <p>The nodes will check it, verify it, and make sure the Block Header produces a Block Hash that meets the criteria. In this case, the Block Hash needed to start with four zeros.<img src="https://bpcdn.co/images/2022/02/18172306/bitcoin-miner-propogates-new-block.png" /></p>
+    <p>These nodes will update their file (the &ldquo;blockchain&rdquo;) by adding the block to the file.</p>
+    <p>THEIR file will be updated and now be the same version as the winning miner&rsquo;s (<strong>green</strong>&nbsp;file).</p>
+    <p>All the transactions in their mempool that are part of this winning block move from &ldquo;<strong>fresh</strong>&rdquo; (or &ldquo;unconfirmed&rdquo;) to &ldquo;<strong>confirmed</strong>&rdquo; status and are now permanently added to the file.</p>
+    <p>Any conflicting transactions will be&nbsp;<strong>kicked out</strong>.</p>
+    <p>Thanks to the process of mining, only the purple transaction will make it into the blockchain.<img src="https://bpcdn.co/images/2022/02/18173933/conflicting-transactions-kicked-out.png" /></p>
+    <p>Then these nodes will pass on the block to other nodes.<img src="https://bpcdn.co/images/2022/02/18174217/bitcoin-nodes-pass-new-block.png" /></p>
+    <p>Once the new block is accepted by a majority of miners, all miners start over and create a brand new candidate block and the mining process repeats itself.</p>
+    <p>Mining acts as a&nbsp;<strong>sorting mechanism for transactions</strong>&nbsp;across a network of computers, where &ldquo;mined&rdquo; blocks have the final say on what belongs in the blockchain.</p>
+    <p>The Block Hash from this newly created block will now be used by miners for the &ldquo;Previous Block Hash&rdquo; in their candidate blocks.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18175105/new-block-hash.png" /></p>
+    <p>The Block Hash acts as the &ldquo;<strong>chain</strong>&rdquo;.</p>
+    <p>Miners must now include the previous block&rsquo;s Block Hash in the&nbsp;<em>new</em>&nbsp;block they are creating.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/18175521/miners-include-new-block-hash.png" /></p>
+    <p>For example, this means that to mine block 101, miners need to know the hash of block 100.</p>
+    <p>Until&nbsp;<strong>block 101</strong>&nbsp;has been mined,<strong>&nbsp;block 102</strong>&nbsp;can&rsquo;t be mined.</p>
+    <p>This forces miners to focus on block 101 which in turn includes the hash of&nbsp;<strong>block 100</strong>. No miner can skip ahead.</p>
+    <p>But instead of having each block have a &ldquo;block number&rdquo; each block refers to the previous block by its&nbsp;<strong>Bock Hash</strong>.</p>
+    <p>This implies that every block is linked to each other and this is what creates a &ldquo;<strong>chain of blocks</strong>&rdquo; known as a blockchain.</p>
+    <p>This &ldquo;chain of blocks&rdquo; is held together not by block numbers, but by&nbsp;<strong>block hashes</strong>.</p>
+    <h2>Why You Can&rsquo;t Cheat Bitcoin</h2>
+    <p>Let&rsquo;s say everyone is working on block 101.</p>
+    <p>But one miner wants to alter a transaction in block 80.</p>
+    <p>It would have to make its changes and redo all the computations for&nbsp;<strong>blocks 80-100 AND also do block 101</strong>.</p>
+    <p>That&rsquo;s&nbsp;<strong>21 blocks</strong>&nbsp;of expensive computing!</p>
+    <p>Not only that, but the miner would have to do it all&nbsp;<strong>before the other miners on the Bitcoin network finish the current block</strong>&nbsp;(block 101) that they&rsquo;re working on. This is basically impossible.</p>
+    <p>It is very hard to get away with tampering with any transactions that already form part of the blockchain.</p>
+    <p>This is what is meant when blockchains are described as&nbsp;<strong>immutable</strong>.</p>
+    <h2>Proof-of-Work (PoW)</h2>
+    <p>The process of mining is often referred to as a &ldquo;<strong>Proof-of-Work</strong>&rdquo; or&nbsp;<strong>PoW</strong>.</p>
+    <p>PoW is known as the &ldquo;<strong>consensus mechanism&rdquo;</strong>&nbsp;that Bitcoin uses to get all nodes to agree on the &ldquo;official&rdquo; copy of Bitcoin&rsquo;s blockchain. It is how Bitcoin is able to reach a&nbsp;<em>consensus</em>&nbsp;without the need for dispute resolution or intervention from a central authority.</p>
+    <p>The term &ldquo;proof-of-work&rdquo; just refers to the fact that<strong>&nbsp;it takes &ldquo;work&rdquo;</strong>&nbsp;to find a block hash below a certain threshold. And once you do, anyone can verify it which provides the &ldquo;proof&rdquo;.</p>
+    <p>The process of &ldquo;guessing a nonce&rdquo; and then running the block header through the hash function is being used as a way to prove that you have performed a required amount of &ldquo;work&rdquo; on your block.</p>
+    <p>The first miner to produce a valid hash is allowed to add a new block to the blockchain and they receive a reward of bitcoins.</p>
+    <p>If a surge of miners joins the Bitcoin network, the PoW will adjust to make it more difficult to find a valid block hash. If this increased difficulty discourages too many miners and they stop mining, the difficulty will be decreased to make it easier to mine.</p>
+    <p>This process, known as the&nbsp;<strong>difficulty adjustment</strong>, occurs roughly every two weeks, and it ensures that new blocks are added to the blockchain&nbsp;<strong>roughly every 10 minutes</strong>, no matter how many miners join or leave the network.</p>
+    <p>Difficulty adjustments are made based on the speed at which miners are creating new blocks.</p>
+    <p>By adjusting the difficulty of mining, Bitcoin can ensure new bitcoins are created at a&nbsp;<strong>predetermined rate</strong>, regardless of the amount of computing power participating in the network.</p>
+    <p>The difficulty adjustment is important because it ensures that miners can&rsquo;t mine&nbsp;<strong>too much of the supply of the bitcoin too fast</strong>.</p>
+    <p>The specialized computer hardware and electricity required to mine also means that attacking the network is prohibitively&nbsp;<strong>expensive</strong>. This ensures the&nbsp;<strong>security</strong>&nbsp;and&nbsp;<strong>integrity</strong>&nbsp;of Bitcoin&rsquo;s blockchain.</p>
+    <p>Anyone with enough computing power to attack the network is better off mining honestly and earning the block reward (new bitcoins plus transaction fees).</p>
+    <blockquote>
+    <p>Interested in learning more about the technical aspects of Bitcoin? learnmeabitoin.com&nbsp;provides an awesome easys-to-follow guide to help folks understand how Bitcoin works.</p>
+    </blockquote>
+    <h2>Summary</h2>
+    <p>Congratulation! You now know how &ldquo;mining&rdquo; in Bitcoin works!</p>
+    <ul>
+    <li>Miners search for an acceptable hash that will be the &ldquo;Block Hash&rdquo; by choosing a nonce, running the hash function, and checking the output.</li>
+    <li>If the hash doesn&rsquo;t have the right amount of leading zeroes, miners change the nonce, run the hash function, and check again.</li>
+    <li>When a miner is finally lucky enough to find a nonce that works, and &ldquo;wins&rdquo;, the block gets sent out to other nodes (including other miners) in the Bitcoin network, each of whom can then run the hash function with the winning miner&rsquo;s nonce, and verify that it works.</li>
+    <li>If the solution is accepted by a majority of the nodes, the block gets added to the blockchain and the winning miner gets the block reward.</li>
+    <li>All miners &ldquo;reset&rdquo; and start working on a new candidate block, using the recently mined block&rsquo;s hash as a reference in their Block Header (as the &ldquo;Previous Block Header&rdquo;).</li>
+    <li>This process where miners try to &ldquo;guess&rdquo; or find a correct nonce is known as a &ldquo;Proof-of-Work&rdquo; (PoW).</li>
+    </ul>
+    <p>Now that we&rsquo;ve learned about miners and mining, let&rsquo;s update our map of the Bitcoin system:</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17095257/bitcoin-as-a-system-after-mining.png" /></p>
+   
+</body>
+
+</html>

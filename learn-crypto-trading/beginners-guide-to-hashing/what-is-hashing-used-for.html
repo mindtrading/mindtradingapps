@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is the purpose of hashing?</p>
+    <p>The main purpose of hashing is to&nbsp;<strong>verify the integrity of a piece of data</strong>.</p>
+    <p>Since the hash generated is UNIQUE to the input data, it acts as a unique &ldquo;<strong>fingerprint</strong>&rdquo; of the input data.</p>
+    <p>This makes a hash useful for verifying the integrity of data sent through insecure communication channels like the internet.&nbsp;<strong>Data integrity just means that the data has not been altered in an unapproved way.</strong></p>
+    <p>The hash value of received data can be compared to the hash value of data&nbsp;<em>before</em>&nbsp;it was sent to determine whether the data was altered.</p>
+    <p>If I post both the message and the hash value I generated from it, you can generate a hash value from the message that you received and compare the hash values.</p>
+    <p>Using a very&nbsp;<em>simple</em>&nbsp;example, let&rsquo;s say we&rsquo;re about to meet up for lunch, and right before I head out the door, I remember our last time together&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/06/13144008/body-odor-360x360.png" /></p>
+    <p>While your personality was really nice, your smell was not nice at all. 😬</p>
+    <p>So I want to send you a message, &ldquo;<strong>Please wear deodorant.</strong>&rdquo;</p>
+    <p>But before I send this, I run it through a hash function (SHA-256). The hash is:</p>
+    <p><strong>33ebb528eab107766343d0 <br>ac591952bb68ee959d45b7a8b399628e662f3bc1ef</strong></p>
+    <p>I send you this hash&nbsp;<em>first</em>.*</p>
+    <p>THEN I send you the actual text message.</p>
+    <p>Once you receive my message, you think, &ldquo;WTF? Did he really just say that to me? Or was the message intercepted during transit and the original message was altered?&rdquo;</p>
+    <p><img src="https://bpcdn.co/images/2022/06/06223327/armpit.png" /></p>
+    <p>So you run the message through the&nbsp;<strong>same hash function</strong>.</p>
+    <p><strong>33ebb528eab10776634</br>3d0ac591952bb68ee959d45b7a8b399628e662f3bc1ef</strong></p>
+    <p>You then compare your hash versus the hash that came before the text message.</p>
+    <p>If both hash values are the same, then this proves that:</p>
+    <ol>
+    <li>The message was sent correctly.</li>
+    <li>That your armpits really do stink!</li>
+    <li>The message has not been deliberately altered by someone between me sending it to you and you receiving it.</li>
+    </ol>
+    <p>Of course, in the real world, it is our&nbsp;<strong>computers</strong>&nbsp;that do all this for us.</p>
+    <p>And hopefully, you keep your armpits smelling fresh. 😅</p>
+    <blockquote>
+    <p>*Technically, before I send you the hash, it should be protected in some way, but I wanted to keep the example simple. How the hash stays protected during transit will be covered in a later lesson.</p>
+    </blockquote>
+    <h2>Real-World Example of Hashing: Online Passwords</h2>
+    <p>This might surprise you, but you probably encounter hashing in your daily life&hellip;.whenever you log in to check your email. 📧</p>
+    <p><img src="https://bpcdn.co/images/2022/08/11125628/use-hashsing-to-login-email-284x360.png"  /></p>
+    <p>When you create an email address and password, your email provider likely does not save your actual password.</p>
+    <p>Instead, your email provider runs the password through a hash function and&nbsp;<strong>saves the&nbsp;<em>hash</em>&nbsp;of your password</strong>.</p>
+    <p>Every time you attempt to log in to your email account, your email provider&nbsp;<strong>hashes the password YOU enter</strong>&nbsp;and&nbsp;<em>compares</em>&nbsp;this hash to the hash it has saved.</p>
+    <p>Only&nbsp;<strong>when the two hashes match</strong>&nbsp;are you authorized to access your email.</p>
+    <p>Let&rsquo;s see why they do NOT save your actual password&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14164945/hashing-password-1.png" /></p>
+    <p>If actual passwords are stored, and hackers get into their system, they can steal them. This is definitely not good for users who use the same password for multiple websites!</p>
+    <p>A solution is to hash the password&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/14165031/hashing-password-2.png" /></p>
+    <p>By hashing a password, the company protects user information. Even if a hacker breaks into the system, they won&rsquo;t have access to actual passwords, just the hashes.</p>
+    <p>Remember, hashes are&nbsp;<strong>irreversible</strong>&nbsp;so it&rsquo;s impossible for the hacker to figure out what the actual password is just by looking at the hash. Hashing ensures that the data is stored in a scrambled state, so it&rsquo;s harder to steal.<br /><img src="https://bpcdn.co/images/2022/02/14165134/hashing-password-3.png" /></p>
+    <p>Whenever you log in, your email provider doesn&rsquo;t store the plain text password, all they need is the&nbsp;<strong>hash</strong>.</p>
+    <p>When you enter your password, it is run through the hash function.</p>
+    <p>The output is matched against the hash that is saved in the database.</p>
+    <p>If the hash values are the same, the password is correct.</p>
+    <p><strong>The wrong password entered would produce a different hash</strong>&nbsp;than the one saved. The hashes would NOT match, so your login attempt would FAIL.</p>
+    <p>So as you can see, a hash function&nbsp;<strong>garbles data and makes it unreadable</strong>. Even if a hacker gains access to your email provider&rsquo;s server, the details stored can&rsquo;t be unscrambled.</p>
+   
+</body>
+
+</html>
