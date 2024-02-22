@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <div>
+        <p>What is the purpose of using a Bitcoin wallet?</p>
+        <p>Why is a crypto wallet needed anyway?</p>
+        <p>In order to understand why Bitcoin wallets are needed, we need to look at the traditional approach of moving money between two people using&hellip;.<strong>bank accounts</strong>.</p>
+        <p>To keep track of each of their client&rsquo;s money, a bank creates a&nbsp;<strong>ledger</strong>&nbsp;that keeps track of balances based on&nbsp;<strong>account numbers</strong>.</p>
+        <p>Here&rsquo;s a simplified version:</p>
+        <div>
+        <div>
+        <table border="1px">
+        <tbody>
+        <tr>
+        <td><strong>Account</strong></td>
+        <td><strong>Balance</strong></td>
+        </tr>
+        <tr>
+        <td>001</td>
+        <td>$10</td>
+        </tr>
+        <tr>
+        <td>002</td>
+        <td>$20</td>
+        </tr>
+        <tr>
+        <td>003</td>
+        <td>$50</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <p>This ledger is maintained by an&nbsp;<strong>administrator</strong>. It is this administrator that assigns account numbers to clients, and clients make payments by sending a request to the administrator.</p>
+        <p><img src="https://bpcdn.co/images/2022/02/28140052/bank-administrator.png"  /></p>
+        <p>In order for the administrator to fulfill this request, there needs to be some sort of authentication process where the client proves that he/she is the actual account owner.</p>
+        <p>So the bank most likely creates a&nbsp;<strong>username and password combination</strong>&nbsp;that&rsquo;s tied to each account.</p>
+        <p>If you know your username and the password assigned to an account, then this proves you&rsquo;re the owner of that account.</p>
+        <div>
+        <div>
+        <table border="1px">
+        <tbody>
+        <tr>
+        <td><strong>Account</strong></td>
+        <td><strong>Username</strong></td>
+        <td><strong>Password</strong></td>
+        <td><strong>Balance</strong></td>
+        </tr>
+        <tr>
+        <td>001</td>
+        <td>Joe</td>
+        <td>9876</td>
+        <td>$10</td>
+        </tr>
+        <tr>
+        <td>002</td>
+        <td>Angie</td>
+        <td>1234</td>
+        <td>$20</td>
+        </tr>
+        <tr>
+        <td>003</td>
+        <td>Bill</td>
+        <td>5511</td>
+        <td>$50</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <p>The administrator grants (or denies) access to accounts and also maintains the proper balances of each account.</p>
+        <p>The administrator makes sure that no one spends money they don&rsquo;t have in their account or spends the same money more than once (&ldquo;double spend&rdquo;).</p>
+        <p>For a decentralized digital currency like Bitcoin,&nbsp;<strong>this is a problem</strong>.</p>
+        <p>Relying on an administrator creates the problem of&nbsp;<strong>centralization</strong>. You are not in control of your account! The administrator is.</p>
+        <p>An administrator can deny access to your account, can block or censor transactions, or even not allow you to open an account at all.</p>
+        <p>For example, banks have the authority to shut down your account(s) with them. They can also reverse transactions and freeze accounts.</p>
+        <p>Imagine having dinner with a hot date, and when it came time to pay the bill, you find out that your bank has denied the transaction because it randomly decided to not do business with that specific restaurant.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/23104025/transaction-denied.png" /></p>
+        <p>That&rsquo;d be pretty embarrassing. Your hot date might think you&rsquo;re actually broke. 🤦</p>
+        <p>Any time you have an entity that can approve or deny something, you are under the control of a centralized third party.</p>
+        <p>For a decentralized digital currency to work, anyone should be able to open an &ldquo;account&rdquo; and be able to transact with anyone they want.&nbsp;<strong>You should NOT have to ask for permission.</strong></p>
+        <p>What&rsquo;s the solution?&nbsp;<strong>Eliminate the administrator.</strong></p>
+        <p><img src="https://bpcdn.co/images/2022/02/28140908/remove-bank-administrator.png" /></p>
+        <p>But is there a way you can create an &ldquo;account&rdquo; without an administrator?</p>
+        <p>Why yes there is. 👍</p>
+        <p>Bitcoin has a solution: Instead of account numbers, use &ldquo;<strong>addresses</strong>&rdquo;.</p>
+        <div>
+        <div>
+        <table border="1px">
+        <tbody>
+        <tr>
+        <td><strong>Bitcoin Address</strong></td>
+        <td><strong>BTC</strong></td>
+        </tr>
+        <tr>
+        <td>1DmjiSdcaSUPyqEuhqHkLrudpJUYDXct5s</td>
+        <td>2</td>
+        </tr>
+        <tr>
+        <td>3QqQAx4ToxsiiFtXbrDkuCSBGYKd56vTzU</td>
+        <td>15</td>
+        </tr>
+        <tr>
+        <td>1PhGCKEeLjCo6ZGz9NAKL3FvCZACLbV1DC</td>
+        <td>3</td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        <p>How do you get an address? All you need is a wallet&hellip;and there are many available that you can download for free on the internet.</p>
+        <p>By using addresses instead of account numbers,&nbsp;<strong>ANYONE can create their own &ldquo;accounts&rdquo; with a wallet software on their own computer without having to ask an administrator for an account number</strong>.</p>
+        <p>You&rsquo;ll be able to create as many addresses as you like and your wallet software will manage all of them for you.</p>
+        So unlike bank accounts, an address can be created by anyone within a matter of seconds&nbsp;<strong>without needing some sort of third-party administrator</strong>.
+        <p>The use of addresses, which a wallet creates for you for free, allows Bitcoin to be&nbsp;<strong>permissionless</strong>.</p>
+        <p>This means that Bitcoin users do not need permission from anyone to be able to join the Bitcoin network.</p>
+        <p>Wallets give regular people the ability to conduct&nbsp;<strong>permissionless transactions</strong>&nbsp;without having third parties involved and without the need to register!</p>
+        <p>Wallets also make Bitcoin (and other crypto) more&nbsp;<strong>accessible</strong>&nbsp;to more people. As long as you have an internet connection, you can download a wallet app, install it, create a Bitcoin address, and you&rsquo;re good to go!</p>
+        <p><img src="https://bpcdn.co/images/2022/08/13011343/mobile-crypto-wallet-360x360.png"  /></p>
+        <p><strong>We don&rsquo;t need no stinkin&rsquo; permission to use bitcoin or any other cryptocurrency!</strong></p>
+        <blockquote>
+        <p>Crypto improves&nbsp;<strong>financial inclusion,&nbsp;</strong>providing easier access to useful and affordable financial products and services such as payments to over 1.7 billion people who remain under- or unbanked.</p>
+        </blockquote>
+        <p>If you&rsquo;re reading this, you can start using bitcoin today. Anyone in the world can participate as long they have a device that can access the internet.</p>
+        <p>You don&rsquo;t need to apply to open an account with a bank or some other corporation to send and receive bitcoins. This is the purpose of wallets and why they&rsquo;re extremely important.</p>
+        </div>
+   
+</body>
+
+</html>

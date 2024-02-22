@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <div>
+        <p>What is a seed phrase?</p>
+        <p>In the early days of Bitcoin, a wallet only generated&nbsp;<em>one</em>&nbsp;private key, which meant there was also only&nbsp;<em>one</em>&nbsp;public key and&nbsp;<em>one</em>&nbsp;address.</p>
+        <p>Nowadays, crypto wallets now give you the ability to generate an almost&nbsp;<em>unlimited</em>&nbsp;number of private keys from a &ldquo;<strong>master private key</strong>&ldquo;.</p>
+        <p>This type of wallet is known as a &ldquo;<strong>Hierarchical Deterministic wallet</strong>&rdquo;, or simply as an &ldquo;<strong>HD wallet</strong>&rdquo;.</p>
+        It first generates a master private key, and then the wallet software uses this to create &ldquo;child&rdquo; private keys and their corresponding public keys, which then form addresses.
+        <p>Think of the master private key as a (single) &ldquo;parent&rdquo; private key that can create lots of &ldquo;child&rdquo; private keys. This creates a sort of tree structure where &ldquo;child&rdquo; keys are derived from a &ldquo;parent&rdquo; key.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01194034/deterministic-wallet.png" /></p>
+        <p>As you can see from the image above, the master private key is generated from a &ldquo;s<strong>eed phrase</strong>&ldquo;.</p>
+        <p>The wallet uses this seed phase to&nbsp;<strong>create private keys</strong>.</p>
+        <p>Because all the &ldquo;child&rdquo; private and public keys are ultimately&nbsp;<strong><em>derived</em>&nbsp;from the master private key</strong>, they can all be controlled by the same&nbsp;<strong>seed phrase</strong>.</p>
+        <h2>What is a Seed Phrase?</h2>
+        <p><img src="https://bpcdn.co/images/2022/06/12183607/seed-phrase-360x360.png" /></p>
+        <p>When you first set up a Bitcoin wallet, you will be shown a series of&nbsp;<strong>12 to 24 seemingly random words</strong>.</p>
+        <p>Not only are the&nbsp;<strong>words</strong>&nbsp;themselves are important but the&nbsp;<strong><em>order</em>&nbsp;of the words</strong>&nbsp;is equally as important.</p>
+        <p>This series of words listed in a specific order is the wallet&rsquo;s &ldquo;<strong>seed phrase</strong>&ldquo;.</p>
+        <p>Here&rsquo;s an example of what&nbsp;a seed phrase looks like:</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01222317/seed-phrase-example.png" /></p>
+        <p>Depending on the wallet, a seed phrase may go by other names like:</p>
+        <ul>
+        <li>recovery phrase</li>
+        <li>mnemonic phrase</li>
+        <li>secret phrase</li>
+        <li>mnemonic seed</li>
+        <li>mnemonic seed phrase</li>
+        <li>seed key</li>
+        <li>wallet seed</li>
+        <li>secret recovery phrase</li>
+        </ul>
+        <p>Or some combination of the words:: &ldquo;seed&rdquo;,&rdquo;wallet&rdquo;,&rdquo;recovery&rdquo;, &ldquo;mnemonic&rdquo; or &ldquo;phrase&rdquo;.</p>
+        <p>All of these names ultimately&nbsp;<strong>mean the same thing</strong>&nbsp;and simply describe the 12 or 24 words that comprise the seed phrase.</p>
+        <blockquote>
+        <p>Words are chosen from a defined list of 2048 words, and any combination of words is a valid seed phrase.</p>
+        </blockquote>
+        <p>The reason that the seed phrase is a series of words such as &ldquo;acid,&rdquo; &ldquo;else,&rdquo; &ldquo;farm,&rdquo; &ldquo;gym,&rdquo; &ldquo;opera,&rdquo; &ldquo;soda,&rdquo; &ldquo;trash,&rdquo; or &ldquo;view&rdquo;) rather than a numeric password is because long numbers are difficult for humans to read and remember.</p>
+        <p>Behind the scenes,&nbsp;<strong>this series of words, entered in the right order, is converted by the wallet software into a string of digits.</strong></p>
+        <p>This string of digits is known as the &ldquo;<strong>seed</strong>&ldquo;.</p>
+        <p>And it is this &ldquo;seed&rdquo; or string of digits that&nbsp;<strong>generates the master private key</strong>!</p>
+        <p>And this master private key is what&rsquo;s used to generate &ldquo;child&rdquo; private keys, as well as their public keys, allowing a wallet to generate as many key pairs as needed.</p>
+        <p>The cool thing is you never have to know about the seed! It&rsquo;s too damn long. That&rsquo;s why the wallet software creates a &ldquo;<strong>seed phrase</strong>&rdquo; (or &ldquo;<strong>mnemonic phrase</strong>&ldquo;) to&nbsp;<em>represent</em>&nbsp;the &ldquo;<strong>seed</strong>&ldquo;. It&rsquo;s a much simpler format and easier to remember.</p>
+        <p>The important thing to know is that&nbsp;<strong>ALL your private keys are generated from and tied to the seed phrase</strong>.</p>
+        <h2>Write down your seed phrase and store it in a safe place!</h2>
+        <p>When your wallet software generates a seed phrase, it will usually instruct you to write it down on paper.</p>
+        <p>Write down your seed phrase and store it in a safe place.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01224149/safe-box.png" /></p>
+        <p>If you want even more security, write it down on multiple pieces of paper and store each in&nbsp;<em>different</em>&nbsp;locations.</p>
+        <p>Since all keys in the HD wallet are derived from the seed phrase, this makes it possible to&nbsp;<strong><em>re-create</em>&nbsp;the entire HD wallet from that seed</strong>&nbsp;in any compatible HD wallet.</p>
+        As long as you have your wallet&rsquo;s seed phrase, you&rsquo;ll have access to all of the bitcoins associated with the wallet that generated the phrase&hellip;even if something unfortunate happens to your wallet.
+        <p>If your computer breaks, you can download the same wallet software again and&nbsp;<strong>restore your wallet and recover your funds by providing your seed phrase</strong>.</p>
+        <p>Different wallets will have different instructions for recovering a wallet but in general, you&rsquo;ll be asked to type or choose&nbsp;<strong>words in the specific order</strong>&nbsp;of your seed phrase to restore your wallet.</p>
+        <p>Never take a screenshot of your seed phrase and never save it on a digital medium like a Word/Google doc, email, or text message. If your computer or phone gets hacked, say goodbye to your bitcoins!</p>
+        <p><strong>Make sure to keep your seed phrase private</strong>. Don&rsquo;t share it with others! Try not to even mention you have a seed phrase. Anyone with your seed phrase will have access to your wallet and all of its funds.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01225538/sharing-seed-phrase-1.png" /></p>
+        <p>If someone asks for your seed phrase they are likely trying to scam you and steal your wallet funds.</p>
+        <h2>What happens if you lose your seed phrase?</h2>
+        <p>Think of your seed phrase as a special kind of password. It is the ONLY way to access your wallet.</p>
+        <p>In the event that your wallet gets lost, deleted, corrupted, broken, or destroyed,&nbsp;<strong>your seed phrase is the one thing that can restore and recover your wallet</strong>.</p>
+        If you delete or lose your wallet WITHOUT saving your seed phrase, your bitcoins are gone.
+        <p>So hopefully, you didn&rsquo;t accidentally throw away that slip of paper where you wrote your seed phrase on.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01223943/lost-seed-phrase-360x360.png" /></p>
+        <p>Unless someone steals your seed phrase, your bitcoins will remain safely stored on the blockchain, but&nbsp;<strong>you won&rsquo;t have any way to access it</strong></p>
+        <p>Without your seed phrase, you lose access to your crypto&nbsp;<strong>forever</strong>.&nbsp;So remember to keep your seed phrase safe!</p>
+        <h2>Is it possible for someone to guess your seed phrase?</h2>
+        <p>A seed phrase comes from a specific list of 2,048 words. This would require someone to be able to guess all the words from that huge list of words AND put them in the correct order.</p>
+        <p><img src="https://bpcdn.co/images/2022/03/01223321/guess-seed-phrase-360x360.png" /></p>
+        <p>For example, for a 12-word seed phrase, there are 777,788,267,247,859,345,059,141,959,844,041,626,185 possible combinations.</p>
+        <p>The likelihood of someone guessing your seed phrase is basically zero.</p>
+        <h2>What&rsquo;s the difference between a seed phrase and a private key?</h2>
+        <p>When you first create your wallet, it generates a seed phrase.</p>
+        <p>The seed phrase generates a&nbsp;<em>master</em>&nbsp;private key.</p>
+        <p>And this master private key can create an almost unlimited amount of private keys.</p>
+        <p>If you think of each private key as a &ldquo;<strong>password</strong>&rdquo; that allows you to send or spend bitcoin tied to a specific address, then the seed phrase acts as a &ldquo;<strong>master password</strong>&ldquo;.</p>
+        <p>As long as you know the &ldquo;master password&rdquo; (seed phrase), then you have access to ALL private keys in the wallet.</p>
+        <p>If it weren&rsquo;t for the seed phrase, you would have to keep track of your private key<strong>&nbsp;for each and every address that you own</strong>! Dealing with multiple addresses (and their private keys) would be a pain in the butt.</p>
+        <p>Thankfully, the wallet removes the need for you to worry about your private keys (and public keys) and can manage all your funds using&nbsp;<strong>just the seed phrase</strong>.</p>
+        <p><strong>Wallets deal with all of the creating and managing of keys in the background. All you need to know is the seed phrase!</strong></p>
+        <blockquote>
+        <p>If you&rsquo;re familiar with password managers (like LastPass, 1Password, or Bitwarden), you can think of a&nbsp;<strong>wallet as like a crypto password manager&nbsp;</strong>and a&nbsp;<strong>seed phase being similar to the master password</strong>.</p>
+        </blockquote>
+        <h2>Summary</h2>
+        <ul>
+        <li>Public and private keys are always created in pairs.</li>
+        <li>The&nbsp;<strong>public key</strong>&nbsp;is used to RECEIVE bitcoins.</li>
+        <li>Due to its length, it is compressed into a format known as the&nbsp;<strong>address</strong></li>
+        <li>The address is similar to an account number of a bank account.</li>
+        <li>The&nbsp;<strong>private key</strong>&nbsp;is what authorizes you to control funds attached to an address and initiate transactions from that address.</li>
+        <li>A&nbsp;<strong>seed phrase</strong>&nbsp;is a human-readable&nbsp;<strong>master private key</strong>&nbsp;in the form of a sequence of words. It can contain an unlimited amount of public/private key pairs.</li>
+        <li>If a seed phrase is lost, there is no way to retrieve it.</li>
+        </ul>
+        <p>As you can see, &ldquo;storing&rdquo; bitcoins in an&nbsp;<strong>HD wallet</strong>&nbsp;simply refers to the&nbsp;<strong>safekeeping of a seed phrase</strong>.</p>
+        </div>
+   
+</body>
+
+</html>

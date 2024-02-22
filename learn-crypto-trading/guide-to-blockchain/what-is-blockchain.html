@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What&rsquo;s a blockchain?</p>
+    <p>A &ldquo;<strong>blockchain</strong>&rdquo; or &ldquo;<strong>blockchain technolog</strong>y&rdquo; is an entirely new way of&nbsp;<strong>recording data on the internet&nbsp;</strong>in a way that makes it impossible or extremely difficult to change the data once recorded.</p>
+    <p>Bitcoin, along with other cryptocurrencies, relies on blockchain technology in order to work To understand cryptocurrencies. you need to understand blockchain.</p>
+    <p>A blockchain is a decentralized database across a peer-to-peer (P2P) network that can be viewed publicly, in real-time.</p>
+    <p>It essentially keeps track of&nbsp;<em><strong>who</strong>&nbsp;</em>owns&nbsp;<em><strong>what</strong></em>.</p>
+    <p>Most normal databases have&nbsp;<strong>someone in charge</strong>&nbsp;who can write or change the entries. A blockchain is a different kind of database because&nbsp;<strong><em>nobody</em>&nbsp;is in charge</strong>.</p>
+    <p>Anybody can add new entries as long as all the predetermined rules are followed. But once the new data is added to the database, it can&rsquo;t be changed.</p>
+    <p>Think of a blockchain as a database that stores information differently from the way a typical database does.</p>
+    <p>In this lesson, I will explain&nbsp;<strong>what a blockchain is, how they work and why it&rsquo;s special</strong>.</p>
+    <h2>What is a blockchain?</h2>
+    <p>In simplest terms, a blockchain is just a special type of database, a way of storing digital information or &ldquo;<strong>data</strong>&rdquo; across multiple computers in a way that makes it impossible to change.</p>
+    <p>The type of data recorded on a blockchain can take on any form and depends on the blockchain type.</p>
+    <p>Its most popular use is to record&nbsp;cryptocurrency transaction history.</p>
+    <p>For example, Bitcoin&rsquo;s blockchain saves the details about a transaction such as a&nbsp;<strong>receiver&rsquo;s&nbsp;<em>address</em></strong>,&nbsp;<strong>sender&rsquo;s&nbsp;<em>address</em></strong>,&nbsp;<strong>the&nbsp;<em>amount</em>&nbsp;of bitcoins (BTC)</strong>, and&nbsp;<strong><em>when</em>&nbsp;it occurred</strong>&nbsp;(known as a &ldquo;timestamp&rdquo;).</p>
+    <p>What makes it special is&nbsp;<strong>how it&nbsp;<em>organizes</em>&nbsp;the data that it stores</strong>.</p>
+    <p>The data in a blockchain gets stored in &ldquo;<strong>blocks</strong>&ldquo;.</p>
+    <p>These blocks are added according to a set of&nbsp;<strong>special rules</strong>&nbsp;(known as the &ldquo;<strong>consensus mechanism</strong>&rdquo;).</p>
+    <p>These blocks&nbsp;<strong>link together</strong>&nbsp;in a linear,&nbsp;<em>chronological</em>&nbsp;order&hellip;.creating a &ldquo;<strong>chain of blocks</strong>&rdquo; or &ldquo;<strong>blockchain</strong>&ldquo;.</p>
+    <p>A collection of blocks (containing data) linked in a&nbsp;<em>specific</em>&nbsp;order represents the&nbsp;<strong>structure</strong>&nbsp;of a blockchain.</p>
+    <p>Each block uses two things to be able to &ldquo;link&rdquo; or &ldquo;chain&rdquo; to each other:</p>
+    <ol>
+    <li>A&nbsp;<strong>hash</strong>: This is a unique string of letters and numbers used to&nbsp;<em>summarize</em>&nbsp;ALL the data contained in a block. If the data in the block changes, so does the hash.</li>
+    <li>A&nbsp;<strong>hash of the previous block</strong>. Whenever a new block gets added to the blockchain, it also contains the hash of the previous block as part of&nbsp;<em>its own data</em>. Basically, a block can&rsquo;t generate its&nbsp;<em>own</em>&nbsp;hash without including the hash of the block that came before it. This is what creates the &ldquo;chain&rdquo;.</li>
+    </ol>
+    <p>Once a block gets created, a&nbsp;<strong>hash gets generated</strong>. A hash of the block is similar to a numerical &ldquo;fingerprint&rdquo; that identifies the block and its contents.</p>
+    <blockquote>
+    <p>If you&rsquo;re not familiar with what a &ldquo;hash&rdquo; is. Please read my &ldquo;Beginner&rsquo;s Guide to Hashing&ldquo;.</p>
+    </blockquote>
+    <p>Since a hash is really just a unique alphanumeric string that&rsquo;s tied to a specific block, you can think of this hash as acting like the&nbsp;<strong>block&rsquo;s ID number</strong>.</p>
+    <p>But in order to generate an ID number for a block, it requires the previous block&rsquo;s ID as an &ldquo;ingredient&rdquo;. Otherwise, the block can&rsquo;t generate a block ID for itself.</p>
+    <p>Because blocks build &ldquo;on top of each other&rdquo;, I usually prefer to envision a blockchain in a&nbsp;<em>vertical</em>&nbsp;form like a tower of blocks.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/04134913/blockchain-vertical-tower-of-blocks.png" /></p>
+    <p>But to save space, let&rsquo;s rotate the blockchain in our minds and view it in a&nbsp;<em>horizontal</em>&nbsp;form like a sideways tower&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/04/04134941/blockchain-horiontal-tower-of-blocks.png" /></p>
+    <p>Or a train&hellip;</p>
+    <p><img src="https://bpcdn.co/images/2022/03/31104127/blockchain-as-a-train-360x119.png"  /></p>
+    <p>So the blockchain looks like this:</p>
+    <p><img src="https://bpcdn.co/images/2022/03/09112240/blockchain-diagram.png" /></p>
+    <p>As you can see, every block includes a&nbsp;<strong>reference</strong>&nbsp;to the block that came before it, and you can follow the links backward from the most recent block to the very first block (known as the &ldquo;Genesis Block&rdquo;).</p>
+    <p>Since blocks are linked chronologically, a blockchain is &ldquo;<strong>append-only</strong>&ldquo;, meaning that new data can be added, but existing data can NOT be altered or deleted. So with a blockchain,&nbsp;you can add new blocks, but once that block is added, it&rsquo;s&nbsp;<strong>permanent</strong>.&nbsp;</p>
+    <p>The unique way in which blocks are linked means that altering one block would require all previous blocks to be altered as well. This makes it (almost) impossible to compromise previously written data.</p>
+    <p>For example, let&rsquo;s take a look at the earlier image again where the hash acts as a&nbsp;<strong>block ID number</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/09112240/blockchain-diagram.png" /></p>
+    <p>This blockchain has a &ldquo;length&rdquo; of 102 blocks. Or to be more accurate, it has a &ldquo;<strong>block height</strong>&rdquo; of 102 blocks.</p>
+    <p>Block #101&rsquo;s hash will&nbsp;<em>include</em>&nbsp;Block #100&rsquo;s hash.</p>
+    <p>If a single piece of Block #100 is altered, Block #100&rsquo;s hash will change, causing&nbsp;<strong>Block #101&rsquo;s hash</strong>&nbsp;to change and so on, all the way until&nbsp;<strong>Block #102</strong>.</p>
+    <p><strong>Every block after Block #100 will be invalidated</strong>. This design prevents anyone from altering a block once it is part of the blockchain without completely&nbsp;<em>rebuilding</em>&nbsp;the blockchain.</p>
+    <p>The information on a blockchain is known as &ldquo;<strong>immutable</strong>&rdquo; Immutability just means that the information is tamper-resistant. It&rsquo;s very difficult to alter.</p>
+    <p>Once a block is added to the blockchain, the information contained in the block is&nbsp;<strong>visible to everyone on the network</strong>.</p>
+    <p>A blockchain is&nbsp;<strong>distributed across a P2P network</strong>. This means no one person or institution has control of the network. Instead, computers from across the world, called &ldquo;<strong>nodes&rdquo;,&nbsp;</strong>&nbsp;work together to keep the blockchain updated and accurate.</p>
+    <p>This is why it&rsquo;s hard to change the data once recorded on a blockchain.</p>
+    <p>In order to change the data and have the altered blockchain become the &ldquo;official&rdquo; copy of the blockchain, you would have to alter YOUR copy of the blockchain that&rsquo;s stored on your computer AND also get&nbsp;<strong>more than half of all the nodes on the Bitcoin network</strong>&nbsp;to update theirs as well.</p>
+    <p>Let&rsquo;s just say this is almost impossible.</p>
+    <h2>How does Bitcoin use a blockchain?</h2>
+    <p>Bitcoin was the first crypto to successfully implement blockchain technology.</p>
+    <p>Without the internet, there would be no Kardashians. And without the blockchain, there would be no Bitcoin.</p>
+    <p>The concept of using a blockchain to record transactions was created to make Bitcoin possible.</p>
+    <p>The blockchain is sometimes described as &ldquo;<em>the</em>&nbsp;blockchain,&rdquo;</p>
+    <p>But&nbsp;<strong>there is no single blockchain</strong>.</p>
+    <p>Blockchain technology can be used in a variety of applications so there are&nbsp;<strong>many different blockchains</strong>&nbsp;developed by different entities or organizations.</p>
+    <p>For example, &ldquo;Bitcoin&rsquo;s blockchain&rdquo; is its own application of blockchain technology. Which is different from &ldquo;Ethereum&rsquo;s blockchain&rdquo; (which is another crypto).</p>
+    <p>A blockchain was Satoshi Nakamoto&rsquo;s solution to solve two problems:</p>
+    <ol>
+    <li>In an online network where members can send digital money to each other, how can you be sure that others are not duplicating their money? In other words, how can a recipient of digital money be sure that the money sent to them was not simultaneously sent to someone else?</li>
+    <li>In a peer-to-peer network where members don&rsquo;t know each other and do NOT trust each other, how can members collectively agree on a specific truth? In other words, how can total strangers arrive at a consensus without relying on a trusted third party or centralized entity?</li>
+    </ol>
+    <p>Bitcoin&rsquo;s blockchain keeps track of the ownership of all bitcoin (BTC). This ensures that everyone knows which bitcoins belong to whom.</p>
+    <p>As I mentioned earlier, a blockchain is a &ldquo;chain of blocks&rdquo;.</p>
+    <p>Each of these &ldquo;blocks&rdquo; contains data<strong>.</strong></p>
+    <p>In Bitcoin&rsquo;s case, each &ldquo;block&rdquo; contains data about&nbsp;<strong>transactions</strong>, representing&nbsp;<strong>transfers of bitcoin from one address to another</strong>.</p>
+    <p>A &ldquo;block&rdquo; is just a batch of&nbsp;<strong>newly confirmed transactions</strong>.</p>
+    <p>As transactions take place over the network, transaction data are grouped together into &ldquo;blocks&rdquo; and added chronologically to the network&rsquo;s ongoing chain of &ldquo;blocks&rdquo;.</p>
+    <p>If you think of the blockchain as a &ldquo;<strong>book</strong>&rdquo; that stores the record of every transaction that has ever occurred on the Bitcoin network, then a block is like a &ldquo;<strong>page</strong>&rdquo; that gets added to this &ldquo;book&rdquo; whenever bitcoins are moved from one address to another.</p>
+    <p>Since the type of information that Bitcoin&rsquo;s blockchain records are&nbsp;<em>transactions</em>, you&rsquo;ll often see or hear Bitcoin&rsquo;s blockchain described as a &ldquo;<strong>decentralized distributed ledger</strong>&ldquo;.</p>
+    <p>This sounds technical, but we can easily break this down:</p>
+    <ul>
+    <li>A&nbsp;<strong>ledger</strong>&nbsp;is a sequential record of transactions. It&rsquo;s a word used by accountants and bookkeepers.</li>
+    <li>A&nbsp;<strong>distributed ledger</strong>&nbsp;is a ledger that is replicated and&nbsp;<em>shared</em>&nbsp;among multiple participants.</li>
+    <li>A&nbsp;<strong>decentralized ledger</strong>&nbsp;is a distributed ledger where no single authority is able to&nbsp;<em>control</em>&nbsp;what is&nbsp;<em>written</em>&nbsp;onto the shared ledger.</li>
+    </ul>
+    <p>The Bitcoin network uses the blockchain as a&nbsp;<strong>ledger</strong>&nbsp;to organize the history of all transactions that have ever taken place&nbsp;<strong>between Bitcoin addresses</strong>. This ledger is publicly visible, allowing anyone to verify that it has not been tampered with.</p>
+    <p>Each Bitcoin node stores a full copy of the blockchain, and nodes communicate among themselves to ensure that everyone is up to date with the latest changes to the blockchain.</p>
+    <p>When a new transaction is broadcasted, or a new block is added to the blockchain, nodes relay that information to other nodes.</p>
+    <p>Nodes do not rely on trusted third parties to tell them whether transactions are valid or not. Instead, they independently validate fresh transactions themselves using the rules of the Bitcoin network.</p>
+    <p>The majority of nodes must agree on each transaction before it can be added to the blockchain. This means that no single person or computer can make changes to the blockchain without consensus from the network.</p>
+    <blockquote>
+    <p>Satoshi Nakamoto never actually used the term, &ldquo;blockchain&rdquo;. In his white paper, the word &ldquo;block&rdquo; is used 67 times, and the word &ldquo;chain&rdquo; is used 27 times, but &ldquo;blockchain&rdquo; and &ldquo;block chain&rdquo; never appear.</p>
+    </blockquote>
+    <h2>What is the difference between blockchain and Bitcoin?</h2>
+    <p>Because the blockchain and Bitcoin were invented together, they are often mentioned together, but Bitcoin is NOT blockchain.</p>
+    <p>The blockchain is the&nbsp;<em>underlying</em>&nbsp;technology of Bitcoin. It&rsquo;s what makes Bitcoin (and other cryptocurrencies) possible.</p>
+    <p>Think of Bitcoin as the&nbsp;<em>inspiration</em>&nbsp;for the blockchain.</p>
+    <p>When Bitcoin was first released in 2009, it was the&nbsp;<strong>first working example of a blockchain</strong>&nbsp;being used in the real world.</p>
+    <p>The use of a blockchain is what allows Bitcoin to keep a record of all transactions&nbsp;<em>without</em>&nbsp;the need for a third party.</p>
+    <p>Bitcoin wouldn&rsquo;t be possible without blockchain technology, but the two are completely different.</p>
+    <p>While Bitcoin was the first, there are now many other cryptocurrencies with their own blockchains.</p>
+    <blockquote>
+    <p>Other examples of blockchains are&nbsp;<strong>Ethereum</strong>,&nbsp;<strong>Binance Smart Chain</strong>,&nbsp;<strong>Cardano</strong>,&nbsp;<strong>Cosmos</strong>,&nbsp;<strong>Solana</strong>,&nbsp;<strong>Polkadot</strong>&nbsp;and&nbsp;<strong>Avalanche</strong>.</p>
+    </blockquote>
+    <h2>What is the difference between blockchain and distributed ledger?</h2>
+    <p>The terms &ldquo;blockchain&rdquo; and &ldquo;distributed ledger &rdquo;are often used interchangeably but they are not the same.</p>
+    <p>A blockchain focuses on&nbsp;<strong>how data is organized and linked to one another.&nbsp;</strong>Specifically, data is stored in &ldquo;blocks&rdquo; and then the blocks are &ldquo;chained&rdquo; in chronological order.</p>
+    <p>A distributed ledger or what is also called &ldquo;Distributed Ledger Technology&rdquo; (DLT) focuses on the&nbsp;<strong>sharing of the ledger&nbsp;</strong>amongst all the members (&ldquo;nodes&rdquo;) of the network.</p>
+    <p>The ledger does not reside in one place. It is copied across nodes that are geographically&nbsp;<em>distributed</em>&nbsp;across the world.</p>
+    <p>Distributed ledgers don&rsquo;t have to be a blockchain to be considered &ldquo;distributed&rdquo;. That&rsquo;s because a distributed ledger does not need to have its data organized in blocks.</p>
+    <p>They just have to be shared with other computers across the network. This means that the ledger no longer exists in a central location (on a centralized &ldquo;server&rdquo;) but instead, is &ldquo;distributed&rdquo; across multiple locations.</p>
+    <p><strong>A blockchain is considered a type of DLT</strong>. It&rsquo;s just one type of distributed ledger. So every blockchain is a DLT, but not all DLTs are blockchains.</p>
+    <p>Just like every iPhone is a smartphone, not all smartphones are iPhones. Or every Kardashian is an influencer, but not all influencers are Kardashians.😂</p>
+   
+</body>
+
+</html>
