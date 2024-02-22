@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is ether?</p>
+    <p><strong>Ether (ETH)</strong>&nbsp;is the built-in currency used in the Ethereum network.</p>
+    <p><img src="https://bpcdn.co/images/2022/04/11145404/ether.png" /></p>
+    <p>Like bitcoin (BTC), it can be seen as a&nbsp;<strong>digital asset used to store and/or transfer value</strong>&nbsp;on the blockchain.</p>
+    <p>But&nbsp;<strong>ether&rsquo;s main use case is to facilitate the&nbsp;<em>computation</em>&nbsp;of smart contracts and decentralized applications (dApps) on the Ethereum network</strong>.</p>
+    <p>Anyone looking to build software on Ethereum has to pay for the computing power with ether (ETH).</p>
+    <p>An Ethereum node has to execute a transaction on the network and isn&rsquo;t going to do it for free.&nbsp;Without ETH, you simply cannot do anything on Ethereum.</p>
+    <p>This was done by design to solve one of the biggest issues with a Turing-complete machine:<strong>&nbsp;the halting problem</strong>.</p>
+    <p>While a Turing-complete machine is pretty awesome in that it can process pretty much any conceivable computation you throw at it, it doesn&rsquo;t know when to stop calculating if you don&rsquo;t tell it to.</p>
+    <p>So, if an app is programmed to run in an infinite loop, that app will run forever. Such a scenario would cause major problems or even grind the Ethereum network to a halt!</p>
+    <p>To help disincentivize bad actors from running code with infinite loops or spamming the network with computation-heavy contracts, Ethereum imposes&nbsp;<strong>transaction fees (paid in ETH)</strong>&nbsp;in order to run smart contracts.</p>
+    <p>This requirement makes ether a key mechanism in keeping the demand for computational resources on the Ethereum network in check.</p>
+    <p>It&rsquo;s pretty much like gas in a race car. Without gas, the car won&rsquo;t start. And the bigger the car or harder you push the car to go, the more fuel is needed to maintain speed and reach the finish line.</p>
+    <p>If the gas runs out then the car just stops, just like an application when it runs out of ether.</p>
+    <h2>What is gas?</h2>
+    <p>The term &ldquo;gas&rdquo; was created to differentiate between the value of ether (ETH) and the computational cost of using Ethereum&rsquo;s virtual machine (EVM).</p>
+    <p><img src="https://bpcdn.co/images/2022/04/11150358/ethereum-gas.png" /></p>
+    <p><strong>Gas</strong>&nbsp;is how the Ethereum network measures the computational effort required to execute transactions.</p>
+    <p>It is called gas because similar to how automobiles need gasoline to operate, the Ethereum network needs gas to keep operating.</p>
+    <p>For example, sending 1 ETH from Person A to Person B may require 21,000 gas units. More complex transactions, such as minting an NFT, could demand 2,000,000 gas or higher.</p>
+    <p>This means that&nbsp;<strong>gas itself is not your transaction fee</strong>.</p>
+    <p>Gas is a&nbsp;<strong>unit</strong>&nbsp;used to measure the&nbsp;<strong>computational effort</strong>&nbsp;necessary to perform specific actions on Ethereum&rsquo;s blockchain. The transaction fee involves other factors like base fees and priority fees.</p>
+    <p><strong>Gas is also not ETH.</strong></p>
+    <p>The price of 1 gas unit rises when Ethereum&rsquo;s network is busy and falls during off-peak hours.</p>
+    <p>The amount of &ldquo;gas&rdquo; required s determined by the supply of mining capacity and the demand for transactions needed to be processed. Since miners can decline to process transactions if the gas price is too low, the gas price must be high enough to outweigh the cost of the computational power needed to process these transactions.</p>
+    <p>For example, the price of 1 ETH rises when a lot of people suddenly want NFTs and falls when someone makes a controversial tweet attacking the usefulness of Ethereum.</p>
+    <p>But&nbsp;<strong>gas IS priced in ETH.</strong></p>
+    <p><strong>Gas price&nbsp;</strong>is the amount of ETH it takes to pay for&nbsp;<em><strong>one unit of gas.</strong></em></p>
+    <p>If one unit of gas is priced at 0.000000015 ETH, your transaction requiring 21,000 units would need at least 0.000315 ETH to push through.</p>
+    <p>Whoa. That&rsquo;s WAY too many decimals and so few ETH!</p>
+    <p>Others think so too.</p>
+    <p>Enter giga-wei or&nbsp;<strong>gwei</strong>.</p>
+    <p><strong>Gwei&nbsp;</strong>represents a fraction of 1 ETH.</p>
+    <p>Like cents to a dollar,&nbsp;<strong>wei</strong>&nbsp;is the smallest denomination of ETH.&nbsp;<strong>Gigawei</strong>&nbsp;translates to 1,000,000,000 wei or 0.000000001 ETH.</p>
+    <p>There are other ways to denominate ETH, but g<strong>wei</strong>&nbsp;is the more commonly used among ETH users.</p>
+    <p>In the example above, instead of saying that gas price is at 0.000000015 ETH, you can just say that gas price is 15 Gwei.</p>
+    <p>That&rsquo;s &ldquo;<strong>gwei</strong>&rdquo; more convenient!</p>
+    <h2>How is the gas fee calculated?</h2>
+    <p>Of course, the transaction fee doesn&rsquo;t just involve gas and gas prices. It also includes the&nbsp;<strong>BASE FEE</strong>, which is the price required to put one gas unit on Ethereum&rsquo;s block.</p>
+    <p>Base fees are determined by the blocks before it. The base fee can increase by as much as 12.5% per block if the previous block&rsquo;s transactions used more gas than the target block size allotted for.</p>
+    <p>But you don&rsquo;t just pay for the service. You gotta add a tip, too!</p>
+    <p>Remember that miners receive block rewards no matter what&rsquo;s inside an Ethereum block.</p>
+    <p>To incentivize them to compute for&nbsp;<em>your</em>&nbsp;transaction and add it to the blockchain, you can add a P<strong>RIORITY FEE (or TIP)</strong>&nbsp;per gas unit when you input your transaction details.</p>
+    <p>And you thought Uber Eats drivers were demanding.</p>
+    <p>At this point, your minimum transaction fee would look like this:</p>
+    <pre><strong>Tx fee = (gas units the transaction requires) x (gas price at least equal to the base fee + tip)</strong></pre>
+    <p>But what if you executed an uncommon transaction that needed way more gas than you thought? You&rsquo;ll end up paying waaay more than you originally thought!</p>
+    <p>This is why users usually add a gas limit to their input.</p>
+    <p>In our fuel example, budgeting for a road trip (executing a transaction) would mean thinking about the price of fuel (gas price) as well as the maximum gallons you think the road trip would need (gas limit).</p>
+    <p>&ldquo;<strong>Gas Limit</strong>&rdquo; is the maximum number of gas units you&rsquo;re willing to pay to execute your transaction.</p>
+    <p>Using a gas limit ensures that you don&rsquo;t accidentally spend way more than your budget. You&rsquo;re protected from a faulty contract code suddenly requiring more gas.</p>
+    <p>Alternatively, users have the option to set a&nbsp;<strong>MAX FEE LIMIT</strong>&nbsp;to tell the network the maximum gwei you&rsquo;re willing to spend on your transaction.</p>
+    <p>Don&rsquo;t be too stingy with your Gas and Max Limits though! Miners will only use enough gas and gwei to run the transaction and refund you the rest.</p>
+    <p>But if a transaction hits its Gas or Max Limit and &ldquo;runs out of gas&rdquo; before it is executed, then the transaction will fail and you will lose the gas the miners had already consumed.</p>
+    <p>That would be&hellip;&rdquo;gwei&rdquo; too much waste.</p>
+    <p>Factoring in Gas Limits, our new minimum transaction fee formula would look like this:</p>
+    <pre><strong>Tx Fee = (Gas Limit) * (Base fee + Tip)</strong></pre>
+    <p>Let&rsquo;s say that Person A is sending 1 ETH to Person B.</p>
+    <p>The simple transaction only requires 21,000 gas but a lot of folks are swapping ERC-20 tokens so the current base fee is 300 gwei. Person A decides to tip 20 gwei to ensure that the 2 ETH is transferred.</p>
+    <p>Using the formula above, Person A&rsquo;s transaction fee is:</p>
+    <pre>(21,000) x (300 + 20) = 6,720,000 gwei or 0.00672 ETH</pre>
+    <p>That&rsquo;s about $18.84 for transferring 1 ETH (~$3,000)!</p>
+    <p>$18.84 may still be a bit steep for some. Luckily, there are efforts to reduce transaction fees.</p>
+    <p><strong>Ethereum&rsquo;s switch to Proof-of-Stake (PoS)</strong>&nbsp;consensus algorithm, for example, would reduce the computational requirements per transaction.</p>
+    <p>A bunch of&nbsp;<strong>Layer 2 scaling solutions</strong>&nbsp;also promise to lighten the network load by doing the heavy computation off-chain.</p>
+    <p>Most wallets and platforms can automatically estimate the gas and gas prices for your transactions.</p>
+    <p>But if you want to practice your transaction fee computing skillz, then you&rsquo;ll definitely want to check out this cheat sheet!</p>
+    <div>
+    <div>
+    <table border="1px">
+    <tbody>
+    <tr>
+    <td>Gas</td>
+    <td>Unit of measurement for the computational effort miners needs to execute your transaction and record it on Ethereum&rsquo;s blockchain.</td>
+    </tr>
+    <tr>
+    <td>Block/Base Fee</td>
+    <td>The minimum amount of gas required to put the transaction on the latest Ethereum block. Base fees are &ldquo;burnt&rdquo; at the end of each transaction.</td>
+    </tr>
+    <tr>
+    <td>Gwei</td>
+    <td>Short for gigawei, a name for a fraction of 1 ETH you need to pay for transaction fees.
+    <p>1 Gwei = 0.000000001 ETH</p>
+    <p>Ex: If you&rsquo;re sending 1 ETH and your total transaction fee is 4230000 gwei (0.00423 ETH), you&rsquo;ll need to send 1.00423 ETH to successfully execute your transaction.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>Gas Price</td>
+    <td>The number of gwei you&rsquo;re willing to pay for one unit of gas.</td>
+    </tr>
+    <tr>
+    <td>Gas Limit</td>
+    <td>The maximum number of gas units you&rsquo;re willing to pay to execute your transaction.
+    <p>You can adjust how much gas you want to spend but setting a gas limit that&rsquo;s lower than the total gas needed will lead to your transaction &ldquo;losing gas&rdquo; and failing.</p>
+    <p>Different types of transactions will require a different minimum gas amount to complete.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>Max fee</td>
+    <td>The maximum cost (in gwei) you&rsquo;re willing to spend on your transaction.
+    <p>After the actual fees and tip have been deducted, the remainder of the max fee will be refunded to the transaction sender.</p>
+    <p>Like in gas limits, setting a max fee lower than the actual fee needed will result in a failed transaction.</p>
+    </td>
+    </tr>
+    <tr>
+    <td>Priority Fee/Tip</td>
+    <td>An additional fee you pay to miners to include/prioritize your transaction on the blockchain.</td>
+    </tr>
+    <tr>
+    <td>Gas burn</td>
+    <td>When users pay for their transactions, their base gas fee gets destroyed (permanently removed from circulation) by the protocol.</td>
+    </tr>
+    <tr>
+    <td>Transaction fee formula</td>
+    <td>(Gas Limit) x (Base Fee + Tip)</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>  
+   
+</body>
+
+</html>

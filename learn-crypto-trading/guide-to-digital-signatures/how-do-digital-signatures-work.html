@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>In this lesson, we&rsquo;re going to learn how a digital signature actually works in Bitcoin and other cryptocurrencies.</p>
+    <p>In order to get to this point, we&rsquo;ve had to learn several technical concepts first since they are the &ldquo;building blocks&rdquo; needed to create a digital signature:</p>
+    <ul>
+    <li>Hash functions</li>
+    <li>Private and public keys</li>
+    <li>Asymmetric encryption</li>
+    </ul>
+    <p>If you&rsquo;re NOT familiar with these concepts, they were explained in a noob-friendly way in previous lessons. Explore the links above to learn more.</p>
+    <h2>How is a digital signature created?</h2>
+    <p>Let&rsquo;s take a look at how a digital signature is step-by-step:</p>
+    <ol>
+    <li>When you want to send bitcoin, your wallet creates a&nbsp;<strong>transaction message</strong>. This message contains information like the amount of bitcoins you wish to send and the recipient&rsquo;s address.</li>
+    <li>This message is run through a&nbsp;<strong>hash function</strong>.</li>
+    <li>The hash function produces an output known as the &ldquo;<strong>message hash</strong>&rdquo; or just &ldquo;<strong>hash</strong>&ldquo;.</li>
+    <li>This message hash is then&nbsp;<em>e</em><strong><em>ncrypted</em>&nbsp;with your private key</strong>.</li>
+    <li>The&nbsp;<em>encrypted</em>&nbsp;message hash becomes the &ldquo;<strong>digital signature</strong>&ldquo;.</li>
+    </ol>
+    <p>Here&rsquo;s a flowchart of this process:</p>
+    <p><img src="https://bpcdn.co/images/2022/03/03100351/how-digital-signature-is-created.png"  /></p>
+    <p>So at the end of this process, your wallet has created two &ldquo;items&rdquo;:</p>
+    <ol>
+    <li><strong>Transaction message</strong></li>
+    <li><strong>Digital signature</strong>&nbsp;(an encrypted hash of the transaction message)</li>
+    </ol>
+    <p>At this point, nothing has been sent out to the Bitcoin network yet.</p>
+    <p>If you didn&rsquo;t notice, the transaction message itself is needed as an &ldquo;ingredient&rdquo; to create the digital signature.</p>
+    <p>So you don&rsquo;t just use your private key to create a digital signature&hellip; you use your&nbsp;<strong>private key AND the hash</strong>&nbsp;of the transaction message.</p>
+    <p>This means you can&rsquo;t use this digital signature for another transaction. If you tried to use this digital signature in a second transaction, it would be rejected by the Bitcoin network because the digital signature is solely based on the data from the first transaction.</p>
+    <p><strong>Every digital signature is unique to a specific transaction</strong>.</p>
+    <h2>How is a digital signature verified?</h2>
+    <p>In order to&nbsp;<strong>spend bitcoins from a particular Bitcoin address</strong>, one must&nbsp;<strong>prove &ldquo;ownership&rdquo; (or: knowledge) of the private key that&rsquo;s paired with the public key</strong>&nbsp;associated with that&nbsp;<strong>address</strong>.</p>
+    <p>But you want to do this&nbsp;<em>without</em>&nbsp;having to reveal your private key.</p>
+    <p>A&nbsp;<strong>digital signature</strong>&nbsp;is something you can use to&nbsp;<strong>PROVE that you know the private key</strong>&nbsp;that&rsquo;s connected to a public key, without having to reveal the actual private key.</p>
+    <p>Let&rsquo;s see this works:</p>
+    <ol>
+    <li>When you initiate a Bitcoin transaction, your wallet software actually provides three &ldquo;items&rdquo; to the Bitcoin network: the original&nbsp;<strong>transaction message</strong>, the&nbsp;<strong>digital signature</strong>, and your&nbsp;<strong>public key</strong>&nbsp;(that&rsquo;s tied to the address where the bitcoin you wish to send is currently stored).</li>
+    <li>Once a Bitcoin node receives these &ldquo;items&rdquo;, it will separate them out.</li>
+    <li>It will take the original transaction message and run it through the same hash function that you used earlier. (All Bitcoin software uses the same hash function.) As for the digital signature, it will use the public key you provided to decrypt it.</li>
+    <li>Both hashes will then be compared.</li>
+    <li>Are both hashes an exact match?</li>
+    <li>If both hashes match, then this proves that you are the actual owner of the bitcoin you wish to send.</li>
+    </ol>
+    <p>Here&rsquo;s a flowchart of this process:</p>
+    <p><img src="https://bpcdn.co/images/2022/03/03103947/how-digital-signature-is-validated.png"  /></p>
+    <p>There are two things to point out here:</p>
+    <h2>1. Being able to decrypt with the public key proves the sender&rsquo;s identity.</h2>
+    <p>In step 3, once a node is able to decrypt the digital signature, this proves your &ldquo;identity&rdquo;.</p>
+    <p>Remember, since a private key and public key are mathematically linked, if you&rsquo;re able to decrypt a message with my&nbsp;<em>public</em>&nbsp;key, that means I encrypted it with my&nbsp;<em>private</em>&nbsp;key.</p>
+    <p>If you weren&rsquo;t able to decrypt the message, that means it was encrypted by somebody else&rsquo;s private key. And that means the message didn&rsquo;t come from me.</p>
+    <h2>2. Hashes that are an exact match prove that the message wasn&rsquo;t altered.</h2>
+    <p>In step 6, checking to make sure both hashes are an exact match ensures that the original message&nbsp;<strong>has not been altered.</strong></p>
+    <p>This is important to know because unlike the digital signature is encrypted, the original transaction message is in plaintext because all Bitcoin transactions are public for all to see.</p>
+    <p>Remember, any slight change would produce a totally different hash. So if someone were to intercept the original transaction message on its way to a node and modify it (like to send the bitcoin to his address instead), when the message goes through the hash function, it would produce a totally different hash from the digital signature.</p>
+    <p>Similar to how a handwritten signature links a person to a specific document, a &ldquo;digital signature&rdquo; using cryptography&hellip;.<em>cryptographically</em>&hellip;.<strong>links identity to a specific message</strong>.</p>
+    <h2>Summary</h2>
+    <p>Now that you understand how a digital signature is created and how it is verified, here&rsquo;s a BIG picture view of what &ldquo;signing&rdquo; a transaction actually means and how the sender&rsquo;s &ldquo;digital signature&rdquo; is used to verify ownership of the bitcoins he/she wishes to send:</p>
+    <p><img title="Digital Signature Process" src="https://bpcdn.co/images/2022/03/03161222/digital-signature-process.png" /></p>
+   
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>How do digital signatures work?</p>
+    <p>Before we get into the technical details of how digital signatures work, I wanted to help ease you in by sharing a funny story.</p>
+    <p>You might think that digital signatures may sound complicated, but if you pay close attention to this story, they&rsquo;re really not.</p>
+    <blockquote>
+    <p>Hello! I&rsquo;m Batman!</p>
+    </blockquote>
+    <p>Imagine Batman has a box.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08144355/box-with-lock.png"  /></p>
+    <blockquote>
+    <p>Check out my box!</p>
+    </blockquote>
+    <p>This box has a lock&hellip;a very special kind of lock.</p>
+    <p>This lock has THREE states:</p>
+    <ol>
+    <li><strong>Locked (A):&nbsp;</strong>When the key is turned all the way to the left, it is locked.</li>
+    <li><strong>Unlocked (B):&nbsp;</strong>When the key is in the middle, it&rsquo;s unlocked.</li>
+    <li><strong>Locked (C):&nbsp;</strong>When the key is turned all the way to the right, it is locked.</li>
+    </ol>
+    <p><img src="https://bpcdn.co/images/2022/02/22212406/digital-signature-lock-1-780x585.png"  /></p>
+    <p>And the lock has TWO separate keys: a&nbsp;<strong>black key</strong>&nbsp;and a&nbsp;<strong>yellow key</strong>.</p>
+    <ol>
+    <li>The black key can only turn&nbsp;<strong>RIGHT</strong>, meaning it can only turn clockwise (from A to B to C)</li>
+    <li>The yellow one can only turn&nbsp;<strong>LEFT</strong>, meaning it can only turn counter-clockwise (from C to B to A).</li>
+    </ol>
+    <p><img src="https://bpcdn.co/images/2022/02/22200950/digital-signature-two-keys.png" /></p>
+    <p>This means that if the box is&nbsp;<strong>locked and the lock is turned to position A</strong>, only the&nbsp;<strong>black key</strong>&nbsp;can unlock it by turning it right, to&nbsp;<strong>position B</strong>&nbsp;(unlocked).</p>
+    <p>If the box is&nbsp;<strong>locked in position C</strong>, only the&nbsp;<strong>yellow key</strong>&nbsp;can unlock it by turning the lock left, to&nbsp;<strong>position B</strong>.</p>
+    <p>So&nbsp;<strong>either key can lock the box</strong>, but&nbsp;<strong>once it is locked, only the&nbsp;<em>other key</em>&nbsp;can unlock it</strong>.</p>
+    <p>Because black is his favorite color, Batman picks the black key and keeps it to himself.</p>
+    <p>Let&rsquo;s call this key his &ldquo;<strong>private</strong>&rdquo; key because now, only Batman has it.</p>
+    <p>Let&rsquo;s call the second key, the yellow key, his &ldquo;<strong>public</strong>&rdquo; key:</p>
+    <p>Batman makes a million copies of it and whenever he&rsquo;s driving through the streets of Gotham City in his Batmobile, he tosses them out the window to pedestrians.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08143404/toss-public-keys-batmobile.png" /></p>
+    <p>There are yellow keys&nbsp;<em>everywhere</em>. Eventually, everyone in Gotham City has a copy of the &ldquo;public&rdquo; key.</p>
+    <p>In this scenario, Batman has his private key that can turn clockwise from&nbsp;<strong>A to B to C</strong>.</p>
+    <p>And everyone else has his public key that can turn counterclockwise from&nbsp;<strong>C to B to A</strong>.</p>
+    <h2>Batman Retires!</h2>
+    <p>Let&rsquo;s imagine that Bruce Wayne has a change of heart and decides he wants to retire as &ldquo;Batman&rdquo; and move to Kamar-Taj in Nepal to study and become a monk under the Ancient One.</p>
+    <blockquote>
+    <p>I&rsquo;m tired of this rich and famous superhero life.</p>
+    </blockquote>
+    <p>He also decides to give all his money to Alfred, his butler.</p>
+    <p>So he writes on a piece of paper, &ldquo;<strong>Give $1 trillion dollars to Alfred ASAP</strong>.&rdquo;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22204429/batman-letter.png" /></p>
+    <p>Batman puts this piece of paper in the box. Using his private key,&nbsp;<strong>he turns his private key to position C</strong>&hellip;.locking the box.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22212406/digital-signature-lock-1-360x270.png" /></p>
+    <p><img src="https://bpcdn.co/images/2022/03/08143948/box-locked-with-private-key.png" /></p>
+    <p>Then he takes another piece of paper and writes the same message, &ldquo;<strong>Give $1 trillion dollars to Alfred ASAP</strong>.&rdquo;</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22204429/batman-letter.png" /></p>
+    <p>He then hands Alfred this piece of paper and instructs him:</p>
+    <blockquote>
+    <p>Give this to my banker.</p>
+    </blockquote>
+    <p>And then adds:</p>
+    <blockquote>
+    <p>If my banker doesn&rsquo;t believe you, hand him the locked box.</p>
+    </blockquote>
+    <p>So now there are two letters with the same message. One is locked in the&nbsp;<strong>box</strong>. And the other is Alfred&rsquo;s&nbsp;<strong>pocket</strong>&nbsp;which technically is publicly viewable by anyone.</p>
+    <p>Later that evening, Batman tells Robin, his sidekick, that he&rsquo;s retiring and giving all his money to Alfred.</p>
+    <p>Robin leaks the news to the press and the next day, it&rsquo;s all over the TV news channels.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22211021/batman-news-flash.png" /></p>
+    <p>Batman&rsquo;s banker, Daime Jimon, at Gotham National Bank is finding out about the news from his television in his office. To his surprise, Alfred shows up asking for his money and hands him the piece of paper.</p>
+    <p>Daime Jimon does not believe the news and refuses.</p>
+    <p>Alfred whips out the locked box.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22211838/alfred-with-box-360x348.png" /></p>
+    <p>Then drops the box on his desk.</p>
+    <p>So now the banker has both the message and box.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08144239/message-and-public-key.png" /></p>
+    <p>Just like everyone else in Gotham City, Daime Jimon has a yellow key that he picked up from the street below his office.</p>
+    <p>Daime Jimon takes the &ldquo;public&rdquo; key out of his pocket and sees if he can unlock the box.</p>
+    <p>He&nbsp;<strong>turns the &ldquo;public&rdquo; key counterclockwise to the left to position B</strong>&nbsp;and the box opens!</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22212406/digital-signature-lock-1-360x270.png" /></p>
+    <p>Inside the box is the letter that Batman wrote. And it matches the first letter that Alfred showed him.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/22210238/batman-letter-matches-780x538.png" /></p>
+    <p>Daime Jimon apologizes to Alfred and asks his assistant to prepare the money.</p>
+    <p><strong>He realizes that the only way that the box was locked was by using Batman&rsquo;s &ldquo;private&rdquo; key which only Batman is in possession of.</strong></p>
+    <p>This means that nobody else could&rsquo;ve put the letter in the box aside from Batman and proves that letter is, in fact, from Batman!</p>
+    <p>The use of the &ldquo;pair of keys&rdquo; is how Batman is able to prove that the message came from him, and him ONLY, without having to provide an actual physically handwritten signature.</p>
+    <p>And the use of the locked box implies that the message inside was always protected and remained untouched (once the box was locked).</p>
+    <p>It basically answers the question, &ldquo;How can you prove to me that Batman actually wrote this message without him having to be present? And that this message wasn&rsquo;t tampered with during transit?&rdquo;</p>
+    <p>This is a crude example of how a &ldquo;<strong>digital signature&rdquo;&nbsp;</strong>works but hopefully, you&rsquo;re starting to get the idea.</p>
+    <p>Now let&rsquo;s go learn how a digital signature actually works in the crypto world!</p> 
+   
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What&rsquo;s a digital signature?</p>
+    <p>When you want to&nbsp;<strong>send some bitcoins</strong>, your wallet creates a &ldquo;transaction&rdquo;&nbsp;and sends it to a node on the Bitcoin network&nbsp;which then broadcasts it to other nodes.</p>
+    <p>When you initiate a Bitcoin transaction, you must prove to every node in the Bitcoin network that you are authorized to spend those funds.</p>
+    <p>What is a Bitcoin transaction?</p>
+    <p>A transaction is just a&nbsp;<strong>message</strong>&nbsp;that contains information about the sender and recipient and the amount of BTC to be transferred (including a transaction fee).</p>
+    <p>So before sending out the message (the &ldquo;transaction&rdquo;),&nbsp;<strong>you&rsquo;re required to &ldquo;sign&rdquo; it</strong>. All transactions need to be &ldquo;signed&rdquo; before they are submitted to the network.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08132116/math-magic-with-private-key.png" /></p>
+    <p>To do so, your wallet software does some fancy math magic to the transaction message and then after that, does some&nbsp;<em>more</em>&nbsp;fancy math magic with something known as a &ldquo;private key&rdquo;.</p>
+    <p>The result of all this math magic is a special piece of information called the &ldquo;<strong>digital signature&rdquo;</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08132403/digital-signature-math-magic.png" /></p>
+    <p>It is this &ldquo;digital signature&rdquo; that&nbsp;<strong>proves</strong>&nbsp;to the Bitcoin network that you are the&nbsp;<strong>true owner of the bitcoins that you wish to send</strong>.</p>
+    <p>When talking about the &ldquo;signing&rdquo; of transactions or &ldquo;digital signatures&rdquo;, mainstream financial media usually will usually stop right here.</p>
+    <p>But this explanation doesn&rsquo;t really tell us much. What is all this vague &ldquo;math magic&rdquo; all about?!</p>
+    <p><strong>What exactly does &ldquo;signing&rdquo; a transaction mean? What does one mean by &ldquo;signatures&rdquo; or &ldquo;digital signatures&rdquo;</strong></p>
+    <p>Given that digital signatures are such a crucial component in cryptocurrencies, we need to learn what a digital signature actually is, why they&rsquo;re needed, and how it actually works!</p>
+    <h2>What is a digital signature?</h2>
+    <p>Bitcoin uses public-key cryptography to create a<strong>&nbsp;&ldquo;key pair&rdquo;&nbsp;</strong>(a pair of keys)&nbsp;that controls access to bitcoins.</p>
+    <p>The key pair consists of a&nbsp;<strong>private key</strong>&nbsp;and a&nbsp;<strong>public key</strong>.</p>
+    <ul>
+    <li>The private key generates a public key.</li>
+    <li>The two keys are mathematically linked and are actually just very large numbers.</li>
+    <li>The public key then generates an&nbsp;<strong>address</strong>&nbsp;that is shared with others so you can&nbsp;<em>receive</em>&nbsp;bitcoin and is represented as a string of letters and numbers.</li>
+    </ul>
+    <blockquote>
+    <p>If you&rsquo;re not familiar with the concepts of &ldquo;private key&rdquo; and &ldquo;public key&rdquo;, this means that you jumped too far ahead in the School of Crypto and didn&rsquo;t complete the courses in order! You need to go back and read this lesson first! 😑</p>
+    </blockquote>
+    <p>So when you say you &ldquo;have some bitcoin&rdquo;, what you&rsquo;re really saying is that:</p>
+    <ul>
+    <li>There are bitcoins tied to a specific&nbsp;<strong>address</strong>.</li>
+    <li>And this address and the amount of bitcoins it holds are recorded on Bitcoin&rsquo;s ledger known as the&nbsp;<strong>blockchain</strong>.</li>
+    <li>You have a&nbsp;<strong>private key</strong>&nbsp;that mathematically proves that you are the owner of&nbsp;<strong>this address</strong>.</li>
+    <li>This means that any bitcoins that are held in this address are&nbsp;<strong>under your control</strong>.</li>
+    <li>And only you can &ldquo;move&rdquo; or send these bitcoins&nbsp;<strong>to a different address</strong>.</li>
+    </ul>
+    <p>If you don&rsquo;t have the private key to the new address, then you are no longer in control of the bitcoins. You have sent them to a new owner (whoever has the private key linked to the new address.)</p>
+    <p>As you can see,&nbsp;<strong>ownership of bitcoins is tied to an address.</strong></p>
+    <p>And the number of bitcoins tied to ALL addresses is recorded on Bitcoin&rsquo;s blockchain.</p>
+    <p>So if you want to send bitcoins to a different address, you have to first prove that you are the&nbsp;<strong>actual owner of the CURRENT&nbsp;<em>address</em>&nbsp;holding the bitcoins</strong>.</p>
+    <p>So how is this done?</p>
+    <p>Remember that an address is just a modified representation of a&nbsp;<strong>public key</strong>.</p>
+    <p>And a public key is created from a specific&nbsp;<strong>private key</strong>.</p>
+    <p>This means that each address relates to a public key, which also relates to a private key.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/28202515/relationship-between-keys-and-addresses.png" /></p>
+    <p>The&nbsp;<strong>public key</strong>, which is represented in a more readable format known as the&nbsp;<strong>address</strong>, can be thought of as the &ldquo;<strong>identity</strong>&rdquo; of the owner.</p>
+    <p>This means that your public key (shown as an&nbsp;<strong>address</strong>) acts as your &ldquo;identity&rdquo; on Bitcoin&rsquo;s blockchain.</p>
+    <p>And the&nbsp;<strong>private key</strong>&nbsp;can be thought of as a piece of information that allows the owner to&nbsp;<strong>prove their ownership of the public key</strong>.</p>
+    <p>So one simple way to prove that you&rsquo;re the owner of an address (and public key) is to&nbsp;<strong>provide your private key</strong>&nbsp;as part of the transaction message.</p>
+    <p>Then using fancy math magic, anyone could easily see that the private key created the public key which created the address.</p>
+    <p>But doing this is NOT safe! Once your private key is&nbsp;<em>publicly</em>&nbsp;known, anybody can now access the address where your bitcoins reside which means anybody can now steal your bitcoins!</p>
+    <p>By &ldquo;stealing&rdquo;, I mean anybody will be able to&nbsp;<em>move</em>&nbsp;the bitcoins from the current address to a different address of their choosing (like uh one of their own addresses).</p>
+    <p>So there has to be a better way!</p>
+    <p>How can you prove you are the actual owner of an address (and public key)&nbsp;<em>without</em>&nbsp;having to reveal the private key that&rsquo;s connected to the address (and public key)?</p>
+    <p>This can be done by providing what&rsquo;s called a &ldquo;<strong>digital signature</strong>&ldquo;.</p>
+    <p>A digital signature is&nbsp;<strong>something that can be attached to a message</strong>&nbsp;to prove that the sender of the message IS the actual sender.</p>
+    <p>In Bitcoin, a digital signature is used to show that you&nbsp;<strong>know the private key associated with an address</strong>&nbsp;WITHOUT having to show the actual private key to the Bitcoin network.</p>
+    <h2>What is the purpose of a digital signature?</h2>
+    <p>In order to spend bitcoins from a particular Bitcoin address, one must prove &ldquo;ownership&rdquo; (or knowledge) of the private key that&rsquo;s paired with the public key associated with that address.</p>
+    <p>A&nbsp;<strong>digital signature</strong>&nbsp;is something you can use to prove that you know the&nbsp;<strong>private key</strong>&nbsp;that&rsquo;s connected to a&nbsp;<strong>public key</strong>, WITHOUT having to reveal the actual private key.</p>
+    <p>The goal of a digital signature is to prove that&nbsp;<strong>you are the owner of an address.</strong></p>
+    <p>And in order to prove you are the owner of an address, you need to prove&nbsp;<strong>you are the owner of the private key that&rsquo;s linked to the address</strong>.</p>
+    <p>Now that we have a general idea of what a digital signature is and what it&rsquo;s used for, let&rsquo;s actually learn how it all works!</p> 
+   
+</body>
+
+</html>

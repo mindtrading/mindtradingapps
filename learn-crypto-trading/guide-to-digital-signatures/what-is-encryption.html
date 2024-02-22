@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>In order to truly grasp the concept of digital signatures, we must&nbsp;<strong>first understand how encryption works</strong>.</p>
+    <p><strong>Encryption</strong>&nbsp;is a key concept in cryptography.</p>
+    <p>In order to understand the process of how transactions are &ldquo;<strong>signed</strong>&ldquo;, which is required to be able to spend your bitcoins (and other cryptocurrencies), you need to be familiar with the concept of encryption and the role it plays.</p>
+    <p>Cryptocurrencies make use of encryption in a neat way, but in order to understand how it works, we must first learn about the&nbsp;<em>conventional</em>&nbsp;use of encryption.</p>
+    <p>In cryptography, encryption is a technique used to protect the privacy of a message by&nbsp;<strong>transforming it into a form</strong>&nbsp;that can ONLY be read by the intended recipient.</p>
+    <p>Everyone else will see it as incoherent&nbsp;<strong>gobbledygook of random characters</strong>.</p>
+    <h2>What is encryption?</h2>
+    <p><strong>Encryption</strong>&nbsp;is the process of transforming data like&nbsp;<em>readable text</em>&nbsp;(referred to as &ldquo;<strong>plaintext</strong>&rdquo;) using an&nbsp;<em>algorithm</em>&nbsp;(called a &ldquo;<strong>cipher</strong>&rdquo;) to make it&nbsp;<em>unreadable</em>&nbsp;to anyone except those possessing special knowledge, usually referred to as a &ldquo;<strong>key</strong>&rdquo;.</p>
+    <p>The result of the process is&nbsp;<strong><em>encrypted</em>&nbsp;text&nbsp;</strong>(referred to as &ldquo;<strong>ciphertext</strong>&rdquo;).</p>
+    <p>In the most basic sense, encryption means using &ldquo;<strong>fancy math</strong>&rdquo; and a set of instructions followed by a computer (an &ldquo;<strong>algorithm</strong>&rdquo;) to disguise and protect data.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/03094916/encryption-protects-data-150x150.png" /></p>
+    <p>For example, if you&rsquo;re sending a message and encrypting it, it is encoded in a format that can&rsquo;t be read or understood by an eavesdropper.</p>
+    <p>These algorithms scramble&nbsp;<strong>plaintext</strong>&nbsp;data into an incomprehensible text known as&nbsp;<strong>ciphertext</strong>, which looks like&nbsp;<strong>gibberish</strong>&nbsp;without the use of a special key that decrypts it.</p>
+    <p>Here&rsquo;s an example of ciphertext that looks like gibberish:</p>
+    <pre>EjQbCXilQmoEssL0tP1395IKLEAwSEhptF6ogdoHGZ1LHgpeon7PFWcADod/ir78LKdc72r17ZzwGCpQbd5XU7Tha7ESBhWe6EzGjxthdGBL+tSsj343yFTp6PgBOcZO</pre>
+    <p>(If you&rsquo;ve ever had one too many drinks, you&rsquo;ve probably typed something similar. 🤣)</p>
+    <p>This means once the data is encrypted using an algorithm, you can&rsquo;t interpret it or guess the original content of the data from the ciphertext. This is how your message is kept secure from unintended, prying eyes.</p>
+    <p>So to summarize:</p>
+    <ul>
+    <li><strong>Encryption</strong>&nbsp;is the process of&nbsp;<em>converting plaintext to encrypted text</em>. This encrypted text is incomprehensible text known as &ldquo;ciphertext&rdquo;. Since encrypted text can&rsquo;t be read by anyone, encrypted text hides the original message from people who aren&rsquo;t supposed to see it.</li>
+    <li><strong>Decryption</strong>&nbsp;is the process of&nbsp;<em>converting encrypted text to plaintex</em>t. Basically,&nbsp;<strong>it is the reverse of encryption</strong>. It is used to decrypt the ciphertext so that only people who are supposed to access and read the message are the only ones who can.</li>
+    </ul>
+    <h2>How does encryption work?</h2>
+    <p>In the illustration below, you can see how the&nbsp;<strong>data changes from plaintext to ciphertext&nbsp;</strong>and&nbsp;<strong>back to plaintext</strong>&nbsp;through the use of encryption and decryption &ldquo;<strong>keys</strong>&ldquo;.</p>
+    <p><img title="How Encryption Works" src="https://bpcdn.co/images/2022/02/23134802/how-encryption-works.png" /></p>
+    <p>The keys can either be&nbsp;<strong>identical</strong>&nbsp;(&ldquo;symmetric&rdquo;) or&nbsp;<strong>unique</strong>&nbsp;(&ldquo;asymmetric&rdquo;).</p>
+    <p>Which means there are two main types of encryption:</p>
+    <ol>
+    <li><strong>Symmetric encryption</strong>: This type of encryption is reciprocal, meaning that the SAME key is used to encrypt and decrypt data.</li>
+    <li><strong>Asymmetric encryption</strong>: This type of encryption uses two SEPARATE keys for encryption and decryption: a private key and a public key.</li>
+    </ol>
+    <p>Basically, if the sender and the recipient of the data use the SAME key to encrypt and decrypt the data, it&rsquo;s called&nbsp;<strong>symmetric encryption.</strong></p>
+    <p>And if the keys are DIFFERENT for encryption and decryption, then it&rsquo;s&nbsp;<strong>asymmetric encryption</strong>.</p>
+    <p>In cryptography, a &ldquo;<strong>key</strong>&rdquo; is just a large number (big, long number with many digits) or string of numbers and letters.</p>
+    <p>A key is used to convert the plaintext into ciphertext and vice versa (ciphertext into plaintext).</p>
+    <p><strong>Cryptocurrencies only make use of asymmetric encryption</strong>, so I&rsquo;m going to focus solely on asymmetric encryption going forward.</p>
+   
+</body>
+
+</html>

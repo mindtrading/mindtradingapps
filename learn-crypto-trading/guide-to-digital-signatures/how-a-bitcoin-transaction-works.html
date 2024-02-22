@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>How do Bitcoin transactions work?</p>
+    <p>A Bitcoin transaction is a transfer of a certain amount of bitcoins from&nbsp;<strong>one address to another address</strong>&nbsp;that is&nbsp;<strong>recorded on the blockchain</strong>.</p>
+    <p>But how does this &ldquo;transfer&rdquo; process actually work?</p>
+    <p>In this lesson, I&rsquo;m going to show you how a Bitcoin transaction works from start to finish.</p>
+    <p>First, we&rsquo;ll look at how a Bitcoin transaction works from a&nbsp;<strong><em>user&rsquo;s</em>&nbsp;perspective</strong>. And afterward, we&rsquo;ll look at how a Bitcoin transaction works from a&nbsp;<strong><em>bird&rsquo;s eye</em>&nbsp;view</strong>.</p>
+    <p>This will help you remember all the new concepts you&rsquo;ve learned in the previous lessons.</p>
+    <p>Are you ready?!</p>
+    <p><img src="https://bpcdn.co/images/2022/08/15170238/start-bitcoin-transaction-360x360.png"  /></p>
+    <p>Let&rsquo;s say that Ironman has 1 bitcoin that she wants to send to Batman.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23202103/ironman-batman-bitcoin-transaction.png" /></p>
+    <h2>From Ironman&rsquo;s Perspective</h2>
+    <p>The first thing that Ironman would do is open his Bitcoin wallet.</p>
+    <p>This could be any type of wallet but in this example, he&rsquo;s using a software wallet that he&rsquo;s installed on his laptop.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17184438/bitcoin-transaction-step-1.png" /></p>
+    <p>The next thing he does is ask Batman for his&nbsp;<strong>Bitcoin address</strong>.</p>
+    <p>This is where Batman wants to&nbsp;<strong>receive his bitcoin</strong>. Batman emails him a Bitcoin address and Ironman copies and pastes it.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17184816/bitcoin-transaction-step-2.png"  /></p>
+    <p>Ironman then enters the&nbsp;<strong>amount of bitcoins</strong>&nbsp;he wants to send Batman.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17185018/bitcoin-transaction-step-3.png" /></p>
+    <p>Since his huge gold-titanium alloy fingers are prone to typos, he double-checks he&rsquo;s entered the correct number.</p>
+    <p>And hits&nbsp;<strong>Send</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17191601/bitcoin-transaction-step-4.png" /></p>
+    <p>The wallet software then asks for the password to confirm the transaction.</p>
+    <p>To send bitcoin, Ironman needs to prove to the Bitcoin network that it&rsquo;s actually&nbsp;<em>him</em>&nbsp;sending the money and that he has ownership of the bitcoin.</p>
+    <p>That&rsquo;s where his&nbsp;<strong>private key</strong>&nbsp;comes in (which is stored in the wallet).</p>
+    <p>After Batman enters the correct password, the wallet software &ldquo;<strong>signs</strong>&rdquo; the transaction using Batman&rsquo;s private key, creating a separate piece of data known as a &ldquo;<strong>digital signature</strong>&ldquo;. (This is all done behind the scenes.)</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17191714/bitcoin-transaction-step-5.png" /></p>
+    <h2>Bitcoin Transaction Behind the Scenes</h2>
+    <p>From here on out, Batman&rsquo;s involvement is done.</p>
+    <p>The wallet software connects to a Bitcoin node and sends the&nbsp;<strong>transaction message,</strong>&nbsp;along with the &ldquo;<strong>digital signature</strong>&rdquo; and&nbsp;<strong>public key</strong>.</p>
+    <p>The node checks to see if the transaction is&nbsp;<strong>valid</strong>:</p>
+    <ul>
+    <li>Does the sender have enough BTC tied to their address to do the transaction?</li>
+    <li>Is the sender authorized to send the BTC?</li>
+    </ul>
+    <p>For example, it checks to make sure that Batman actually has 1 BTC to send. If the transaction passes all checks, the node passes the transaction on to other nodes.</p>
+    <p>By default, nodes don&rsquo;t trust each other, so they will validate the transaction&nbsp;<em>again</em>&nbsp;for themselves.</p>
+    <p>And only if it deems the transaction valid, will they share the transaction to nodes that they&rsquo;re connected to.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17192239/bitcoin-transaction-step-6.png" /></p>
+    <p>If a transaction is deemed valid, it is then stored in a temporary storage area known as the &ldquo;memory pool&rdquo; or &ldquo;<strong>mempool</strong>&ldquo;.</p>
+    <p>At this point, a transaction is considered &ldquo;unconfirmed&rdquo; or &ldquo;<strong>pending</strong>&ldquo;.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17192922/bitcoin-transaction-step-7.png" /></p>
+    <p>Special nodes known as &ldquo;<strong>miners</strong>&rdquo; will package this transaction along with other valid transactions from their mempool into a &ldquo;<strong>block</strong>&ldquo;.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17193323/bitcoin-transaction-step-8.png" /></p>
+    <p>Miners will then compete to be the first to &ldquo;mine&rdquo; their block. This involves trying to find a number that begins with a specific number of zeros.</p>
+    <p>The only way to find this number is by&nbsp;<strong>trial and error</strong>. In other words, making&nbsp;<strong>as many guesses as possible.</strong></p>
+    <p><img src="https://bpcdn.co/images/2022/03/17193932/bitcoin-transaction-step-9.png" /></p>
+    <p>The first miner to guess a correct number means it&rsquo;s the first to &ldquo;mine&rdquo; its block.</p>
+    <p>The moment the miner guesses correctly, it shares its block along with the &ldquo;winning number&rdquo; to other nodes in the Bitcoin network.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17194328/bitcoin-transaction-step-910.png" /></p>
+    <p>Nodes on the Bitcoin network verify that the miner has guessed the correct number and if it is correct, it adds the winning miner&rsquo;s&nbsp;<strong>block</strong>&nbsp;to their copy of the blockchain. And they also send this block to other nodes.</p>
+    <p>Since the block (that holds the transaction) has now been added to the &ldquo;official&rdquo; version of the blockchain, the transaction is now considered &ldquo;<strong>confirmed</strong>&rdquo;</p>
+    <p>Once that block is created and the new transaction is verified and included in that block, the transaction is said to have &ldquo;<strong>one confirmation</strong>&ldquo;.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17195808/bitcoin-transaction-step-11.png" /></p>
+    <h2>From Batman&rsquo;s Perspective</h2>
+    <p>Batman sees that the transaction has been&nbsp;<strong>confirmed</strong>&nbsp;and checks his Bitcoin wallet to see if the bitcoin has been transferred.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/17195930/bitcoin-transaction-step-12.png" /></p>
+    <p>The more blocks that have been built on top of the block with Ironman&rsquo;s transaction, the more &ldquo;confirmed&rdquo; the transaction is on the blockchain.</p>
+    <p>Basically, each block added is considered an &ldquo;<strong>additional confirmation</strong>&ldquo;. Waiting for six confirmations is the current standard for most transactions to be considered secure.</p>
+    <p>And three you have it!</p>
+    <p><strong>One bitcoin has now been transferred from an address owned by Ironman to a new address that&rsquo;s owned by Batman.</strong></p>
+    <p>And unless Ironman or Batman shares their Bitcoin wallet address publicly, nobody will know two famous superheroes were involved in a Bitcoin transaction.</p>
+    <p>All anybody would see is 1 BTC being sent from one address to another, but they wouldn&rsquo;t know who is behind the addresses.</p>
+    <p>As you can see, a lot of the steps in a Bitcoin transaction were done behind the scenes.</p>
+    <p>Once Batman shared his address with Ironman, and Ironman initiated the transaction using his Bitcoin wallet, the rest was handled by computers and software code.</p>
+    <h2>Bird&rsquo;s Eye View of a Bitcoin Transaction</h2>
+    <p>Now let&rsquo;s take a bird&rsquo;s eye view of how a Bitcoin transaction works.</p>
+    <p>Let&rsquo;s assume that Ironman has already entered Batman&rsquo;s address and the amount of bitcoin to send.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/18111505/bitcoin-sent-1.png" /></p>
+    <p>Ironman&rsquo;s wallet connects to a node that broadcasts a message to all the computers (&ldquo;the Bitcoin network&rdquo;) that run a copy of the up-to-date database (&ldquo;Bitcoin&rsquo;s blockchain&rdquo;) that says, effectively, &ldquo;<strong>I want to send 1 bitcoin to Batman</strong>.&rdquo;</p>
+    <p>Ironman has a unique string of letters and numbers called a &ldquo;<strong>private key</strong>&rdquo;. With this private key, Batman&rsquo;s wallet software generates a &ldquo;<strong>digital signature</strong>&rdquo; that ensures that the message is coming from him and not from anyone else.</p>
+    <p>Computers (&ldquo;<strong>full nodes</strong>&rdquo;) in the Bitcoin network can easily confirm if Ironman is the one who actually sent the message by using a different string of letters and number that Ironman provides, called a &ldquo;<strong>public key</strong>&rdquo; to verify this &ldquo;digital signature&rdquo;.</p>
+    <p>They can also easily confirm that Ironman has 1 bitcoin to send because they all have a copy of the current database.</p>
+    <p>All of the nodes are constantly updating each other with the latest information (&ldquo;<strong>transactions</strong>&rdquo;) that is added to the Bitcoin network.</p>
+    <blockquote>
+    <p>A transaction exists as a record of the transfer of bitcoin from one address to another. Transactions are not individually recorded on the blockchain, but are first grouped into blocks.</p>
+    </blockquote>
+    <p>Importantly, at this point, the transaction has only been&nbsp;<em>proposed.&nbsp;</em>No computer has updated its copy of the ledger (&ldquo;<strong>blockchain</strong>&rdquo;) yet.</p>
+    <p>Transactions are initially placed into what amounts to a waiting room (&ldquo;<strong>mempool</strong>&rdquo;), where they sit waiting for confirmation.</p>
+    <blockquote>
+    <p>The mempool (memory pool) is a smaller database of unconfirmed (pending) transactions which every node keeps. All transactions in the mempool are pending, and should not be trusted until they are included in a block.</p>
+    </blockquote>
+    <p>Because the transaction is only being&nbsp;<strong>proposed and not settled</strong>, the system can rapidly relay the message to ensure every participant is aware of it.</p>
+    <p>In the diagram below, Ironman and Batman are represented as&nbsp;<strong>purple</strong>&nbsp;wallets.</p>
+    <p>The&nbsp;<strong>gray</strong>&nbsp;circles represent the computers (&ldquo;full nodes&rdquo;) that are part of the peer-to-peer (P2P) Bitcoin network.</p>
+    <p>The&nbsp;<strong>black</strong>&nbsp;squares represent the &ldquo;blockchain&rdquo;, sequentially updated copies of the ledger, at the time Ironman proposes his transaction to the network.</p>
+    <p>As you can see, identical copies of the blockchain are stored on computers around the world (&ldquo;<strong>full nodes</strong>&rdquo;) that run the Bitcoin software. This design ensures that no single entity is in control of the ledger and makes Bitcoin resistant to being controlled (or shut down) by any government or central authority.</p>
+    <p>All nodes that maintain a complete copy of the blockchain known as &ldquo;<strong>full nodes</strong>&rdquo; would need to be destroyed in order to erase the ledger. As long as the entire ledger exists on&nbsp;<strong>at least one full node</strong>, there will be a record of all Bitcoin transactions throughout history.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23202743/bitcoin-network-transaction-1.png" /></p>
+    <p>Of course, Ironman is not the only one creating a transaction. There are other members of the Avengers sending their bitcoins to other recipients. For example, Captain America could be sending some bitcoins to the Winter Soldier.</p>
+    <p>This is where a special participant in the network enters: &ldquo;<strong>miners</strong>.&rdquo;</p>
+    <p>Miners are computers that are scattered around the world and form a critical part of the Bitcoin network. Their job is to bundle or group together new valid transactions, such as Ironman&rsquo;s, and propose them for settlement.</p>
+    <p>These groups of transactions are called &ldquo;<strong>blocks</strong>,&rdquo; which is where the &ldquo;block&rdquo; in &ldquo;blockchain&rdquo; comes from.</p>
+    <p>A&nbsp;<strong>block</strong>&nbsp;is a collection of&nbsp;<strong>transactions</strong>. Blocks are&nbsp;<em>linked together chronologically</em>&nbsp;to form a &ldquo;chain of blocks&rdquo; or&nbsp;<strong>blockchain</strong>.</p>
+    <p>At any given time, thousands of these computers are competing with each other for the right to create the next block. The competition involves solving a&rdquo;puzzle&rdquo;, and miners can propose a new block only if they solve the current puzzle.</p>
+    <p>This &ldquo;puzzle&rdquo; basically boils down to trying to guess a correct number.&nbsp;The odds of guessing a correct number is about 1 in 6 trillion.</p>
+    <p>So the trick to being the first to find a &ldquo;winning&rdquo; number is to guess as many numbers as possible. This requires a lot of computing power which uses huge amounts of energy.</p>
+    <p>Whoever finds the solution first is entitled to a reward, known as the &ldquo;<strong>block reward</strong>&rdquo;.</p>
+    <p>The block reward was designed to incentivize nodes to participate in mining. Otherwise, there would be no miners since they would not be able to recoup the high cost of the computers and the electricity cost of running them.</p>
+    <p>The&nbsp;<strong>block reward</strong>&nbsp;is made of TWO components:</p>
+    <ol>
+    <li>Newly minted bitcoins</li>
+    <li>Transactions fees (which are paid by the person initiating the transaction like Ironman)</li>
+    </ol>
+    <p>The newly minted bitcoins &ldquo;won&rdquo; by the miner are known as the &ldquo;<strong>block subsidy</strong>&rdquo; and represent the biggest part of the reward. Currently, each new block currently comes with a reward of&nbsp;<strong>6.25 newly minted bitcoins</strong>.</p>
+    <p>Each block contains multiple transactions, And all transactions include a fee, which miners collect.</p>
+    <p>In summary:</p>
+    <pre><strong>Block reward = block subsidy + transaction fees</strong></pre>
+    <p>The block reward is what&nbsp;<strong>incentivizes miners to perform the work necessary to verify transactions and maintain the database</strong>.</p>
+    <blockquote>
+    <p>Every 210,000 blocks, or roughly every four years, the block subsidy is cut in half in an event known as the &ldquo;<strong>halving</strong>&rdquo;. This process will continue until the block subsidy is zero. At that point, miners will only collect transaction fees</p>
+    </blockquote>
+    <p>New blocks are settled on the Bitcoin network roughly every 10 minutes, though the exact time depends on how quickly the &ldquo;puzzle&rdquo; is solved.</p>
+    <p>Today, most mining is done by &ldquo;mining pools,&rdquo; groups of miners who combine their processing power and share the block reward among themselves.</p>
+    <p>This process is shown in the diagram below.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23203632/bitcoin-network-transaction-with-miners.png" /></p>
+    <p>The miners are now represented as&nbsp;<strong>orange</strong>&nbsp;circles.</p>
+    <p>The&nbsp;<strong>blue</strong>&nbsp;square shows the updated ledger that includes a number of new transactions, including Ironman&rsquo;s</p>
+    <p>For now, only&nbsp;<strong>one network participant (the miner who proposed the new block of transactions)</strong>&nbsp;can see the fully updated ledger.</p>
+    <p>All other participants still only see the&nbsp;<em>older</em>&nbsp;blocks, which are depicted in&nbsp;<strong>black</strong>.</p>
+    <p>Because the reward is significant, many miners compete to settle each block of transactions.</p>
+    <p>By design, solving the &ldquo;puzzle&rdquo; is an expensive endeavor since it takes significant computing power and requires a lot of electricity. And knowing which of the thousands of miners will solve the &ldquo;puzzle&rdquo; first is impossible.</p>
+    <p>Once a miner does solve the &ldquo;puzzle&rdquo;(guess a correct number), it can post the solution and propose its block of transactions to the network.</p>
+    <p>What&rsquo;s neat about this approach is that although solving the puzzle is difficult and expensive to solve, checking the result is very easy. And when a miner posts a solution and its block of transactions, other members of the network check the work.</p>
+    <p>If the transactions are valid and the solution to the &ldquo;puzzle&rdquo; is correct,&nbsp;<strong>network participants update their copy of the database to reflect the new transactions</strong>.</p>
+    <p>At that point, Ironman&rsquo;s transaction is considered&nbsp;<strong>settled&nbsp;</strong>or &ldquo;<strong>confirmed</strong>&ldquo;. The 1 bitcoin has moved from Ironman&rsquo;s address to Batman&rsquo;s address and has officially been recorded on the blockchain.</p>
+    <p>This &ldquo;<strong>consensus mechanism</strong>&rdquo; of determining what transactions get permanently recorded and &ldquo;confirmed&rdquo; is the heart of Bitcoin&rsquo;s blockchain design.</p>
+    <p>This process is shown below.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23204159/bitcoin-network-transaction-blockchain-updated.png" /></p>
+    <p>All network participants have now accepted the new block of transactions proposed (<strong>blue</strong>&nbsp;square). As a result, their ledgers are updated and synchronized.</p>
+    <p>Importantly, the competition to settle the next block of transactions depends on including the information from the previous block, which causes the miners to rapidly update their copy of the database and ensures that tampering with a settled block is very difficult.</p>
+    <p>This &ldquo;chaining together of blocks&rdquo; is why this database architecture is called a &ldquo;<strong>blockchain</strong>.&rdquo;</p>
+    <p>The Bitcoin blockchain contains every block since its&nbsp;<strong>inception</strong>, going all the way back to the first block known as the &ldquo;<strong>Genesis Block</strong>.&rdquo;</p>
+    <p>What if the unknown Bitcoin miner submitting a block is a bad actor and proposes an invalid block of transactions that somehow benefits it?</p>
+    <p>Or what if Ironman is malicious, and he&rsquo;s trying to send the same 1 bitcoin to both Spider-Man and Wonder Woman at the same time without anyone noticing?</p>
+    <p>Network participants examine each transaction in each proposed block and reject blocks with invalid transactions. Today, more than 100,000 nodes are independently verifying every single Bitcoin transaction!</p>
+    <p>Because the work of&nbsp;<strong>validating&nbsp;</strong>transactions and ensuring that only valid transactions are settled is trivially easy for network participants but attempting to&nbsp;<strong>settle</strong>&nbsp;transactions is costly, the incentive to even try to defraud the system is minimal.</p>
+    <h2>Summary</h2>
+    <p>Let&rsquo;s summarize all the interactions on the Bitcoin network:</p>
+    <ul>
+    <li>If you want to send bitcoins to another person, you provide the recipient&rsquo;s Bitcoin address, and your wallet will connect to a node to initiate a transaction.</li>
+    <li>The node will verify the transaction, validate it and then broadcast and relay the valid transaction to other nodes and miners. If a transaction violates one of Bitcoin&rsquo;s rules, nodes will automatically reject it.</li>
+    <li>Miners batch these transactions into a &ldquo;candidate block&rdquo; (temporary block) and compete to be the one who gets to publish their block on the blockchain by being the first to guess correctly a solution to a math &ldquo;puzzle&rdquo;.</li>
+    <li>The &ldquo;winning&rdquo; miner gets to publish this temporary block as a permanent block to the blockchain, confirming the transaction (and other transactions in the batch).</li>
+    <li>Nodes receive this block and verify that the miner is following the rules of the network. (If the block violates one of Bitcoin&rsquo;s rules, nodes will automatically reject it.)</li>
+    <li>Whenever a node receives a new block and deems it valid, it relays it to other nodes, so that all nodes (including miners) can remain in sync and maintain identical blockchains.</li>
+    <li>All other miners delete the temporary block they were working on and start on a new &ldquo;candidate block&rdquo; with a new math &ldquo;puzzle&rdquo;.</li>
+    <li>Once the node that the recipient&rsquo;s wallet connects to has received the new block, the recipient&rsquo;s wallet will show an updated balance with the newly received bitcoins.</li>
+    </ul>
+   
+</body>
+
+</html>

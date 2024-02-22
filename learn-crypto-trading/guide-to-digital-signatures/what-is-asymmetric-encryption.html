@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+      body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: #242424;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+         }
+      img {
+         max-width: 100%;
+         height: auto;
+         display: block; /* Ensures proper rendering */
+         margin: 0 auto; /* Center the image */
+      }
+      .pattern-image {
+            width: 70%;
+         }
+   
+      
+       </style>
+</head>
+
+<body>
+   
+    <p>What is asymmetric encryption?</p>
+    <p><strong>Asymmetric encryption</strong>&nbsp;is a type of encryption that uses&nbsp;<strong>two separate but mathematically connected &ldquo;keys&rdquo;</strong>&nbsp;to encrypt and decrypt data and protect it from unauthorized access or use.</p>
+    <p>These keys are known as:</p>
+    <ol>
+    <li>Private key</li>
+    <li>Public key</li>
+    </ol>
+    <p>Together, they&rsquo;re called a &ldquo;<strong>public and private key pair</strong>&rdquo; or just &ldquo;<strong>key pair</strong>&ldquo;.</p>
+    <p>One of the keys, the&nbsp;<strong>public key</strong>, is available for anyone to use. The other key is known as the&nbsp;<strong>private key</strong>.</p>
+    <p>Data&nbsp;<em>encrypted</em>&nbsp;with the public key can ONLY be&nbsp;<em>decrypted</em>&nbsp;with the private key. This is why asymmetric encryption is also known as &ldquo;<strong>public-key cryptography</strong>&rdquo;.</p>
+    <h2>How Asymmetric Encryption Works</h2>
+    <p>When first learning about asymmetric encryption, the following classic example is used:</p>
+    <p>To send encrypted data to someone, you must&nbsp;<em>encrypt</em>&nbsp;the data with that person&rsquo;s&nbsp;<strong>public key</strong>, and the person receiving the data&nbsp;<em>decrypts</em>&nbsp;it with the corresponding&nbsp;<strong>private key</strong>.</p>
+    <p>All the data you send through the internet is in&nbsp;<strong>plaintext</strong>. This means that anyone who gets access to it can see and read it.</p>
+    <p>If you don&rsquo;t want anyone to be able to read your data, what you can do is encrypt the data using the&nbsp;<strong>public key of the recipient&nbsp;</strong>or person you&rsquo;re sending the message to. (This person would send you her public key ahead of time.)</p>
+    <p>Once the data has been converted into ciphertext, you can&rsquo;t decrypt it using the same key.</p>
+    <p>The&nbsp;<strong>ciphertext</strong>&nbsp;can be decrypted only with the corresponding private key, which&nbsp;<strong>only the recipient has</strong>.</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23133902/how-asymmetric-encryption-works-classic-example-2.png" /></p>
+    <p>The illustration above shows how you can freely distribute the public key so that&nbsp;<strong>only you, as the owner of the private key,</strong>&nbsp;can read data that was encrypted with the public key.</p>
+    <p>Since you&rsquo;re encrypting the data with a public key, this is why this type of asymmetric encryption is also known as &ldquo;<strong>public-key encryption</strong>&ldquo;.</p>
+    <p>Obviously, the most popular use of asymmetric encryption is to send confidential messages.</p>
+    <p>If I&rsquo;m sending a love letter to your mom over the internet and I don&rsquo;t want you to be able to read it, I can use asymmetric encryption.</p>
+    <p>I would encrypt the message with your mom&rsquo;s public key, then send the message to her.</p>
+    <p>Being able to unscramble the text back into a readable format would require the private key, which only your mom is in possession of. So only SHE would be able to read the message (not you!) and learn about my true feelings for her.</p>
+    <p><img src="https://bpcdn.co/images/2022/03/08135001/love-yo-mama-360x360.png" /></p>
+    <h2>How Asymmetric Encryption Works in Crypto</h2>
+    <p>Asymmetric encryption was first used to encrypt and decrypt messages. But cryptocurrencies now use this technology in a&nbsp;<strong>slightly different way</strong>.</p>
+    <p>In the classic example of asymmetric encryption, I explained how you use a&nbsp;<strong>public key to encrypt data</strong>&nbsp;and then need the&nbsp;<strong>private key to decrypt the data</strong>.</p>
+    <p>But the&nbsp;<strong>reverse</strong>&nbsp;also works as well!</p>
+    <p>You can also use a<strong><em>&nbsp;private key</em>&nbsp;to encrypt data</strong>&nbsp;and then use the&nbsp;<strong><em>public key</em>&nbsp;to decrypt the data</strong>.</p>
+    <p>And this is how asymmetric encryption is used in cryptocurrencies!</p>
+    <p><img src="https://bpcdn.co/images/2022/02/23141424/how-asymmetric-encryption-works-crypto-example.png" /></p>
+    <p>In crypto, the sender uses his&nbsp;<strong>private key</strong>&nbsp;to encrypt a special message and the recipient uses the s<strong>ender&rsquo;s public key</strong>&nbsp;to decrypt it.</p>
+    <p>It&rsquo;s the REVERSE from the classic example earlier! Instead of using the RECIPIENT&rsquo;S keys, it&rsquo;s the SENDER&rsquo;S keys that are being used.</p>
+    <p>If you wanted to send confidential messages this way, it&rsquo;d be a bad idea since anyone with your public key, which by definition, is&nbsp;<em>public</em>, would be able to decrypt your message and read it.</p>
+    <p>But in Bitcoin (and other cryptocurrencies),&nbsp;<strong>all transactions are made public</strong>&nbsp;so it doesn&rsquo;t need to keep the data private or confidential.</p>
+    <p>It uses asymmetric encryption for a totally different purpose. And it&rsquo;s pretty clever.</p>
+    <p>It uses asymmetric encryption for&nbsp;<strong>authentication</strong>&hellip;.to&nbsp;<strong>prove you are who you say you are</strong>.</p>
+    <p>More specifically, when you want to send some bitcoins to another person, it&rsquo;s used to prove that&nbsp;<strong>YOU are the actual&nbsp;<em>owner</em>&nbsp;of the bitcoins that you wish to send</strong>.</p>
+    <blockquote>
+    <p><strong>Authentication</strong>&nbsp;is the act of proving an assertion, such as the identity of a user. This is in contrast with&nbsp;<strong>identification</strong>, twhich is he act of indicating a person&rsquo;s iidentity. Authentication is the process of&nbsp;<strong>verifying that identity</strong>.</p>
+    </blockquote>
+    <p>If you encrypt (&ldquo;lock&rdquo;) something with your private key, anyone can decrypt it (&ldquo;unlock&rdquo;) with your public key.</p>
+    <p>This serves as proof that you are the original sender of the message because you are the ONLY one who would be able to&nbsp;<em>encrypt</em>&nbsp;the message (because you have the corresponding private key).</p>
+    <p>And since now that your&nbsp;<strong>identity</strong>&nbsp;(as the true owner of the bitcoins you wish to send) has been&nbsp;<strong>authenticated</strong>, you are now&nbsp;<strong>authorized</strong>&nbsp;to send the bitcoins.</p>
+    <blockquote>
+    <p><strong>Identification</strong>&nbsp;means claiming to&nbsp;<em>be</em>&nbsp;someone.&nbsp;<strong>Authentication</strong>&nbsp;means proving that you really are who you claimed to be.&nbsp;<strong>Authorization</strong>&nbsp;means getting access to something due to the previously authenticated identity.</p>
+    </blockquote>
+    <p>Now that we&rsquo;ve learned what asymmetric encryption is, and how it works, let&rsquo;s now put it all together and see how it&rsquo;s used in digital signatures.</p> 
+   
+</body>
+
+</html>
