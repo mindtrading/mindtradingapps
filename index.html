@@ -1,9 +1,333 @@
+    
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+ 
+   .post-body {
+       color: #000;
+     width: 100%;
+     overflow-x: hidden;
+     margin: 0;
+     padding: 0;
+     font-family: "Poppins", sans-serif;
+   }
+   
+ 
+   .post-body img { height: unset; }
+   
+   .post-body h3 { color: #000; }
+   
+   footer h3 { color: #fff; }
+   
+   .Blog .blog-posts .post-outer-container .post-outer {
+        padding-bottom: 0; 
+   }
+   
+   .Blog .blog-posts .post-outer-container,
+   .centered-bottom { 
+       padding: 0;
+     
+   }
+   
+   .page_body .widget {
+       margin-bottom: 0;
+   }
+   
+   .page_body .centered {
+       padding: 0;
+     max-width: unset;
+   }
+   
+   @media screen and (max-width: 800px) {
+     div.widget.Blog .blog-posts .post-outer-container {
+         padding: 0;
+     }
+   }
+   
+   main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 20px;
+   padding-bottom: 120px;
+ }
+ 
+ .app {
+   width: 300px;
+   margin: 20px;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   text-align: center;
+ }
+ 
+ .app img {
+   width: 100px;
+   height: 100px;
+   border-radius: 5%;
+   margin-bottom: 10px;
+ }
+ 
+ .btn img{
+  width: 80%;
+ border-radius: 5px;
+ }
+ 
+ 
+ footer {
+     background: linear-gradient(60deg, rgb(1, 71, 16) 0%, rgb(0, 46, 21) 100%);
+   color: #fff;
+   text-align: center;
+   padding: 10px 0;
+   
+   bottom: 0;
+   width: 100%;
+ }
+ 
+ footer nav ul {
+   list-style-type: none;
+   padding: 0;
+ }
+ 
+ footer nav ul li {
+   display: inline;
+   margin-right: 20px;
+ }
+ 
+ footer nav ul li a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ footer nav ul li a:hover {
+   text-decoration: underline;
+ }
+ h1 {
+   font-family: 'Lato', sans-serif;
+   letter-spacing: 2px;
+   font-size:48px;
+ }
+ .header {
+   position:relative;
+   text-align:center;
+   background: linear-gradient(60deg, rgb(1, 71, 16) 0%, rgb(0, 46, 21) 100%);
+   color:white;
+ }
+ .logo {
+   width:50px;
+   fill:white;
+   padding-right:15px;
+   display:inline-block;
+   vertical-align: middle;
+ }
+ 
+   .header .sub-title p {
+     font-family: 'Lato', sans-serif;
+     letter-spacing: 0px;
+     font-size: 100%;
+ }
+ 
+ 
+ .inner-header {
+   height:120px;
+   width:100%;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .flex { /*Flexbox for containers*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .waves {
+   position:relative;
+   width: 100%;
+   height:15vh;
+   margin-bottom:-7px; /*Fix for safari gap*/
+   min-height:50px;
+   max-height:100px;
+ }
+ 
+ .content {
+   position:relative;
+   height:10vh;
+   text-align:center;
+   background-color: white;
+ }
+ 
+ /* Animation */
+ 
+ .parallax > use {
+   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+ }
+ .parallax > use:nth-child(1) {
+   animation-delay: -2s;
+   animation-duration: 7s;
+ }
+ .parallax > use:nth-child(2) {
+   animation-delay: -3s;
+   animation-duration: 10s;
+ }
+ .parallax > use:nth-child(3) {
+   animation-delay: -4s;
+   animation-duration: 13s;
+ }
+ .parallax > use:nth-child(4) {
+   animation-delay: -5s;
+   animation-duration: 20s;
+ }
+ @keyframes move-forever {
+   0% {
+    transform: translate3d(-90px,0,0);
+   }
+   100% { 
+     transform: translate3d(85px,0,0);
+   }
+ }
+ /*Shrinking for mobile*/
+ @media (max-width: 768px) {
+   .waves {
+     height:20px;
+     min-height:30px;
+   }
+   .content {
+     height:30vh;
+   }
+   h1 {
+     font-size:24px;
+   }
+ }
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+
+   
+    </style>
+</head>
+
+<body>
+            
+    <div class="header">
+
+        <!--Content before waves-->
+        <div class="inner-header flex">
+        <!--Just the logo.. Don't mind this-->
+          
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7TkYAIOoCBqDOIIwDdM3ozzt5dB2XroFoWU_AUxFWMaLQQ_4hyU0nHhbN4EkP1P89S5s1g-1oHgt0_PfF1HkbzMl7Wq52PNPF2luWnENF81dM5nzMCa02mqr-iwTnxeVaq8k_I_oadINxHubh5916naGD36UPgLviwkJIPg08TFDzSisjPaSHKedX-xA/s120/icon-mindtrading.png"/>
+        <h1>MindTradingApp</h1>
+          
+        </div>
+    
+        <div class="sub-title">
+            <p>Take Your Trading Skill To The Next Level !</p>
+
+          </div>
+        
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+  <main>
+
+    <section class="app">
+        <img src="https://play-lh.googleusercontent.com/VXBr5F1M0PW2WcLY8J_CfZu7cvj_hOBVzeuMTYu5DvYjKSbhzKEtbpDc3vkQBrB1TB8=w240-h480-rw" alt="App 2 Icon">
+        <h2>Price Action Strategy</h2>
+        <p>Your beginner's guide to learn price action, price action analysis and price action course</p>
+        <a href="https://play.google.com/store/apps/details?id=com.price.action.strategy" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      <section class="app">
+        <img src="https://play-lh.googleusercontent.com/2Vr3yaPeLfjeI4bjJpiPBpW-KdIwn-wBUFmsKKTPp7wyX8klpJ_g0tCr3R0pDneMu2U=w240-h480-rw" alt="App 2 Icon">
+        <h2>Learn Forex Trading</h2>
+        <p>Download our Forex Trading School and Learn forex trading app now to become a trading expert</p>
+        <a href="https://play.google.com/store/apps/details?id=com.forextradingschool.learnforextrading" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      <section class="app">
+        <img src="https://play-lh.googleusercontent.com/LMKvYlKUenAYSerlK1WXbbwwZEN_DTzFCQlKAHCb4EENLAcxX2S_NI4HH10IICqvqw=w240-h480-rw" alt="App 2 Icon">
+        <h2>Learn Trading & Strategies</h2>
+        <p>Just download our trading learning app and get ready to become a trading master!</p>
+        <a href="https://play.google.com/store/apps/details?id=com.learntotrade.learntrading" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+    <section class="app">
+      <img src="https://play-lh.googleusercontent.com/TEuoH-bLtkF_rAXGRP_ckYC1x8uiE2d6QIePTrGHq96iWJENitVk1gW8qoX5FMSrPA=w240-h480-rw" alt="App 1 Icon">
+      <h2>Most Profitable Chart Patterns</h2>
+      <p>This chart patterns app takes your trading journey to the next level.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.tradingmind.profitablechartpatterns" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+    </section>
+    <section class="app">
+      <img src="https://play-lh.googleusercontent.com/bpYNC9jBp-aLF_DGaJzBwXMRgFTp08cYNZZjpvmW6rXMQTuU7kIJjYDkMdP9cqaqphuy=w240-h480-rw" alt="App 2 Icon">
+      <h2>Candlestick pattern in hindi</h2>
+      <p>This candlestick pattern in hindi app take your trading journey to next level.    </p>
+      <a href="https://play.google.com/store/apps/details?id=com.candlepatternhindi.candlestickpatterninhindi" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+    </section>
+    <section class="app">
+        <img src="https://play-lh.googleusercontent.com/tm9PKueAN0Fhcwx9kdQiRvv9UZs7Lp6SWjc_9T2C1fSmtrAVANj0UTjMfM-sAv4KMLE=w240-h480-rw" alt="App 2 Icon">
+        <h2>Chart Pattern hindi</h2>
+        <p>Download our chart pattern hindi pdf app today and take your trading to the next level! </p>
+        <a href="https://play.google.com/store/apps/details?id=com.chartpatternhindipdf.tradingcandlecharthindi" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      <section class="app">
+        <img src="https://play-lh.googleusercontent.com/08IwEvhwEd9gdnazfFQxk1WjIzMzod3T8TXQNVRXFY1l6tcED7KzhpM1YtEZiOZIHA=w240-h480-rw" alt="App 2 Icon">
+        <h2>Japanese candlestick pattern</h2>
+        <p>Learn to become an expert trader using Japanese candlestick pattern</p>
+        <a href="https://play.google.com/store/apps/details?id=com.japanesecandlestick.pattern" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      
+      
+      <section class="app">
+        <img src="https://play-lh.googleusercontent.com/du5i7JPf3NvyZH4fyWek3StvxHmq2ixZ5-mrz1V3S8VNU_xwieqZkXiQFBsPpfceDoU=w240-h480-rw" alt="App 2 Icon">
+        <h2>Candlestick pattern in bengali</h2>
+        <p>This candlestick pattern in bengali app take your trading journey to next level.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.candlestick.banglacandlestickpattern" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      <section class="app">
+        <img src="https://play-lh.googleusercontent.com/wg1DggaEKkR8bucunHCPWw0MYlx_eEvohqix94SpGtKb-YNzQVlnILblqAfsKJpqXeM=w240-h480-rw" alt="App 2 Icon">
+        <h2>Learn Crypto Trading</h2>
+        <p>Learn Crypto Trading - Your beginner's guide to learn cryptocurrency trading offline</p>
+        <a href="https://play.google.com/store/apps/details?id=com.offline.learn.crypto.trading" class="btn"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsEfd-m9Yo4HdxsFXuJEhIg8_gkq7-ZPsAftNsYUg7a5BW3TsNiI-SAO3s_pHK7OdSBJQBFiLPu5JwEi269ibFU9jsRbePKnJoUIUm7YAhSdJyqkQQOAKozhk90g8PQqWQHZoojRugtQXFYf4l7nVPeJOY1-6AHoss-wJdt0KnrdtvuUIq_15DxfvJjvE/s646/google-play-badge.webp"/></a>
+      </section>
+
+      
+
+
+  </main>
+  <footer>
+    <nav>
+      <ul>
+         <li><a href="https://mindtrading.blogspot.com/p/privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="https://mindtrading.blogspot.com/p/about-us.html">About Us</a></li>
+        <li><a href="https://mindtrading.blogspot.com/p/contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 MindTradingApp</p>
+    <p><a href="https://www.instagram.com/mindtradingapp/"> <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS1YHp2XsQXp5r8A5DgyYHBtt-H9c_fwgou9STyTALolvYUhRXtAvYP-N3FcJqUdC-ISWR-Rrq14w_29qVB5MmtrI81KEwxe4YGOGtPBAO9A3ovM3cBt9tvAF0AqR6IkmpK-83fZNaiifsaZbxeKroJYYVfK02aS_itdOEoxnIvYWU2pJlCXq5-eK-FGc/s216/insta-logo.png" alt=""></a></p>
+
+  </footer>
+
 
 </body>
+
 </html>
