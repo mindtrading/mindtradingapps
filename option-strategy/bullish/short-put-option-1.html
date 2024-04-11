@@ -1,0 +1,115 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/47.webp"/>
+         <p>Short Put is the sale of a Put option. This position gives the obligation to the option seller to buy an underlying security at an agreed-upon price until a specific future date to the option holder if he/she wishes to exercise the option. When writing a Put option, the writer does not expect the price of the underlying to decrease below the strike price. Short Puts are simple and short-term investments, the expiration should be one month or less. If share prices fall and the option is exercised by the holder, the writer must buy the underlying products. It is recommended to sell OTM Short Put options. It should be applied when it is expected that the market prices are increasing or stagnating.</p>
+         <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Basic strategy</li>
+         </ul>
+
+         <h2>Opening the Position</h2>
+    <p>Sell a Put option with a strike price lower than the current market price of the underlying security.</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Is the market trend actually increasing or stagnating after the option purchase?</li>
+        <li>Write a Put option with lower strike price than the current price of the underlying security (OTM Put). The option should be sold only if the writer thinks that the share price won’t decrease below the strike price.</li>
+        <li>Write a Put option with a strike price close to the current price of the underlying security (ATM Put) if there is no upcoming earnings. The option should be sold only if the writer thinks that the share price will rather increase than fall.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>The writer hopes that the price of the underlying will increase or stagnate, so the options will expire worthless and he can keep the premium.</li>
+        <li>If the share price decreases below the Stop Loss level, the writer can leave the position by buying back the sold option.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Strike price - premium. Increasing as the prices fall.</li>
+        <li>Maximum profit: Limited. The profit cannot be bigger than the premium received.</li>
+        <li>Time decay: Time decay has a positive effect on the Short Put. The closer the option to expiration the more it increases its value. This process accelerates over time, which may be further strengthened by a decrease in the underlying’s volatility.</li>
+        <li>Breakeven point: Strike price - premium.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>If implemented correctly and the market is bullish or neutral, the position can be profitable.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Unlimited potential loss if the share price decreases.</li>
+        <li>Highly risky strategy, not recommended for beginners.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the option or wait for expiry worthless. In the latter case, the writer can keep the option premium.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Determine the value for the Stop Loss based on the underlying security.</p>
+
+    <h2>Example</h2>
+    <img src="img/48.webp"/>
+    <p>Short Put (naked) strategy example</p>
+    <ul>
+        <li>ABCD is traded for $27.35 on 12.05.2017. The investor sells a Short Put option which has a strike price of $25.00, expires in June 2017. and costs $1.05 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $27.35</li>
+        <li>Premium (Put): P= $1.05</li>
+        <li>Strike price: K= $25.00</li>
+        <li>Credit: Cr</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Breakeven point: BEP</li>
+    </ul>
+    <ul>
+        <li>Credit: Cr = P</li>
+        <li>Maximum loss (risk): R = K - P</li>
+        <li>Maximum profit: Pr = P</li>
+        <li>Breakeven point: BEP = K - P</li>
+    </ul>
+    <ul>
+        <li>Cr = $1.05</li>
+        <li>R = $23.95</li>
+        <li>Pr = $1.05</li>
+        <li>BEP = $23.95</li>
+    </ul>
+
+
+</body>
+
+</html>

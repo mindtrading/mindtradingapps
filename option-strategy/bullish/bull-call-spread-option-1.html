@@ -1,0 +1,110 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/3.webp"/>
+         <p>Bull Call Spread is a spread strategy, because it consists of a Long and a Short position in a same time. It is also a vertical strategy, because the two positions have different strike prices. The trader believes that the probability of a share price increase is bigger than the probability of a decrease. The investor speculates on increasing market prices. This strategy should be used when the trader is not totally sure about the increasing direction of the market. A lower strike Long Call is bought (longer expiration than 6 months), then a higher strike (OTM) Short Call is written (same expiration). The Long option’s cost and delta are higher than the Short OTM Call’s. The investment is characterised by net debit, because the sold options cost more than the purchased options. The strategy only generates profit when the share prices are increasing. The strategy can be easily profitable when implemented correctly. It can even generate a 400% return. When the share price if below the strike price of the Long Call, the position will generate maximum losses. When the share price is above the Short Call’s strike price, the position will generate maximum profits. The sold options are limited from above and it reduces the initial costs. It is a long-term investment; the maturity is at least 6 months.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Vertical spread</li>
+        </ul>
+        <h3>Opening the position</h3>
+        <img src="img/5.webp"/>
+        <p>Bull Call Spread Option Positions</p>
+
+        <ul>
+           <li> Buy lower strike Call options.</li>
+           <li> Sell higher strike Call options (same quantity and expiration as the other Call options’).</li>
+        </ul>
+        <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <p>Make sure the trend is ascending.</p>
+    <h3>Exit:</h3>
+    <p>When the share price is below the Stop Loss, sell the Long Call option and close the positions (if it is not possible to hold naked Call options).</p>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. Premium (Long Call) - Premium (Short Call) = Net debit.</li>
+        <li>Maximum profit: Limited. Difference between the strikes - Net debit.</li>
+        <li>Time decay: Time decay has a positive effect on the value when the position is profitable, otherwise it has a negative effect. If the market is between the two strikes, then the time value is not changing rapidly. The profit is the increasing the fastest with time close to higher strike. The loss is the increasing the fastest with time close to lower strike.</li>
+        <li>Breakeven point: Lower strike price - Net debit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The risks, the costs, and the breakeven point is lower than in the case of a Long Call.</li>
+        <li>Limited from below.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+       <li> It can result higher returns with higher strike prices, but the share prices must increase above those high strikes.</li>
+        <li>In case of increasing share prices, it has an upper limit.</li>
+    </ul>
+    
+
+   
+
+    <h2>Closing the Position</h2>
+    <h3>Closing the position:</h3>
+    <p> Buy back the Short options and sell the Long options.</p>
+    <h3>Mitigation of losses:</h3>
+    <p>Close the position the above-mentioned way.</p>
+    <h3>Example</h3>
+    <img src="img/6.webp"/>
+    <p>Bull Call Spread strategy example</p>
+    <p>ABCD is traded for $26.00 on 13.05.2017. The investor buys a Long Call option which has a strike price of $27.50, expires in January 2018. and costs $1.40 (premium). Then he sells a Short Call option which has a strike price of $32.50, expires in January 2018. and costs $0.25 (premium).</p>
+    <p>Price of the underlying (share price): S= $26.00<br>
+        Premium (Long Call): LC= $1.40<br>
+        Premium (Short Call): SC= $0.25<br>
+        Strike price (Long Call): KL= $27.50<br>
+        Strike price (Short Call): KS= $32.50<br>
+        Debit: D<br>
+        Maximum loss: R<br>
+        Maximum profit: Pr<br>
+        Breakeven point: BEP<br>
+        
+        Net debit: ND = LC - SC<br>
+        Maximum loss (risk): R = ND<br>
+        Maximum profit: Pr = (KS - KL) - ND<br>
+        Breakeven point: BEP = KS + ND<br>
+        
+        ND = $1.15<br>
+        R = $1.15<br>
+        Pr = $3.85<br>
+        BEP = $28.65<br></p>
+
+</body>
+
+</html>

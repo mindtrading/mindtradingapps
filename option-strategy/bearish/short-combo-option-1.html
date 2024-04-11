@@ -1,0 +1,99 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/25.webp"/>
+         <p>Short Combo is the opposite of Long Combo strategy. Short Combo is a synthetic strategy, because it simulates a share-selling situation. To establish the position, the trader buys lower strike Put options and sells higher strike Call options. This investment is short-term and is usually combined with other strategies. The direction of the market is bearish. The strategy is a net credit investment. The loss is unlimited when share prices are increasing.
+         </p>
+        <ul>
+            <li>Type: Bearish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Unlimited</li>
+            <li>Strategy: Volatility strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/26.webp"/>
+    <p>Short Combo Option Positions</p>
+    <ul>
+        <li>Buy lower strike (OTM) Put options.</li>
+        <li>Sell higher strike (OTM) Call options (same expiration as the Put options’).</li>
+    </ul>
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Make sure the trend is descending.</li>
+    </ul>
+    <h4>Exit:</h4>
+    <ul>
+        <li>The strategy should simulate the sale of an underlying security.</li>
+        <li>The portfolio should never contain a Long option in the last month before expiration.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Unlimited.</li>
+        <li>Maximum profit: Lower strike price + Net Credit (or - Net debit).</li>
+        <li>Time decay: Time decay has a positive effect because of the Short Call, a negative effect because of the Long Put.</li>
+        <li>Breakeven point: Lower strike price (in case of net debit) - Net debit. Higher strike price (in case of net credit) + Net credit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The position is similar to a normal Short position when selling shares, but the cost is almost 0.</li>
+        <li>Unlimited profit in theory. In practice, the profit is limited because the share price cannot be lower than 0.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>The potential loss is unlimited when share prices are increasing.</li>
+        <li>High Bid/Offer Spread has a negative influence on the position.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the Put options and buy back the Call options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Sell the position when the share price crosses the Stop Loss limit.</p>
+
+    <h2>Example</h2>
+    <img src="img/27.webp"/>
+    <p>Short Combo strategy example with ABCD traded for $35.10 on 02. 06. 2017.  The investor buys a Long Put option which has a strike price of $30.00, expires in August 2017. and costs $0.90 (premium). Then, he sells a Short Call option which has a strike price of $40.00, expires in August 2017. and costs $1.00 (premium).</p>
+    <ul>
+        <li>Net credit: $0.10</li>
+        <li>Maximum loss (risk): Unlimited</li>
+        <li>Maximum profit: $30.10</li>
+        <li>Breakeven point: $40.10</li>
+    </ul>
+
+</body>
+
+</html>

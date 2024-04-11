@@ -1,0 +1,123 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/49.webp"/>
+         <p>Strap option is also version of the Long Straddle strategy. The difference here is an extra Long Call option. All components are ATM. Thus, trading Strip is more expensive and riskier than trading Long Straddle. The lower breakeven point is the strike price minus net debit. The net debit is higher than for the Long Straddle, because there are more Long Calls. The direction of the market is neutral/decreasing. The investor speculates on increasing volatility. The strategy is a net debit investment. The maximum loss is the amount of net debit, and the maximum profit is unlimited. The optimal maturity is three months. If the share prices aren’t moving, the position should be sold one month before expiration.</p>
+         <ul>
+            <li>Type: Neutral, Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Volatility strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/50.webp"/>
+         <p>Strap Option Positions</p>
+    <p>Strap Option Positions involve buying one (ATM) Put option and two (ATM) Call options with the same expiration and strike price as the Put option’s.</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Look for shares showing pennant or similar shapes on charts.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>When share prices are increasing, sell the Call option.</li>
+        <li>When share prices are decreasing, sell the Put option.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Net debit.</li>
+        <li>Maximum profit: Unlimited.</li>
+        <li>Time decay: Time decay has a negative effect on the value.</li>
+        <li>Lower breakeven point: Strike price - Net debit.</li>
+        <li>Upper breakeven point: Strike price + (Net debit / 2).</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Profit is generated when the share price changes in any direction.</li>
+        <li>Limited loss.</li>
+        <li>The profit is potentially unlimited when share prices are moving.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Expensive.</li>
+        <li>The share price must change significantly to generate profit.</li>
+        <li>High Bid/Offer spread can have a negative influence on the position.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the Call and Put options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Sell the position when there is one month left until expiry.</p>
+
+    <h2>Example</h2>
+    <img src="img/51.webp"/>
+    <p>Strap strategy example</p>
+    <ul>
+        <li>ABCD is traded for $25.37 on 17. 05. 2017. The investor buys a Long Put option which has a strike price of $25.00, expires in August 2017. and costs $1.70 (premium). Then, buys 2 Long Call options which have a strike price of $25.00, expire in August 2017. and cost $2.40 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $25.37</li>
+        <li>Premium (Long Put): P= $1.70</li>
+        <li>Premium (Long Call): C= $2.40</li>
+        <li>Strike price (Long Put): KP= $25.00</li>
+        <li>Strike price (Long Call): KC= $25.00</li>
+        <li>Net debit: ND</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Lower breakeven point: LBEP</li>
+        <li>Upper breakeven point: UBEP</li>
+    </ul>
+    <ul>
+        <li>Net debit: ND = P + (2*C)</li>
+        <li>Maximum loss (risk): R = ND</li>
+        <li>Maximum profit: Pr = unlimited</li>
+        <li>Lower breakeven point: LBEP = K - ND, where K = KP = KC</li>
+        <li>Upper breakeven point: UBEP = K + (ND/2)</li>
+    </ul>
+    <ul>
+        <li>ND = $6.50</li>
+        <li>R = $6.50</li>
+        <li>Pr = unlimited</li>
+        <li>LBEP = $18.50</li>
+        <li>UBEP = $28.25</li>
+    </ul>
+
+
+</body>
+
+</html>

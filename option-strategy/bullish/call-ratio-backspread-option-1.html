@@ -1,0 +1,112 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/16.webp"/>
+         <p>Call Ratio Backspread generates profit when share prices are rapidly increasing. Furthermore, increased volatility is useful for the position. Stagnating prices are unbeneficial for the strategy. The strategy consists of Short and Long Call options with the same expiration, but different quantities. Typically, the ratio of the purchased/sold Call options is 2:1 or 3:2. Thus, it is a net credit investment. The potential profit is unlimited. The direction of the market is (aggressively) increasing. The trader speculates on high volatility shares with explosively increasing prices. The goal of the strategy is to minimise risks and costs. It is a long-term investment; the expiration is at least 6 months.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Ratio spread</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/17.webp"/>
+        <p>Call Ratio Backspread Option Position 1 or</p>
+        <img src="img/18.webp"/>
+    <p>Call Ratio Backspread Option Position 2</p>
+
+    <ul>
+        <li>Sell one or two lower strike Call options.</li>
+        <li>Buy two or three higher strike Call options.</li>
+        <li>The goal is to push down the initial costs to 0 or push below the amount of the net credit.</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <p>Make sure the trend is ascending.</p>
+    <h3>Exit:</h3>
+    <ul>
+        <li>When the share price is below the Stop Loss, close the positions.</li>
+        <li>Close the positions at least one month before the expiry date.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Difference between strike prices - Net credit (or + Net debit).</li>
+        <li>Maximum profit: Unlimited.</li>
+        <li>Time decay: Time usually has a negative effect on the value.</li>
+        <li>Lower breakeven point: Lower strike price + Net Credit.</li>
+        <li>Upper breakeven point: Higher strike price + (Difference between strike prices * Short Call quantity) / (Long Call quantity - Short Call quantity) - Net Credit (or + Net debit).</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Low costs.</li>
+        <li>Limited loss.</li>
+        <li>The profit is unlimited if the share prices increase.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Stagnating share prices cause increasing risks.</li>
+        <li>Complexity of the strategy.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short options and sell the Long options.</p>
+    <p>Mitigation of losses: Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/19.webp"/>
+    <p>Call Ratio Backspread strategy example</p>
+    <ul>
+        <li>ABCD is traded for $25.37 on 25.05.2017.</li>
+        <li>The investor sells a Short Call option which has a strike price of $25.00, expires in January 2018, and costs $4.90 (premium).</li>
+        <li>Then, he buys 2 Long Call options which have a strike price of $30.00, expire in January 2018, and cost $2.40 (premium) each.</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $27.65</li>
+        <li>Premium (Short Call): SC= $4.90</li>
+        <li>Premium (Long Calls): LC= $2.40 each</li>
+        <li>Strike price (Short Call): KS= $25.00</li>
+        <li>Strike price (Long Calls): KL= $30.00</li>
+        <li>Net credit: NCr= $0.10</li>
+        <li>Maximum loss (risk): R= $4.90</li>
+        <li>Maximum profit: Unlimited</li>
+        <li>Lower breakeven point: LBEP= $26.10</li>
+        <li>Upper breakeven point: UBEP= $34.90</li>
+    </ul>
+
+</body>
+
+</html>

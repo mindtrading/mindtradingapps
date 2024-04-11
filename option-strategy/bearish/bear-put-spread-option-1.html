@@ -1,0 +1,110 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/4.webp"/>
+         <p>Bear Put Spread is a spread strategy, because it consists of a Long and a Short position in a same time. It is also a vertical strategy, because the two positions have different strike prices. The investor expects the market prices to rather decrease than increase. Thus, the investor speculates on decreasing market pricing. This strategy should be used when the trader is not totally sure about the decreasing direction of the market. Then, he will sell a long-maturity, lower strike Put option and buy a higher strike OTM Put option with the same expiration. Compared to a simple Long Put option, Bear Put Spread has lower costs and Upper breakeven point. Profit will only be generated when the share prices actually decrease. When the share price is above strike price (Long Put), the position will be potentially lossmaking. When the share price is around the strike price of the Short Put, the profit will be maximised. The Long options are limited from below, the Short options are decreasing the initial costs. The investment is characterised by net debit, because the purchased options cost more than the sold OTM options. The strategy can be easily profitable when implemented correctly. It can even generate a 400% return. It is a long-term investment; the expiration is at least 6 months.</p>
+         <ul>
+            <li>Type: Bearish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Vertical spread</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/5.webp"/>
+    <p>Bear Put Spread Option Positions involve purchasing lower strike Put options and selling higher strike Put options (same quantity and expiration as the other Put options’).</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Make sure the trend is inclining.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>When the share price is above the Stop Loss, sell the Long Put option and close the positions (if it is not possible to hold naked Put options).</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. Premium (Long Put) - Premium (Short Put) = Net debit.</li>
+        <li>Maximum profit: Limited. Difference between the strikes - Net debit.</li>
+        <li>Time decay: Time decay has a positive effect on the value when the position is profitable, otherwise it has a negative effect. If the market is between the two strikes, then the time value is not changing rapidly. The profit increases the fastest with time close to the lower strike. The loss increases the fastest with time close to the higher strike.</li>
+        <li>Breakeven point: Strike price (Short Put) - Net debit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The risks, the costs, and the breakeven point are lower than in the case of a Long Put.</li>
+        <li>Limited loss.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>It can result in higher returns with lower strike prices, but the share prices must fall below those low strikes.</li>
+        <li>In case of decreasing share prices, it has an upper limit.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short options and sell the Long Put.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/6.webp"/>
+    <p>Bear Put Spread strategy example</p>
+    <ul>
+        <li>ABCD is traded for $26.00 on 13.05.2017. The investor sells a Short Put option which has a strike price of $20.00, expires in January 2018, and costs $0.35 (premium). Then he buys a Long Put option which has a strike price of $25.00, expires in January 2018, and costs $1.80 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $26.00</li>
+        <li>Premium (Long Put): LP= $1.80</li>
+        <li>Premium (Short Put): SP= $0.35</li>
+        <li>Strike price (Long Put): KL= $25.00</li>
+        <li>Strike price (Short Put): KS= $20.00</li>
+        <li>Net debit: D = LP - SP</li>
+        <li>Maximum loss (risk): R = D</li>
+        <li>Maximum profit: Pr = (KS - KL) - D</li>
+        <li>Breakeven point: BEP = KS - D</li>
+    </ul>
+    <ul>
+        <li>Net Debit (D) = $1.45</li>
+        <li>Maximum Loss (R) = $1.45</li>
+        <li>Maximum Profit (Pr) = $3.55</li>
+        <li>Breakeven (BEP) = $23.55</li>
+    </ul>
+
+         
+         
+        </body>
+
+</html>

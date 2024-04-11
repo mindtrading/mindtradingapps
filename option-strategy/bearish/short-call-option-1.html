@@ -1,0 +1,94 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/23.webp"/>
+         <p>Short Call is the sale of a Call option. This position gives the obligation to the option seller (writer) to sell an underlying security at an agreed-upon price until a future date to the option holder if he/she wishes to exercise the option. When writing a Call option, the writer does not expect the price of the underlying security to increase above the strike price. Despite its simplicity, it is considered to be highly risky, because the position has an unlimited risk in case of an increase in the market prices. Therefore, to write Call options is only recommended to experts. The expiration should be one month or less. It should be applied when it is expected that the market is not increasing.</p>
+         <ul>
+            <li>Type: Bearish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Unlimited</li>
+            <li>Strategy: Basic strategy, Income strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+    <p>Sell a Call option with a strike price higher than the current market price of the underlying security.</p>
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Write a Call option with higher strike price than the current price of the underlying security (OTM Call). The option should be sold only if the writer thinks that the share price won’t increase above the strike price.</li>
+        <li>Write a Call option with a strike price close to the current price of the underlying security (ATM Call). The option should be sold only if the writer thinks that the share price will rather fall than increase.</li>
+    </ul>
+    <h4>Exit:</h4>
+    <ul>
+        <li>The writer hopes that the price of the underlying security will decrease or stagnate, so the options will expire worthless and he can keep the premium.</li>
+        <li>If the share price increases above the Stop Loss level, the writer can leave the position by buying back the sold option.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Increasing as the market rises. It might even be unlimited.</li>
+        <li>Maximum profit: Limited. The profit cannot be bigger than the premium received.</li>
+        <li>Time decay: Time decay has a positive effect on the Short Call. The closer the option to expiration the more it increases its value. This process accelerates over time, which may be further strengthened by a decrease in the underlying securities volatility.</li>
+        <li>Breakeven point: Strike price + premium.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>If implemented correctly and the market is bearish or neutral, the position can be profitable.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Unlimited potential loss if the share price increases.</li>
+        <li>Highly risky strategy, not recommended for beginners.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the option or wait for expiry worthless. In the latter case, the writer can keep the option premium.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Determine the value for the Stop Loss based on the underlying security.</p>
+
+    <h2>Example</h2>
+    <img src="img/24.webp"/>
+    <p>Short Call strategy example with ABCD traded for $28.20 on 19.02.2017. The investor sells a Short Call option which has a strike price of $30.00, expires in January 2018, and costs $2.50 (premium).</p>
+    <ul>
+        <li>Credit: $2.50</li>
+        <li>Maximum loss (risk): Unlimited</li>
+        <li>Maximum profit: $2.50</li>
+        <li>Breakeven point: $32.50</li>
+    </ul>
+
+
+</body>
+
+</html>

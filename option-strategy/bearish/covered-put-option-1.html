@@ -1,0 +1,101 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/10.webp"/>
+         <p>A Covered Put option is the opposite of a Covered Call. The main idea is to short shares and sell a short term OTM Put option. The direction of the market is neutral/decreasing, the investor expects constant decrease on the market. The strategy is a net credit investment. The Put options are sold on a monthly basis. If the share stays below the strike price, the option will be exercised and the investor buys the shares. If the price stagnates, the investor can keep the premium received for the Put option. Therefore, a Covered Put position is the sale of the share and the agreement to buy the share if the option is exercised.
+        </p>
+        <ul>
+            <li>Type: Neutral, Bearish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Unlimited</li>
+            <li>Strategy: Income strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/11.webp"/>
+        <p>Covered Put Option Positions involve selling the share and selling the out-of-the-money (OTM) Put option.</p>
+    
+        <h2>Steps</h2>
+        <h3>Entry:</h3>
+        <ul>
+            <li>Make sure the trend is inclining or stagnating at a certain level.</li>
+        </ul>
+        <h3>Exit:</h3>
+        <ul>
+            <li>If the shares close above the strike price at expiry, the option will be exercised. The investor will have to buy back the shares at the strike price, with the profit being the received premium minus the decrease in the share price.</li>
+            <li>If the share price is above the strike price but below the Stop Loss at expiration, the Short Put option should be left to expire worthless, and the received premium should be kept. Then, another Put option can be sold the next month.</li>
+            <li>If the share price is below the Stop Loss at expiration, either the shares should be bought back or the trader should start trading in the opposite position.</li>
+        </ul>
+    
+        <h2>Basic Characteristics</h2>
+        <ul>
+            <li>Maximum loss: Unlimited.</li>
+            <li>Maximum profit: (Strike price - share price) + premium.</li>
+            <li>Time decay: Time decay has a positive effect on the value. If shares do not reach the strike price, the investor can keep the whole premium and decrease their costs.</li>
+            <li>Breakeven point: Strike price + premium.</li>
+        </ul>
+    
+        <h2>Advantages and Disadvantages</h2>
+        <h3>Advantages:</h3>
+        <ul>
+            <li>Generates monthly profit.</li>
+            <li>The risk is lower than selling the shares.</li>
+            <li>The investor can profit from share prices moving within given limits as well.</li>
+        </ul>
+        <h3>Disadvantages:</h3>
+        <ul>
+            <li>Said to be expensive because it involves high cash payment.</li>
+            <li>The increase is limited when share prices fall.</li>
+            <li>The decrease is unlimited if share prices increase.</li>
+        </ul>
+    
+        <h2>Closing the Position</h2>
+        <p>When the share price is below the strike price, the option will be exercised, generating a limited profit.</p>
+        <p>When the share price is above the strike price, the position will be loss-making. In such cases, the investor should either buy back the shares or buy back the shares and the Short Put option.</p>
+    
+        <h2>Mitigation of Losses</h2>
+        <p>Either buy back the shares or buy back the shares and the Short Put option.</p>
+    
+        <h2>Example</h2>
+        <img src="img/12.webp"/>
+        <p>Covered Put strategy example with ABCD traded at $50.00 on 25.02.2017. The investor sells a share for $49.75 and sells a Short Put option at $45.00 strike for $1.50 premium.</p>
+        <ul>
+            <li>Credit: $51.25</li>
+            <li>Maximum loss (risk): Unlimited</li>
+            <li>Maximum profit: $6.25</li>
+            <li>Breakeven point: $51.25</li>
+        </ul>
+
+
+</body>
+
+</html>

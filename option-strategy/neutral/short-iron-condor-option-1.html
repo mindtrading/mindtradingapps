@@ -1,0 +1,106 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/46.webp"/>
+         <p>Short Iron Condor option is the opposite of Long Iron Condor. The strategy is a net debit investment. Condors in the Short Iron Condor option are almost similar to the shorted butterflies (Short Iron Butterfly), but the two middle components have different strike prices. Despite the net debit investment, it is not popular, because its return is smaller than a Straddle’s or a Strangle’s return. It is the combination of the Bull Put Spread and the Bear Call Spread. The strike of the higher Put is lower than the strike of the lower Call. This makes the options form a condor shape. The investor can profit from shares with large price fluctuations. The disadvantage of this strategy is the limited profit and the maximum loss when share prices are stagnating. The direction of the market is neutral. The investor speculates on shares with high volatility. This strategy is relatively cheap and has a limited return. The investor believes that the underlying shares have high volatility. The expiration should be at least three months. The position should be closed one month before expiry.
+         </p>
+         <ul>
+            <li>Type: Neutral</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Volatility strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/47.webp"/>
+    <p>Short Iron Condor Option Positions</p>
+    <ul>
+        <li>Sell a lower strike (OTM) Put option.</li>
+        <li>Buy a middle lower strike (OTM) Put option.</li>
+        <li>Buy a middle higher strike (OTM) Call option.</li>
+        <li>Sell a higher strike (OTM) Call option.</li>
+    </ul>
+
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Look for shares showing pennant or similar shapes on charts.</li>
+    </ul>
+
+    <h3>Exit:</h3>
+    <ul>
+        <li>The position can be closed only before expiration.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Net debit.</li>
+        <li>Maximum profit: Difference between consecutive strike prices - Net debit.</li>
+        <li>Time decay: Time usually has a negative effect on the value. However, when the position is making profit, time can have a positive effect as well.</li>
+        <li>Lower breakeven point: Long Put’s strike price - Net debit.</li>
+        <li>Upper breakeven point: Long Call’s strike price + Net debit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The investor can profit from share prices moving within given limits.</li>
+        <li>Limited loss.</li>
+        <li>High possible return when share prices moving explosively.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Profit can be increased only if the strike prices are farther from each other.</li>
+        <li>Potentially higher profit is only possible close to expiration.</li>
+        <li>The potential loss is much larger than the potential profit.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short options and sell the Long options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/48.webp"/>
+    <p>Short Iron Condor strategy example with ABCD traded for $52.87 on 17.05.2017. The investor sells a Short Put option which has a strike price of $45.00, expires in August 2017, and costs $1.88 (premium). Then, he buys a Long Put option which has a strike price of $50.00, expires in August 2017, and costs $3.73 (premium). Then, buys a Long Call option which has a strike price of $55.00, expires in August 2017, and costs $4.70 (premium). Finally, he sells a Short Call option which has a strike price of $60.00, expires in August 2017, and costs $3.02 (premium).</p>
+    <ul>
+        <li>Net debit: $3.53</li>
+        <li>Maximum loss: $3.53</li>
+        <li>Maximum profit: $1.47</li>
+        <li>Lower breakeven point: $46.47</li>
+        <li>Upper breakeven point: $58.53</li>
+    </ul>
+
+</body>
+
+</html>

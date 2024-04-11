@@ -1,0 +1,115 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/1.webp"/>
+         <p>Bear Call Ladder is a version of Bear Call Spread, but there is an extra Short Call involved with a higher strike price. Consequently, increasing share prices can result a potential unlimited profit. When the share price is above long strike price, the position will be potentially unlimited profitmaking. The profit is maximised when the share price is under the lower and the middle strike prices. Because of the extra component, there are both lower and Upper breakeven points. The direction of the market is increasing. The result of the investment is the function of the share price and the lowest component’s value. The strategy is a net credit investment, because more Call options are bought than sold. This makes the risks limited. The investment is medium- or long-term. Then, there will be enough time for the underlying to move the profitable direction and the time not to have a negative effect on the Long option.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Vertical spread</li>
+        </ul>
+        <h3>Opening the position</h3>
+        <img src="img/2.webp"/>
+        <p>Bear Call Ladder Option Positions</p>
+
+        <ul>
+            <li>Sell lower strike Call options.</li>
+            <li>Buy middle-strike Call options (same quantity and expiration as the other Call options’).</li>
+            <li>Buy higher strike Call options (same quantity and expiration as the other Call options’).</li>
+        </ul>
+        <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <p>Make sure the trend is going in the expected direction.</p>
+    <h3>Exit:</h3>
+    <p>Close the positions at least one month before the expiry date.</p>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. Lower strike price - Medium strike price + Temporary loss.</li>
+        <li>Temporary loss: Net credit.</li>
+        <li>Maximum profit: Unlimited.</li>
+        <li>Time decay: Time decay has a positive effect on the value when the position is profitable, and a negative effect when the position is loss-making.</li>
+        <li>Lower breakeven point: Lower strike price - net debit (or + net credit).</li>
+        <li>Upper breakeven point: Higher strike price + maximum loss.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Unlimited potential profit.</li>
+        <li>Limited loss.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Can be a net debit investment.</li>
+        <li>The strategy is uncertain.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <h3>Closing the position:</h3>
+    <p>Buy back the Short options and sell the Long Call.</p>
+    <h3>Mitigation of losses:</h3>
+    <p>Close the position the above-mentioned way.</p>
+    <h3>Example</h3>
+    <img src="img/3.webp"/>
+    <p>Bear Call Ladder strategy example</p>
+    <p>ABCD is traded for $48.00 on 15.05.2017. The investor sells a Short Call option which has a strike price of $50.00, expires in August 2017. and costs $4.20 (premium). Then he buys a Long Call option which has a strike price of $55.00, expires in August 2017. and costs $2.40 (premium). Then buys another Long Call option which has a strike price of $60.00, expires in August 2017. and costs $0.80 (premium).</p>
+    <p>Price of the underlying (share price): S= $48.00<br>
+        Premium (Short Call): SC= $4.20<br>
+        Premium (Long Call 1): LC1= $2.40<br>
+        Premium (Long Call 2): LC2= $0.80<br>
+        Strike price (Short Call): KS= $50.00<br>
+        Strike price (Long Call 1): KL1= $55.00<br>
+        Strike price (Long Call 2): KL2= $60.00<br>
+        Net credit: NCr<br>
+        Maximum loss: R<br>
+        Maximum profit: Pr<br>
+        Lower breakeven point: LBEP<br>
+        Upper breakeven point: UBEP<br>
+        
+        Net credit: NCr = SC - (LC1 + LC2)<br>
+        Maximum loss (risk): R = KL1 - KS - ND (or + NCr)<br>
+        Maximum profit: Unlimited<br>
+        Lower breakeven point: LBEP = KS - ND (or + NCr)<br>
+        Upper breakeven point: UBEP = KL2 + R<br>
+        
+        NCr = $1.00<br>
+        R = $4.00<br>
+        Pr = unlimited<br>
+        LBEP = $51.00<br>
+        UBEP = $64.00</p>
+
+</body>
+
+</html>

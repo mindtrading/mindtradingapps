@@ -1,0 +1,108 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/32.webp"/>
+         <p>Diagonal Call is almost like Covered Call position, but the shares are replaced with a long-duration ITM Long Call option. With this step, the costs are significantly lower. The position shorted should be short-term and OTM. The profit is maximized when the shares are sold on the strike price of the shorted Call option at expiration. The direction of the market is increasing. The investment is characterised by net debit, because the purchased Call options cost more than the sold Call options. It is a safe investment if the Long Call’s expiration is far (back) and the Short Call’s expiration is close (front), usually monthly.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/33.webp"/>
+    <p>Diagonal Call Option Positions</p>
+    <ol>
+        <li>Buy a long term, lower strike (ITM) Call option.</li>
+        <li>Sell a short term, higher strike Call option.</li>
+    </ol>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Make sure the trend is ascending or stagnating at a certain level.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>If the share closes above the strike price at expiration then the Call option is exercised automatically, the shares are delivered and the profit is going to be the received premium.</li>
+        <li>If the share price is below the strike price but above the Stop Loss at expiration, then the Short Call option should be left to expire worthless and the received premium should be kept.</li>
+        <li>If the share price is below the Stop Loss at expiration then the Long Call option should be sold or the trader should start trading in opposite position.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. Cannot be more than the paid debit.</li>
+        <li>Maximum profit: Value of Long Call (at the expiry of the Short Call) - net debit.</li>
+        <li>Time decay: Time decay has a mixed effect on the value.</li>
+        <li>Lower breakeven point: At the expiry of Short Call, it is the function of the Long Call’s value.</li>
+        <li>Upper breakeven point: At the expiry of Short Call, it is the function of the Long Call’s value.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Income on a monthly basis.</li>
+        <li>The potential return is larger than for a Covered Call strategy.</li>
+        <li>The investor can profit from share prices moving within given limits as well.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>In case of increasing share prices, it has an upper limit.</li>
+        <li>In case of large increase in share prices, it can generate losses.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Details on how to close the position by buying back the Short Call options and selling the Long Call options, along with mitigation of losses.</p>
+
+    <h2>Example</h2>
+    <img src="img/34.webp"/>
+    <p>Diagonal Call strategy example</p>
+    <ul>
+        <li>ABCD is traded for $26.00 on 19.03.2017. The historical volatility is 40%. The investor buys a Long Call option which has a strike price of $25.00, expires in January 2018. and costs $6.60 (premium). Then, sells a Short Call option which has a strike price of $27.50, expires in January 2003. and costs $0.55 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $26.00</li>
+        <li>Premium (Short Call): SC= $0.55</li>
+        <li>Premium (Long Call): LC= $6.60</li>
+        <li>Strike price (Short Call): KS= $27.50</li>
+        <li>Strike price (Long Call): KL= $25.00</li>
+        <li>Net debit: ND</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Breakeven point: BEP</li>
+    </ul>
+    <p>Cannot be calculated numerically!</p>
+
+</body>
+
+</html>

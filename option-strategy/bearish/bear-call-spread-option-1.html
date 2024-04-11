@@ -1,0 +1,112 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/1.webp"/>
+         <p>
+            Bear Call Spread option strategy can be profitable if the underlying’s price falls or moves within given levels. The main point is to cover the Short Call option with a higher strike Long Call. Both options’ strike price is above the current share price. Therefore, profit is going to be realised even if the share price does not change. Furthermore, the higher strike Long Call is also OTM. The investment is characterised by net credit, because the purchased options cost less than the sold options. When share prices fall, both options will expire worthless and the investor can keep the net credit. When share prices increase, the breakeven point is the lower strike plus the net credit. If the share price stays below that level, profit may be generated. Otherwise the investment is lossmaking. The direction of the market is decreasing or decreasing/neutral. It is a safe investment when the trading is short-term, one month or less.
+        </p>
+        <ul>
+            <li>Type: Bearish</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy, Vertical spread</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/2.webp"/>
+    <p>Bear Call Spread Option Positions involve selling lower strike Call options and buying higher strike Call options (same quantity and expiration as the other Call options’). The strike prices should be above the current share prices.</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Make sure the trend is inclining or stagnating at a certain level.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>When share prices increase above the Stop Loss, buy back the Short Call options or close the positions.</li>
+        <li>When share prices are below the lower strike price, the options will expire worthless and the investor can keep the net credit.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Difference between strike prices - net credit.</li>
+        <li>Maximum profit: Received net credit.</li>
+        <li>Time decay: Time decay has a positive effect on the value when the position is profitable, and a negative effect when the position is lossmaking.</li>
+        <li>Breakeven point: Lower strike price + net credit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Short-term strategy, it can be profitable even with sideways share prices.</li>
+        <li>Limited from below.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>The maximum loss is larger than the maximum profit.</li>
+        <li>In case of decreasing share prices, it has an upper limit.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short Calls and sell the Long Calls.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/3.webp"/>
+    <p>Bear Call Spread strategy example</p>
+    <ul>
+        <li>ABCD is traded for $28.00 on 12. 05. 2017. The investor sells a Short Call option which has a strike price of $30.00, expires in June 2017, and costs $1.00 (premium). Then he buys a Long Call option which has a strike price of $35.00, expires in June 2017, and costs $0.50 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $28.00</li>
+        <li>Premium (Long Call): LC= $0.50</li>
+        <li>Premium (Short Call): SC= $1.00</li>
+        <li>Strike price (Long Call): KL= $35.00</li>
+        <li>Strike price (Short Call): KS= $30.00</li>
+        <li>Net credit: NCr = SC - LC</li>
+        <li>Maximum loss (risk): R = (KL- KS) - NCr</li>
+        <li>Maximum profit: Pr = NCr</li>
+        <li>Breakeven point: BEP= KS + NCr</li>
+    </ul>
+    <ul>
+        <li>NCr = $0.50</li>
+        <li>R = $4.50</li>
+        <li>Pr = $0.50</li>
+        <li>BEP = $30.50</li>
+    </ul>
+
+
+</body>
+
+</html>

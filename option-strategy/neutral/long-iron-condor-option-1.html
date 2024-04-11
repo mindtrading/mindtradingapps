@@ -1,0 +1,110 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/19.webp"/>
+         <p>Long Iron Condor option strategy can be profitable if the underlying’s price increases or moves within given levels. It is basically a combination of a Bull Put Spread and a Bear Call Spread, but it can be also seen as a version of a Long Iron Butterfly. The strike of the higher Put is lower than the strike of the lower Call. This makes the options form a condor shape. The combination of two income strategies result another income strategy. Ideally, the share price closes between the middle components strike prices, which maximises the profit. In this case the options can expire and the investor can keep the combined credit. The range of the breakeven points are wider due to the Bull Put - Bear Call combination. The direction of the market is neutral. The investor speculates on shares with low volatility and small price changes. The strategy is a net credit investment. It is a short-term investment, usually one month or less.</p>
+         <ul>
+            <li>Type: Neutral</li>
+            <li>Transaction type: Credit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy, Neutral strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/20.webp"/>
+    <p>Long Iron Condor Option Positions</p>
+    <ul>
+        <li>Buy a lower strike (OTM) Put option.</li>
+        <li>Sell a middle lower strike (OTM) Put option.</li>
+        <li>Sell a middle higher strike (OTM) Call option.</li>
+        <li>Buy a higher strike (OTM) Call option.</li>
+    </ul>
+    <p>All components have the same expiration and the strategy uses both Call and Put options. The difference between consecutive strike prices must be equal.</p>
+
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Make sure the share prices are moving within certain limits.</li>
+    </ul>
+
+    <h4>Exit:</h4>
+    <ul>
+        <li>The position can be closed before expiration. The commissions should not be forgotten during calculations.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Difference between consecutive strike prices - net credit.</li>
+        <li>Maximum profit: Received net credit.</li>
+        <li>Time decay: Time decay has a positive effect on the value when the position is profitable, and a negative effect when the position is lossmaking.</li>
+        <li>Lower breakeven point: Middle Short Put’s strike price - Net Credit.</li>
+        <li>Upper breakeven point: Middle Short Call’s strike price + Net Credit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The investor can profit from share prices moving within given limits.</li>
+        <li>Low and limited risk with potential income.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Potentially higher profit is only possible close to expiration.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short options and sell the Long options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/21.webp"/>
+    <p>Long Iron Condor strategy example with ABCD traded for $27.50 on 12.04.2017. The investor engages in the following:</p>
+    <ul>
+        <li>Buy a Long Put option with a strike price of $20.00, expiring in May 2017, for a premium of $0.25.</li>
+        <li>Sell a Short Put option with a strike price of $25.00, expiring in May 2017, for a premium of $1.25.</li>
+        <li>Sell a Short Call option with a strike price of $30.00, expiring in May 2017, for a premium of $1.30.</li>
+        <li>Buy another Long Call option with a strike price of $35.00, expiring in May 2017, for a premium of $0.35.</li>
+    </ul>
+    <ul>
+        <li>Net credit: $1.95</li>
+        <li>Maximum loss: $3.05</li>
+        <li>Maximum profit: $1.95</li>
+        <li>Lower breakeven point: $23.05</li>
+        <li>Upper breakeven point: $31.95</li>
+    </ul>
+
+
+</body>
+
+</html>

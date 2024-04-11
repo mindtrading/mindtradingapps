@@ -1,0 +1,105 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/38.webp"/>
+         <p>Long Call is the purchase of a call option. This position grants the right to the option holder to buy an underlying security at an agreed-upon price until a specific future date. When opening this position, the option holder expects the price of the underlying to increase. It should be applied when the market is intensively increasing. The best is to buy cheap options, because the market can reach the strike price in a strong trend. One should think in long-term, in 3 months at least.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Basic strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+    <p>Buy a Call option with a strike price lower than the current market price of the underlying security.</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Is the market trend actually increasing after the option purchase?</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>To avoid the time decay effect, the Long option should be sold at least one month before the expiry date.</li>
+        <li>If the underlying’s price falls below the Stop Loss level, the position should be closed by selling the Call option. Stop Loss is a strategy to avoid losses: the investor decides the maximum loss he would finance and at what point the opposite transaction should take place.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. The lost amount cannot be bigger than the premium paid.</li>
+        <li>Maximum profit: Increasing as the market rises. It might even be unlimited.</li>
+        <li>Time decay: Time decay has a negative effect on the Long Call. The closer the option to expiration the more it loses from its value. This process accelerates over time. An increase in the underlying securities volatility can slow it down, and a decrease can make it faster.</li>
+        <li>Breakeven point: Strike price + premium.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Long Call costs less than buying the share immediately.</li>
+        <li>The potential profit is unlimited in theory, and the potential loss is limited.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>An incorrectly chosen strike price, expiration, or underlying security can result in a potential loss of 100% of the investment.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the option.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Determine the value for the Stop Loss based on the underlying security.</p>
+
+    <h2>Example</h2>
+    <img src="img/39.webp"/>
+    <p>Long Call strategy example</p>
+    <ul>
+        <li>ABCD is traded for $28.88 on 19.02.2017. The investor buys a Long Call option which has a strike price of $27.50, expires in January 2018. and costs $4.38 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $28.88</li>
+        <li>Premium (Call): C= $4.38</li>
+        <li>Strike price: K= $27.50</li>
+        <li>Debit: D</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Breakeven point: BEP</li>
+    </ul>
+    <ul>
+        <li>Debit: D = $4.38</li>
+        <li>Maximum loss (risk): R = $4.38</li>
+        <li>Maximum profit: Unlimited</li>
+        <li>Breakeven point: BEP = $31.88</li>
+    </ul>
+
+</body>
+
+</html>

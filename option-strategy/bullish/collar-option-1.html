@@ -1,0 +1,101 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/20.webp"/>
+         <p>Collar option is a version of the Covered Call strategy. It is a long-term investment and has an extra component: a Long Put option. The Long Put gives the strategy a lower barrier to save the investor from falling share prices. The Short Call makes the strategy limited from above. High volatility can be beneficial. The strategy is long term, usually the expiration is between one and two years. The direction of the market is bullish. The investor should minimise the risks associated with the strategy. The strategy is a net debit investment.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/21.webp"/>
+    <p>Collar Option Positions</p>
+    <ol>
+        <li>Purchase shares.</li>
+        <li>Buy ATM (or OTM) Put options.</li>
+        <li>Sell OTM Call options.</li>
+    </ol>
+    <p>The closer the Long Put’s strike price to the shares price, the safer the position.</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <p>Make sure the trend is ascending.</p>
+    <h3>Exit:</h3>
+    <ul>
+        <li>At expiry, the best case is when the Short Call is exercised and the profit is maximised.</li>
+        <li>If the share price is below the strike price of the Long Put but above the Stop Loss at expiration, then the Short Call option should be left to expire worthless and the received premium should be kept.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: (Share price + Premium (Put)) - (Strike price (Put) - Premium (Call)).</li>
+        <li>Maximum profit: Strike price (Call) - Strike price (Put) – Net Premium received.</li>
+        <li>Time decay: Time decay has a positive effect due to the Short Call, a negative effect due to the Long Put, and a neutral effect due to the purchased shares.</li>
+        <li>Breakeven point: Share price + Premium (Call) - Premium (Put).</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The strategy is safe even when share prices fall.</li>
+        <li>The risk is low even for volatile shares.</li>
+        <li>The expected return is high.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Slow transaction, because of the extended time horizon.</li>
+        <li>The maximum profit is only realised at expiration.</li>
+        <li>It is expensive because the shares need to be purchased.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Due to the low expected risk, the position does not need to be closed (when the strategy is implemented correctly).</p>
+
+    <h2>Example</h2>
+    <img src="img/22.webp"/>
+    <p>Collar strategy example</p>
+    <ul>
+        <li>ABCD is traded for $19.45 on 29.05.2017. The investor buys 1,000 shares for $19.45/piece. Then he buys a Long Put option which has a strike price of $20.00, expires in January 2006, and costs $6.50 (premium). Then sells a Short Call option which has a strike price of $25.00, expires in January 2006, and costs $5.00 (premium).</li>
+    </ul>
+    <ul>
+        <li>Net debit: ND = $20.95 ($20,950)</li>
+        <li>Maximum loss (risk): R = $0.95 ($950)</li>
+        <li>Maximum profit: Pr = $4.05 ($4,050)</li>
+        <li>Breakeven point: BEP = $20.95</li>
+    </ul>
+
+</body>
+
+</html>

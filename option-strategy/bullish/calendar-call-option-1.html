@@ -1,0 +1,109 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/10.webp"/>
+         <p>A Calendar Call option is a horizontal spread strategy. The two options’ expiration is different and their strike prices are the same. Calendar Call is almost like Covered Call position, but the shares are replaced with a long-duration Long Call option. This step decreases the costs and increases the initial return. Because of the identical strike prices, if the share price rises above the strike price, the Short Call option will be exercised. Then the investor should sell the Long Call option, buy shares for the current market price and then sell them for the strike price. Then another option can be sold the next month. The direction of the market is mixed, neutral/increasing. The investor expects constant increase on the market. The investment is characterised by net debit, because the purchased Call options cost more than the sold Call options. It is a safe investment if the Long Call’s expiration is far (back) and the Short Call’s expiration is close (front), usually one month.</p>
+         <ul>
+            <li>Type: Neutral, Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/11.webp"/>
+    <p>Calendar Call Option Positions</p>
+    <ul>
+        <li>Buy a long term Long Call option.</li>
+        <li>Sell a short term Short Call option (same strike price as the Long Call’s).</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <p>Make sure the trend is ascending or stagnating at a certain level.</p>
+    <h3>Exit:</h3>
+    <ul>
+        <li>When the share closes above the strike price, the Short Call will be exercised, the investor delivers the shares and receives the premiums.</li>
+        <li>If the share price is below the strike price but above the Stop Loss at expiration, then the Short Call option should be left to expire worthless and the received premium should be kept.</li>
+        <li>If the share price is below the Stop Loss at expiration then the Long Call option should be sold or the trader should start trading in opposite position.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Limited. Cannot be more than the paid debit.</li>
+        <li>Maximum profit: Value of Long Call (at the expiry of the Short Call) - net debit.</li>
+        <li>Time decay: Time decay has a mixed effect on the value.</li>
+        <li>Lower Breakeven point: At the expiry of Short Call, it is the function of the Long Call’s value.</li>
+        <li>Upper Breakeven point: At the expiry of Short Call, it is the function of the Long Call’s value.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Income on a monthly basis.</li>
+        <li>The potential return is larger than for a Covered Call strategy.</li>
+        <li>The investor can profit from share prices moving within given limits as well.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>In case of increasing share prices, it has an upper limit.</li>
+        <li>In case of large increase in share prices, it can generate losses.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Buy back the Short Call option and sell the Long Call option.</p>
+    <p>Mitigation of losses: Close the position the above-mentioned way.</p>
+
+    <h2>Example</h2>
+    <img src="img/12.webp"/>
+    <p>Calendar Call strategy example</p>
+    <ul>
+        <li>ABCD is traded for $65.00 on 05.05.2017. The historical volatility is 30%.</li>
+        <li>The investor buys a Long Call option which has a strike price of $65.00, expires in January 2006, and costs $12.50 (premium).</li>
+        <li>Then the investor sells a Short Call option which has a strike price of $65.00, expires in June 2017, and costs $2.70 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $65.00</li>
+        <li>Premium (Short Call): SC= $2.70</li>
+        <li>Premium (Long Call): LC= $12.50</li>
+        <li>Strike price (Short Call): KS= $65.00</li>
+        <li>Strike price (Long Call): KL= $65.00</li>
+        <li>Net debit: ND</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Breakeven point: BEP</li>
+    </ul>
+    <p>Cannot be calculated numerically!</p>
+
+</body>
+
+</html>

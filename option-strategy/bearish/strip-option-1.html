@@ -1,0 +1,104 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/28.webp"/>
+         <p>Strip option is a version of the Long Straddle strategy. The difference is an extra Long Put option in the Strip. All components are ATM. Thus, trading Strip is more expensive and riskier than trading Long Straddle. The Upper breakeven point is the strike price plus net debit. The net debit is higher than for the Long Straddle, because there are more Long Puts. The direction of the market is neutral/decreasing. The investor speculates on increasing volatility. The strategy is a net debit investment. The maximum loss is the amount of net debit, and the maximum profit is unlimited. The optimal expiration is three months. If the share prices aren’t moving, the position should be sold one month before expiry.
+         </p>
+         <ul>
+            <li>Type: Neutral, Bearish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Volatility strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/29.webp"/>
+    <p>Strip Option Positions</p>
+    <ul>
+        <li>Buy two (ATM) Put options.</li>
+        <li>Buy one (ATM) Call option (same expiration and strike price as the Put options’).</li>
+    </ul>
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Look for shares showing pennant or similar shapes on charts.</li>
+    </ul>
+    <h4>Exit:</h4>
+    <ul>
+        <li>When share prices are increasing, sell the Call option.</li>
+        <li>When share prices are decreasing, sell the Put option.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Net debit.</li>
+        <li>Maximum profit: Unlimited.</li>
+        <li>Time decay: Time decay has a negative effect on the value.</li>
+        <li>Lower breakeven point: Strike price - (Net debit / 2).</li>
+        <li>Upper breakeven point: Strike price + Net debit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Profit is generated when the share price changes in any direction.</li>
+        <li>Limited loss.</li>
+        <li>The profit is potentially unlimited when share prices are moving.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>Expensive.</li>
+        <li>The share price must change significantly to generate profit.</li>
+        <li>High Bid/Offer spread can have a negative influence on the position.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the Call and Put options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Sell the position when there is one month left until expiry.</p>
+
+    <h2>Example</h2>
+    <img src="img/30.webp"/>
+    <p>Strip strategy example with ABCD traded for $25.37 on 17.05.2017. The investor buys 2 Long Put options which have a strike price of $25.00, expire in August 2017, and cost $1.70 (premium). Then, buys a Long Call option which has a strike price of $25.00, expires in August 2017, and costs $2.40 (premium).</p>
+    <ul>
+        <li>Net debit: $5.80</li>
+        <li>Maximum loss (risk): $5.80</li>
+        <li>Maximum profit: Unlimited</li>
+        <li>Lower breakeven point: $22.10</li>
+        <li>Upper breakeven point: $30.80</li>
+    </ul>
+
+
+</body>
+
+</html>

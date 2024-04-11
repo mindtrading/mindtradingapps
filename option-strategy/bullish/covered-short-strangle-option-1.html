@@ -1,0 +1,104 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/29.webp"/>
+         <p>A Covered Short Strangle is a risky strategy and it is a version of the Covered Short Straddle. The main idea is to sell a lower strike OTM Put option to increase the return of a Covered Call. When the share price is below the Short Put’s strike price, the risk increases. The Short Put option increases the risk of the overall strategy. The extra risk equals the difference of the Short Put’s strike price and its premium. When the share price is below the Short Put’s strike price, the Short Put will be exercised and the Short Call will expire worthless. Consequently, further shares must be purchased at the Short Put’s strike price. This situation is expensive when the share prices fall. When the share prices are below the Short Call’s strike price, the Short Put will expire worthless, the Short Call will be exercised, and the shares are going to be delivered. The direction of the market is increasing. The goal of the strategy is to increase monthly revenues. Usually the trading takes place on a monthly basis.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/30.webp"/>
+        <p>Covered Short Strangle Option Positions</p>
+        <ol>
+            <li>Buy shares.</li>
+            <li>Sell lower strike (OTM) Put options (strike price &lt; estimated price at expiration).</li>
+            <li>Sell higher strike (OTM) Call options (same expiration and strike price as the Put option’s).</li>
+        </ol>
+    
+        <h2>Steps</h2>
+        <h3>Entry:</h3>
+        <ul>
+            <li>Make sure the trend is ascending or stagnating at a certain level.</li>
+        </ul>
+        <h3>Exit:</h3>
+        <ul>
+            <li>When the share price is above the strike price, the Short Call will be exercised automatically and the investor will deliver the shares. The income equals to the received premiums.</li>
+            <li>When the share price is at or below the strike price, the Short Put will be exercised. Then further shares must be purchased. The investor must pay the strike price for the shares. Therefore, it is an expensive transaction.</li>
+            <li>When the share price is between the two strikes, the investor can keep the premiums. Covered Short Strangle is a risky strategy and not recommended for beginners.</li>
+        </ul>
+    
+        <h2>Basic Characteristics</h2>
+        <ul>
+            <li>Maximum loss: Share price + Strike price (Put) - Premium (Put) - Premium (Call).</li>
+            <li>Maximum profit: Limited. Premiums (Put and Call) + Strike price (Call) - share price.</li>
+            <li>Time decay: Time decay has a positive effect on the value.</li>
+            <li>Breakeven point: Mixed. It is the function of the share price, the premiums, and the strike prices.</li>
+        </ul>
+    
+        <h2>Advantages and Disadvantages</h2>
+        <h3>Advantages:</h3>
+        <ul>
+            <li>Income on a monthly basis.</li>
+            <li>The potential income is higher than for the Covered Call strategy.</li>
+            <li>It is less risky than the Covered Short Straddle strategy.</li>
+        </ul>
+        <h3>Disadvantages:</h3>
+        <ul>
+            <li>It is highly risky when share prices fall.</li>
+            <li>Expensive.</li>
+            <li>In case of increasing share prices, it has an upper limit.</li>
+            <li>It has no limits for losses. Not a recommended strategy for beginners.</li>
+        </ul>
+    
+        <h2>Closing the Position</h2>
+        <p>Details on how to close the position based on the share price relative to the strike price, and strategies for mitigating losses.</p>
+    
+        <h2>Example</h2>
+        <img src="img/31.webp"/>
+        <p>Covered Short Strangle strategy example</p>
+        <ul>
+            <li>ABCD is traded for $28.20 on 25.02.2017.  Buy a share for $28.20. Then the investor sells a Short Put option which has a strike price of $27.50, expires in March 2017. and costs $1.20 (premium). Then he sells a Short Call option which has a strike price of $30, expires in March 2017. and costs $0.90.</li>
+        </ul>
+        <ul>
+            <li>Net debit: ND = $26.10</li>
+            <li>Maximum loss (risk): R = $53.60</li>
+            <li>Maximum profit: Pr = $3.90</li>
+            <li>Breakeven point: BEP = $26.80</li>
+        </ul>
+
+</body>
+
+</html>

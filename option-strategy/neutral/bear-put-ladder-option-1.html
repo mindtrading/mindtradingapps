@@ -1,0 +1,108 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/1.webp"/>
+         <p>Bear Put Ladder is a version of Bear Put Spread, but there is an extra Short Put involved with a lower strike price. Consequently, falling share prices can result a potential unlimited risk. When the share price (Long) is above higher strike price, the position will be potentially lossmaking. The profit is maximised when the share price is between the lower Short Put and the middle component’s strike prices. Because of the extra component, there are both lower and Upper breakeven points. The direction of the market is neutral. The strategy is a net debit investment. It is a short-term investment to avoid the possibility of unlimited losses when share prices fall.</p>
+         <ul>
+            <li>Type: Neutral</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Unlimited</li>
+            <li>Strategy: Vertical spread</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/2.webp"/>
+         <p>Bear Put Ladder Option Positions</p>
+         <ul>
+             <li>Sell a lower strike Put option.</li>
+             <li>Sell a middle-strike Put option (same quantity and expiration as the other Put option’s).</li>
+             <li>Buy a higher strike Put option (same quantity and expiration as the other Put option’s).</li>
+         </ul>
+         <h3>Steps</h3>
+         <h4>Entry:</h4>
+         <ul>
+             <li>Make sure the trend is inclining.</li>
+         </ul>
+         <h4>Exit:</h4>
+         <ul>
+             <li>When the share price is above the Stop Loss, sell the Long Put option and close the Short Put positions (if it is not possible to hold naked Put options).</li>
+         </ul>
+     
+         <h2>Basic Characteristics</h2>
+         <ul>
+             <li>Maximum loss: Unlimited. Lower strike - (Higher strike - Middle strike) + Net debit.</li>
+             <li>Temporary loss: Net debit.</li>
+             <li>Maximum profit: Limited. Higher strike - Middle strike - Net debit.</li>
+             <li>Time decay: Time decay has a positive effect on the value. The position is making profit especially around the strike price of the middle component.</li>
+             <li>Lower breakeven point: Lower strike - Maximum profit.</li>
+             <li>Upper breakeven point: Higher strike - Net debit.</li>
+         </ul>
+     
+         <h2>Advantages and Disadvantages</h2>
+         <h3>Advantages:</h3>
+         <ul>
+             <li>The costs are lower and the breakeven points are higher than at the Bear Put Spread strategy.</li>
+         </ul>
+         <h3>Disadvantages:</h3>
+         <ul>
+             <li>It has an upper limit when share prices are increasing.</li>
+             <li>It has no limit when share prices are decreasing.</li>
+             <li>The strategy is uncertain.</li>
+         </ul>
+     
+         <h2>Closing the Position</h2>
+         <p>Buy back the Short options and sell the Long Put.</p>
+     
+         <h2>Mitigation of Losses</h2>
+         <p>Close the position the above-mentioned way.</p>
+     
+         <h2>Example</h2>
+         <img src="img/3.webp"/>
+         <p>Bear Put Ladder strategy example with ABCD traded for $26.10 on 14.05.2017. The investor engages in the following:</p>
+         <ul>
+             <li>Sells a Short Put option with a strike price of $22.50, expiring in June 2017, for a premium of $0.30.</li>
+             <li>Sells another Short Put option with a strike price of $25.00, expiring in June 2017, for a premium of $1.00.</li>
+             <li>Then buys a Long Put option with a strike price of $27.50, expiring in August 2017, for a premium of $2.40.</li>
+         </ul>
+         <ul>
+             <li>Net debit: $1.10</li>
+             <li>Temporary risk: $1.10</li>
+             <li>Maximum risk: $21.10</li>
+             <li>Maximum profit: $1.40</li>
+             <li>Lower breakeven point: $21.10</li>
+             <li>Upper breakeven point: $28.60</li>
+         </ul>
+
+
+</body>
+
+</html>

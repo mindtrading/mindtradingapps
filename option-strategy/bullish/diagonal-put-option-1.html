@@ -1,0 +1,107 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/35.webp"/>
+         <p>Diagonal Put is like Diagonal Call but the Call options are replaced by Put options. Therefore, the investments may look similar. The only question is whether trading Calls or Puts result bigger return. The purchased Long Put should be long term and OTM, and the Short Put should be short term and ITM. If the share price increases above the Short Put’s strike price, then the option expires worthless and the Long Put’s value will decrease also. The direction of the market is increasing. It is a safe investment if the Long Put’s expiration is far (back) and the Short Put’s expiration is close (front), usually monthly.</p>
+         <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Limited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Income strategy</li>
+         </ul>
+         <h2>Opening the Position</h2>
+         <img src="img/36.webp"/>
+         <p>Diagonal Put Option Positions</p>
+         <ol>
+             <li>Buy a long term, lower strike Put option.</li>
+             <li>Sell a short term, higher strike Put option.</li>
+         </ol>
+     
+         <h2>Steps</h2>
+         <h3>Entry:</h3>
+         <ul>
+             <li>Make sure the trend is ascending or stagnating at a certain level.</li>
+         </ul>
+         <h3>Exit:</h3>
+         <ul>
+             <li>If the share price is lower and outside the higher Stop Loss, the position should be reversed.</li>
+             <li>If the position stays between the two strike prices, it will be exercised.</li>
+         </ul>
+     
+         <h2>Basic Characteristics</h2>
+         <ul>
+             <li>Maximum loss: Higher strike price - Long Put’s maximum value at first expiry + net debit.</li>
+             <li>Maximum profit: At expiry of Short Put, it is the function of the Long Put’s value.</li>
+             <li>Time decay: Time decay has a mixed effect on the value.</li>
+             <li>Lower breakeven point: At expiry of Short Put, it is the function of the Long Put’s value.</li>
+             <li>Upper breakeven point: At expiry of Short Put, it is the function of the Long Put’s value.</li>
+         </ul>
+     
+         <h2>Advantages and Disadvantages</h2>
+         <h3>Advantages:</h3>
+         <ul>
+             <li>Income on a monthly basis.</li>
+             <li>The potential return is larger than for a Covered Call or a Naked Call strategy.</li>
+             <li>The investor can profit from share prices moving within given limits as well.</li>
+         </ul>
+         <h3>Disadvantages:</h3>
+         <ul>
+             <li>In case of increasing share prices, it has an upper limit.</li>
+             <li>In case of large increase in share prices, it can generate losses.</li>
+         </ul>
+     
+         <h2>Closing the Position</h2>
+         <p>Details on how to close the position by buying back the Short Put option and selling the Long Put option, along with mitigation of losses.</p>
+     
+         <h2>Example</h2>
+         <img src="img/37.webp"/>
+         <p>Diagonal Put strategy example</p>
+         <ul>
+             <li>ABCD is traded for $26.00 on 11.05.2017. The historical volatility is 40%. The investor buys a Long Put option which has a strike price of $25.00, expires in January 2006. and costs $4.00 (premium). Then, sells a Short Put option which has a strike price of $27.50, expires in June 2017. and costs $2.50 (premium).</li>
+         </ul>
+         <ul>
+             <li>Price of the underlying (share price): S= $26.00</li>
+             <li>Premium (Short Put): SP= $2.50</li>
+             <li>Premium (Long Put): LP= $4.00</li>
+             <li>Strike price (Short Put): KS= $27.50</li>
+             <li>Strike price (Long Put): KL= $25.00</li>
+             <li>Net Debit: ND</li>
+             <li>Maximum loss: R</li>
+             <li>Maximum profit: Pr</li>
+             <li>Breakeven point: BEP</li>
+         </ul>
+         <p>Cannot be calculated numerically!</p>
+
+</body>
+
+</html>

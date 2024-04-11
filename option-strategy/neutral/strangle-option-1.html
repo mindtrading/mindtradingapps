@@ -1,0 +1,104 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/64.webp"/>
+         <p>Long Strangle is a version of Long Straddle strategy, but the investment is cheaper when OTM options are purchased instead of ATM options. Due to the lower costs, higher return is expected. The two breakeven points are farther from each other in this strategy. To establish the position, the trader has to buy a lower strike Long Put and a higher strike Long Call. The investment will be profitable whether the share prices are falling or increasing. Time decay has a negative effect on the value. The direction of the market is neutral. The trader speculates on fluctuating volatility. Ideally, the implied volatility is low. The strategy is a net debit investment. The maximum risk is limited, cannot be more than the net debit. The maximum profit is potentially unlimited. The optimal maturity is three months.</p>
+        <ul>
+            <li>Type: Neutral</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Volatility strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/65.webp"/>
+    <p>Strangle Option Positions</p>
+    <ul>
+        <li>Buy lower strike (OTM) Put options.</li>
+        <li>Buy higher strike (OTM) Call options (same expiration as the Put options’).</li>
+    </ul>
+
+    <h3>Steps</h3>
+    <h4>Entry:</h4>
+    <ul>
+        <li>Look for shares showing pennant or similar shapes on charts.</li>
+    </ul>
+
+    <h3>Exit:</h3>
+    <ul>
+        <li>When share prices are increasing, sell the Call option.</li>
+        <li>When share prices are decreasing, sell the Put option.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Net debit.</li>
+        <li>Maximum profit: Unlimited.</li>
+        <li>Time decay: Time decay has a negative effect on the value, especially during the last month before expiration.</li>
+        <li>Lower breakeven point: Lower strike price - Net debit.</li>
+        <li>Upper breakeven point: Higher strike price + Net debit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>Profit is generated when the share price changes in any direction.</li>
+        <li>Limited loss.</li>
+        <li>The profit is potentially unlimited when share prices are moving.</li>
+        <li>Cheaper than the Straddle strategy.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>The share price must change significantly to generate profit.</li>
+        <li>High Bid/Offer spread can have a negative influence on the investment’s quality.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the Call and Put options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Sell the position when there is one month left until expiry.</p>
+
+    <h2>Example</h2>
+    <img src="img/66.webp"/>
+    <p>Strangle strategy example with ABCD traded for $25.37 on 17.05.2017. The investor buys a Long Put option which has a strike price of $22.50, expires in August 2017, and costs $0.85 (premium). Then, buys a Long Call option which has a strike price of $27.50, expires in August 2017, and costs $1.40 (premium).</p>
+    <ul>
+        <li>Net debit: $2.25</li>
+        <li>Maximum loss: $2.25</li>
+        <li>Maximum profit: Unlimited</li>
+        <li>Lower breakeven point: $20.25</li>
+        <li>Upper breakeven point: $29.75</li>
+    </ul>
+
+</body>
+
+</html>

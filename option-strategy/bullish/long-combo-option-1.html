@@ -1,0 +1,111 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+         <img src="img/40.webp"/>
+         <p>Long Combo is a synthetic strategy, because it simulates a share purchase situation. To establish the position, the trader sells lower strike Put options and purchases higher strike Call options. This investment is long-term and usually combined with other strategies. The direction of the market is bullish. The strategy is a net debit investment. The loss is limited until the price of the underlying reaches 0.</p>
+        <ul>
+            <li>Type: Bullish</li>
+            <li>Transaction type: Debit</li>
+            <li>Maximum profit: Unlimited</li>
+            <li>Maximum loss: Limited</li>
+            <li>Strategy: Volatility strategy</li>
+        </ul>
+        <h2>Opening the Position</h2>
+        <img src="img/41.webp"/>
+        <p>Long Combo Option Positions</p>
+    <p>Sell lower strike (OTM) Put options. Buy higher strike (OTM) Call options (same expiration as the Put options’).</p>
+
+    <h2>Steps</h2>
+    <h3>Entry:</h3>
+    <ul>
+        <li>Make sure the trend is ascending.</li>
+    </ul>
+    <h3>Exit:</h3>
+    <ul>
+        <li>The strategy should simulate the purchase of an underlying security.</li>
+        <li>The portfolio should never contain a Long option in the last month before maturity.</li>
+    </ul>
+
+    <h2>Basic Characteristics</h2>
+    <ul>
+        <li>Maximum loss: Unlimited.</li>
+        <li>Maximum profit: Lower strike + Net debit (or - Net credit).</li>
+        <li>Time decay: Time decay has a negative effect on the value.</li>
+        <li>Breakeven point: Higher strike price (in case of net debit) + Net debit. Lower strike price (in case of net credit) - Net credit.</li>
+    </ul>
+
+    <h2>Advantages and Disadvantages</h2>
+    <h3>Advantages:</h3>
+    <ul>
+        <li>The position is similar to a normal Long position when purchasing shares, but the cost is almost 0.</li>
+        <li>Unlimited risk in theory. In practice, the risk is limited because the share price cannot be lower than 0.</li>
+        <li>The potential profit is unlimited.</li>
+    </ul>
+    <h3>Disadvantages:</h3>
+    <ul>
+        <li>No dividends.</li>
+        <li>The Bid/Offer Spread has a negative influence on the position.</li>
+    </ul>
+
+    <h2>Closing the Position</h2>
+    <p>Sell the Call options and buy back the Put options.</p>
+
+    <h2>Mitigation of Losses</h2>
+    <p>Sell the position when the share price crosses the Stop Loss limit.</p>
+
+    <h2>Example</h2>
+    <img src="img/42.webp"/>
+    <p>Long Combo strategy example</p>
+    <ul>
+        <li>ABCD is traded for $35.25 on 02.06.2017. The investor buys a Long Call option which has a strike price of $40.00, expires in November 2017. and costs $2.35 (premium). Then, sells a Short Put option which has a strike price of $30.00, expires in November 2017. and costs $1.65 (premium).</li>
+    </ul>
+    <ul>
+        <li>Price of the underlying (share price): S= $35.25</li>
+        <li>Premium (Long Call): C= $2.35</li>
+        <li>Premium (Short Put): P= $1.65</li>
+        <li>Strike price (Long Call): KC= $40.00</li>
+        <li>Strike price (Short Put): KP= $30.00</li>
+        <li>Net debit: ND</li>
+        <li>Maximum loss: R</li>
+        <li>Maximum profit: Pr</li>
+        <li>Breakeven point: BEP</li>
+    </ul>
+    <ul>
+        <li>Net debit: ND = C - P</li>
+        <li>Maximum loss (risk): R = KP + ND</li>
+        <li>Maximum profit: Unlimited</li>
+        <li>Breakeven point: BEP = KC + ND</li>
+    </ul>
+
+</body>
+
+</html>

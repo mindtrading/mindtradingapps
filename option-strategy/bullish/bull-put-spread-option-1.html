@@ -1,0 +1,112 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: left;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+            
+         <h3>Description and use</h3>
+        <img src="img/7.webp" />
+        <p>Bull Put Spread is a spread strategy, because it consists of a Long and a Short position in the same time. It is also a vertical strategy, because the two positions have different strike prices. The trader believes that the probability of a share price increase is bigger than the probability of a decrease. The investor speculates on increasing market prices. This strategy should be used when the trader is not totally sure about the increasing direction of the market. Bear Put Spread option strategy can be profitable if the underlying’s price increases or moves within given levels. The main point is to cover the Short Put option with a lower strike Long Put. Both options’ strike price is below the current share price. Therefore, profit is going to be realised even if the share price does not change. Furthermore, the lower strike Long Put is also OTM. When share prices are increasing, both Puts will expire worthless and the investor can keep the net credit. When share prices are falling, the breakeven point equals the difference of the higher share price and the net credit. There can be profit only if the share prices close above the breakeven point. The maximum loss is the difference between the strike prices minus the net credit. The direction of the market is mixed, increasing or neutral/increasing. The investment is safe in short term, the maturity should not be longer than one month. The main goal is to decrease the maximum loss.</p>
+        <ul>
+           <li>Type: Neutral, Bullish</li>
+           <li>Transaction type: Credit</li>
+           <li>Maximum profit: Limited</li>
+           <li>Maximum loss: Limited</li>
+           <li>Strategy: Income strategy, Vertical spread</li>
+        </ul>
+        <h3>Opening the position</h3>
+        <img src="img/8.webp"/>
+        <p>Bull Put Spread Option Positions</p>
+        <ul>
+           <li>Buy lower strike Put options.</li>
+           <li>Sell higher strike Put options (same quantity and expiration as the other Put options’).</li>
+           <li>Both options’ strike price is below the current share price.</li>
+        </ul>
+        <h2>Steps</h2>
+        <h3>Entry:</h3>
+        <p>Make sure the trend is ascending or stagnating at a certain level.</p>
+        <h3>Exit:</h3>
+        <ul>
+            <li>When the share price is below the Stop Loss, sell the Long Put option and close the positions.</li>
+            <li>When share prices are above the higher strike price, the options will expire worthless and the investor can keep the net credit.</li>
+        </ul>
+    
+        <h2>Basic Characteristics</h2>
+        <ul>
+            <li>Maximum loss: Difference between strike prices - Net credit.</li>
+            <li>Maximum profit: Net Credit.</li>
+            <li>Time decay: Time decay has a mixed effect on the value: it has a positive effect on the value when the position is profitable, and a negative effect when the position is loss-making. Only use this strategy for short-term trading.</li>
+            <li>Breakeven point: Higher strike price - Net credit</li>
+        </ul>
+    
+        <h2>Advantages and Disadvantages</h2>
+        <h3>Advantages:</h3>
+        <ul>
+            <li>No share price movement is needed, because of the short-term nature of the investment.</li>
+            <li>It has a lower limit, unlike a Naked Put strategy.</li>
+        </ul>
+        <h3>Disadvantages:</h3>
+        <ul>
+            <li>The higher profit possibility is associated with higher possible losses.</li>
+        </ul>
+    
+        <h2>Closing the Position</h2>
+        <p>Buy back the Short Puts and sell the Long Puts.</p>
+        
+        <h2>Mitigation of Losses</h2>
+        <p>Close the loss-making positions in alignment with the market movements.</p>
+        <h3>Example</h3>
+        <img src="img/9.webp"/>
+        <p>Bull Put Spread strategy example</p>
+        <p><strong>ABCD</strong> is traded for <strong>$27.00</strong> on <strong>12.05.2017</strong>. The investor buys a Long Put option which has a strike price of <strong>$20.00</strong>, expires in June 2017, and costs <strong>$0.50</strong> (premium). Then he sells a Short Put option which has a strike price of <strong>$25.00</strong>, expires in June 2017, and costs <strong>$1.00</strong> (premium).</p>
+
+        <h3>Details</h3>
+        <ul>
+            <li>Price of the underlying (share price): <strong>S= $27.00</strong></li>
+            <li>Premium (Long Put): <strong>LP= $0.50</strong></li>
+            <li>Premium (Short Put): <strong>SP= $1.00</strong></li>
+            <li>Strike price (Long Put): <strong>KL= $20.00</strong></li>
+            <li>Strike price (Short Put): <strong>KS= $25.00</strong></li>
+            <li>Net credit: <strong>NCr</strong></li>
+            <li>Maximum loss: <strong>R</strong></li>
+            <li>Maximum profit: <strong>Pr</strong></li>
+            <li>Breakeven point: <strong>BEP</strong></li>
+        </ul>
+    
+        <h3>Calculated Values</h3>
+        <ul>
+            <li>Net credit: <strong>NCr = SP - LP = $1.00 - $0.50 = $0.50</strong></li>
+            <li>Maximum loss (risk): <strong>R = (KS - KL) - NCr = ($25.00 - $20.00) - $0.50 = $4.50</strong></li>
+            <li>Maximum profit: <strong>Pr = NCr = $0.50</strong></li>
+            <li>Breakeven point: <strong>BEP = KS - NCr = $25.00 - $0.50 = $24.50</strong></li>
+        </ul>
+    
+
+</body>
+
+</html>
