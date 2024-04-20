@@ -1,0 +1,133 @@
+{
+  "basics": {
+    "a1": {
+      "header": "चार्ट पैटर्न की प्राथमिक समझ",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/prathomic-dharona.html"
+    },
+    "a2": {
+      "header": "चार्ट पैटर्न क्या है?",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/chart-pattern-ki.html"
+    },
+    "a3": {
+      "header": "कैंडलस्टिक पैटर्न क्या है?",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/candlestick-ki.html"
+    },
+    "a4": {
+      "header": "कैंडलस्टिक का उपयोग",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/candlestick-er-bobohar.html"
+    },
+    "a5": {
+      "header": "कैंडलस्टिक का इतिहास",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/histrory.html"
+    },
+    "a6": {
+      "header": "पैटर्न देखकर कैसे ट्रेड किया जाता है?",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/logo.jpg",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/basics/pattern-dekhe-trade.html"
+    }
+  },
+  "bearish": {
+    "a1": {
+      "header": "Bearish Flag",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Flag.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-flag.html"
+    },
+    "a2": {
+      "header": "Rectangle Pattern",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Rectangle.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-rectangle.html"
+    },
+    "a3": {
+      "header": "Double Top",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Double-Top.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-double-top.html"
+    },
+    "a4": {
+      "header": "Triple Top",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Triple-Top.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-triple-top.html"
+    },
+    "a5": {
+      "header": "Bearish Pennant",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Pennant.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-pennant.html"
+    },
+    "a6": {
+      "header": "Rising Wedge",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/bearish-Rising-Wedge.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-rising-wedge.html"
+    },
+    "a7": {
+      "header": "Descending Triangle",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Descending-Triangle.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-descending-triangle.html"
+    },
+    "a8": {
+      "header": "Head and Shoulder",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Head-And-Shoulders.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-head-and-shoulders.html"
+    },
+    "a9": {
+      "header": "Diamond Top",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bearish-Diamond-Top.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bearish-diamond-top.html"
+    }
+  },
+  "bulish": {
+    "b1": {
+      "header": "बुलिश फ्लैग",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Flag.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-flag.html"
+    },
+    "b10": {
+      "header": "ब्रॉडनिंग ट्रायंगल",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/bearish-Broadening-Triangle.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-broadening-triangle.html"
+    },
+    "b2": {
+      "header": "बुलिश रेक्टेंगल",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi-chart-pattern/images/Bullish-Rectangle.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-rectangle.html"
+    },
+    "b3": {
+      "header": "Double Bottom",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Double-Bottom.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-double-bottom.html"
+    },
+    "b4": {
+      "header": "Triple Bottom",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Triple-Bottom.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-triple-bottom.html"
+    },
+    "b5": {
+      "header": "Pennant",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Pennant.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-pennant.html"
+    },
+    "b6": {
+      "header": "Falling Wedge",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/bullish-Falling-Wedge.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-falling-wedge.html"
+    },
+    "b7": {
+      "header": "Ascending Triangle",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Ascending-Triangle.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-ascending-triangle.html"
+    },
+    "b8": {
+      "header": "Inverted Head and Shoulder",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Inverted-Head-and-Shoulders-chart.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-inverted-head-and-shoulders.html"
+    },
+    "b9": {
+      "header": "Diamond Bottom",
+      "image": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/images/Bullish-Diamond-Bottom.webp",
+      "link": "https://iamabhijitbera.github.io/mindtrading/hindi_chart_pattren_article/bullish-diamond-bottom.html"
+    }
+  }
+}
