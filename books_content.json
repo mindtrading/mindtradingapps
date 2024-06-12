@@ -1,0 +1,105 @@
+{
+    "books_chapters": {
+      "c1":{
+        "link": "file:///android_asset/content/c1.html",
+        "chapter": "The Making of a Stockpicker",
+         "part" : "PREPARING TO INVEST"
+      },
+      "c2":{
+        "link": "file:///android_asset/content/c2.html",
+        "chapter": "The Wall Street Oxymorons",
+        "part" : "PREPARING TO INVEST"
+      },
+      "c3":{
+        "link": "file:///android_asset/content/c3.html",
+        "chapter": "Is This Gambling, or What?",
+         "part" : "PREPARING TO INVEST"
+      },
+      "c4":{
+        "link": "file:///android_asset/content/c4.html",
+        "chapter": "Passing the Mirror Test",
+         "part" : "PREPARING TO INVEST"
+      },
+      "c5":{
+        "link": "file:///android_asset/content/c5.html",
+        "chapter": "Is This a Good Market? Please Don’t Ask",
+         "part" : "PREPARING TO INVEST"
+      },
+      "c6":{
+        "link": "file:///android_asset/content/c6.html",
+        "chapter": "Stalking the Tenbagger",
+         "part" : "PICKING WINNERS"
+      },
+      "c7":{
+        "link": "file:///android_asset/content/c7.html",
+        "chapter": "I’ve Got It, I’ve Got It—What Is It?",
+         "part" : "PICKING WINNERS"
+      },
+      "c8":{
+        "link": "file:///android_asset/content/c8.html",
+        "chapter": "The Perfect Stock, What a Deal!",
+         "part" : "PICKING WINNERS"
+      },
+      "c9":{
+        "link": "file:///android_asset/content/c9.html",
+        "chapter": "Stocks I’d Avoid",
+         "part" : "PICKING WINNERS"
+      },
+      "c10":{
+        "link": "file:///android_asset/content/c10.html",
+        "chapter": "Earnings",
+         "part" : "PICKING WINNERS"
+      },
+      "c11":{
+        "link": "file:///android_asset/content/c11.html",
+        "chapter": "The Two-Minute Drill",
+         "part" : "PICKING WINNERS"
+      },
+      "c12":{
+        "link": "file:///android_asset/content/c12.html",
+        "chapter": "Getting the Facts",
+         "part" : "PICKING WINNERS"
+      },
+      "c13":{
+        "link": "file:///android_asset/content/c13.html",
+        "chapter": "Some Famous Numbers",
+         "part" : "PICKING WINNERS"
+      },
+      "c14":{
+        "link": "file:///android_asset/content/c14.html",
+        "chapter": "Rechecking the Story",
+         "part" : "PICKING WINNERS"
+      },
+      "c15":{
+        "link": "file:///android_asset/content/c15.html",
+        "chapter": "The Final Checklist",
+         "part" : "PICKING WINNERS"
+      },
+      "c16":{
+        "link": "file:///android_asset/content/c16.html",
+        "chapter": "Designing a Portfolio",
+         "part" : "THE LONG-TERM VIEW"
+      },
+      "c17":{
+        "link": "file:///android_asset/content/c17.html",
+        "chapter": "The Best Time to Buy and Sell",
+         "part" : "THE LONG-TERM VIEW"
+      },
+      "c18":{
+        "link": "file:///android_asset/content/c18.html",
+        "chapter": "The Twelve Silliest",
+         "part" : "THE LONG-TERM VIEW"
+      },
+      "c19":{
+        "link": "file:///android_asset/content/c19.html",
+        "chapter": "Options, Futures, and Shorts",
+         "part" : "THE LONG-TERM VIEW"
+      },
+      "c20":{
+        "link": "file:///android_asset/content/c20.html",
+        "chapter": "50,000 Frenchmen Can Be Wrong",
+         "part" : "THE LONG-TERM VIEW"
+      }
+
+    }
+  }
