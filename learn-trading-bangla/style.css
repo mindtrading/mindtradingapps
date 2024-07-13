@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('https://res.cloudinary.com/abhitech-solution/raw/upload/v1720889503/MindTrading/hindsiliguri.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Hind Siliguri', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #242424;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #f6f3e9;
+ }
+img {
+ max-width: 100%;
+ height: auto;
+ display: block; /* Ensures proper rendering */
+ margin: 0 auto; /* Center the image */
+}
+.pattern-image {
+    width: 70%;
+ }
+
+h2{
+    text-align: center;
+    font-size: 22px;
+}
+img {
+ max-width: 100%;
+ height: auto;
+ display: block; /* Ensures proper rendering */
+ margin: 0 auto; /* Center the image */
+}
+
+.left-align {
+text-align: left;
+}
+.quotebox{
+    display: inline;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    text-align: center; 
+    text-decoration: underline;
+    color: blue;
+}
