@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <style type="text/css">
+   body {
+         font-family: Arial, Helvetica, sans-serif;
+         text-align: left;
+         color: #242424;
+         font-size: 18px;
+         padding-left: 20px;
+         padding-right: 20px;
+         text-align: justify;
+      }
+   img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensures proper rendering */
+      margin: 0 auto; /* Center the image */
+   }
+   .pattern-image {
+         width: 70%;
+      }
+
+   
+    </style>
+</head>
+
+<body>
+
+   <h2><strong>কিভাবে নিজের ডে ট্রেডিং স্ক্যানার তৈরি করবেন</strong></h2>
+   <p>এটি একটি প্রবন্ধ যেখানে আমি ধাপে ধাপে আলোচনা করবো কিভাবে নিজের ডে ট্রেডিং স্ক্যানার তৈরি করবেন। আমাদের পূর্ববর্তী প্রবন্ধ পড়ুন যেখানে আমরা আলোচনা করেছি ট্রেডিংয়ে ঝুঁকি ব্যবস্থাপনার জন্য ৩টি পদ্ধতি। এখানে আপনি শিখবেন কিভাবে গুগল স্প্রেডশীট ব্যবহার করে মূল্য, ভলিউম, এবং ওপেন ইন্টারেস্ট ডেটার মতো শেয়ার বাজারের তথ্য সংগ্রহ এবং বিশ্লেষণ করতে হয়। এই প্রবন্ধ পড়ার পরে, আপনি সক্ষম হবেন:</p>
+   <ol>
+   <li><strong>তথ্যের শেষ বিশ্লেষণ</strong></li>
+   <li><strong>তথ্য বিশ্লেষণের জন্য নিজের গুগল স্প্রেডশীট তৈরি কিভাবে করেন?</strong></li>
+   <li><strong>কিভাবে আপনি এই শীটটি ব্যবহার করবেন?</strong></li>
+   </ol>
+   <h4><strong>স্টকের তথ্যের শেষ কি?</strong></h4>
+   <p>এটি সেই দিনের মূল্য কী করেছিল তা বোঝায়। এটি ওপেন, ক্লোজ, হাই, লো, ওপেন ইন্টারেস্ট, অপশন চেইন তথ্য ইত্যাদি দেখায়।</p>
+   <h4><strong>এই ডেটা কোথায় পাবেন?</strong></h4>
+   <p>বাজার বন্ধ হওয়ার পরে। NSEINDIA এই রিপোর্টটি ভাভকপি ফাইলে প্রকাশ করে</p>
+   <h4><strong>কি ডাউনলোড করতে হবে?</strong></h4>
+   <p>ক্যাপিটাল মার্কেট ভাভকপি ফাইল এবং ডেরিভেটিভস মার্কেট ভাভকপি ফাইল ডাউনলোড করুন। লিঙ্কটি নিচে দেওয়া হয়েছে</p>
+
+   <h4><strong>স্ক্যানারের ব্যবহার</strong></h4>
+   <ol>
+   <li>ডেটার শেষ বিশ্লেষণ করে কি আমরা শেয়ারের প্রবণতা পূর্বানুমান করতে পারি?</li>
+   <li>আমরা কি পরবর্তী দিনের জন্য শেয়ার খুঁজে পেতে পারি?</li>
+   </ol>
+   <h4><strong>এই শীটে কি রয়েছে?</strong></h4>
+   <p><strong>কেনা/বিক্রি কলাম</strong></p>
+   <p>তাহলে দীর্ঘমেয়াদী শেয়ারের উচ্চ ভলিউম, উচ্চ OI, এবং PCR&gt;1 থাকা উচিত। সুতরাং, উপরোক্ত শর্ত দিয়ে আমরা আমাদের কেনা কলাম তৈরি করি</p>
+   <h4><strong>ভলিউমে পরিবর্তন এবং ওপেন ইন্টারেস্ট কলামে পরিবর্তন</strong></h4>
+   <p>যদি অত্যন্ত উচ্চ ভলিউম থাকে, আমরা খুঁজে পাই। তখন কিছু অস্বাভাবিক ঘটেছে। চার্ট পরীক্ষা করে, আমরা নির্ধারণ করতে পারি যে শেয়ারটি বিনিময়যোগ্য কিনা। এটি যদি উচ্চ ভলিউম সহ কোনও সমর্থন বা প্রতিরোধ স্তর থেকে বেরিয়ে আসে, তাহলে আমাদের অবশ্যই এটি আমাদের নজরদারি তালিকায় রাখতে হবে</p>
+   <h4><strong>মূল্য পরিবর্তন</strong></h4>
+   <p>এখানে, আমরা শীর্ষ গেইনার বা শীর্ষ লুজার শেয়ার খুঁজে পাব। চার্টে পরীক্ষা করুন কেন শীর্ষ গেইনার এবং শীর্ষ লুজার।</p>
+   <p><strong>PCR কলামে পরিবর্তন</strong></p>
+<p><img class="alignnone wp-image-6569 ezlazyloaded" title="How to make own Day Trading Scanner" src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=rs:829x191/rscb8/ng:webp/ngcb8" sizes="(max-width: 829px) 100vw, 829px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=ng:webp/ngcb8 829w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-300x69.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-768x177.png?ezimgfmt=ng:webp/ngcb8 768w" alt="How to make own Day Trading Scanner" width="829" height="191" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=ng:webp/ngcb8 829w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-300x69.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22-768x177.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-22.png?ezimgfmt=rs:829x191/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>কলামের গ্যাপ আপ এবং গ্যাপ ডাউন</strong></h4>
+<p>এই কলামটি আফটার মার্কেট খোলার পরে আপডেট হয়।&nbsp;এই শীটটি দেখুন</p>
+<p><img class="alignnone wp-image-6570 ezlazyloaded" title="Gap up and gap down column" src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=rs:839x395/rscb8/ng:webp/ngcb8" sizes="(max-width: 1312px) 100vw, 1312px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=ng:webp/ngcb8 1312w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-300x141.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-1024x482.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-768x361.png?ezimgfmt=ng:webp/ngcb8 768w" alt="Gap up and gap down column" width="1312" height="617" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=ng:webp/ngcb8 1312w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-300x141.png?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-1024x482.png?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23-768x361.png?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-23.png?ezimgfmt=rs:839x395/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>আমি কিভাবে এ স্ক্যানারটি ব্যবহার করব?</strong></h4>
+<p>আমি আপনাকে কিছু মৌলিক তথ্য বলছি।</p>
+<p>বাণিজ্যের উদ্দেশ্যে, কম ভলিউম এবং কম ওপেন ইন্টারেস্ট সহ স্টকগুলি এড়িয়ে চলুন।</p>
+<h4><strong>কেন?</strong></h4>
+<p>বাজারে ভলিউম এবং ওপেন ইন্টারেস্টের উপমা আগুনের জ্বালানির মতো। যদি আগুন থেকে জ্বালানি সরিয়ে ফেলা হয়, আগুন নিভে যাবে। যদি একটি দামি প্রবণতা থেকে জ্বালানি (ভলিউম এবং ওপেন ইন্টারেস্ট) সরিয়ে ফেলা হয়, প্রবণতা পরিবর্তিত হবে বা গতি থেমে যাবে। যখন ওপেন ইন্টারেস্ট এবং ভলিউম হ্রাস পায়, জ্বালানি সরিয়ে ফেলা হয়, এবং বর্তমান দামি প্রবণতা ধার করা সময়ে চলছে। একটি সুস্থ, শক্তিশালী দামি প্রবণতা (উর্ধ্ব বা নিম্নগামী) চালিয়ে যাওয়ার জন্য, ওপেন ইন্টারেস্ট এবং ভলিউম আদর্শভাবে বৃদ্ধি করা উচিত, বা কমপক্ষে হ্রাস করা উচিত নয়।</p>
+<p><img class="alignnone wp-image-6571 ezlazyloaded" title="How to use own Day Trading Scanner" src="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=rs:839x384/rscb8/ng:webp/ngcb8" sizes="(max-width: 1379px) 100vw, 1379px" srcset="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=ng:webp/ngcb8 1379w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--300x137.jpeg?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--1024x469.jpeg?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--768x351.jpeg?ezimgfmt=ng:webp/ngcb8 768w" alt="How to use own Day Trading Scanner" width="1379" height="631" data-ezsrcset="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=ng:webp/ngcb8 1379w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--300x137.jpeg?ezimgfmt=ng:webp/ngcb8 300w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--1024x469.jpeg?ezimgfmt=ng:webp/ngcb8 1024w,https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price--768x351.jpeg?ezimgfmt=ng:webp/ngcb8 768w" data-ezsrc="https://dotnettutorials.net/wp-content/uploads/2020/04/c-users-bikash-pc-desktop-new-folder-oi-vo-price-.jpeg?ezimgfmt=rs:839x384/rscb8/ng:webp/ngcb8" /></p>
+<h4><strong>অপশন চেইন বিশ্লেষণ</strong></h4>
+<p>PCR=পুট টু কল অনুপাত</p>
+<p>ক্রয়ের নিয়ম: 1. PCR(OI)-এর পরিবর্তন ইতিবাচক হয়।</p>
+<p>বিক্রয়ের নিয়ম: 1. PCR(OI)-এর পরিবর্তন নেতিবাচক হয়।</p>
+<p>ভিডিওতে, আমি সরাসরি ব্যাখ্যা করছি কীভাবে দিনের তথ্য বিশ্লেষণ করে পরবর্তী দিনের জন্য স্টক নির্বাচন করতে হয়। এটি সেই স্টকের তালিকা যেগুলো ক্রয়ের শর্ত দেখাচ্ছে</p>
+<p><img src="https://dotnettutorials.net/wp-content/uploads/2020/04/word-image-24.png?ezimgfmt=rs:839x393/rscb8/ng:webp/ngcb8" alt="How to create your own Google spread sheet for data analysis?" /></p>
+<p>আমাদের স্ক্যানারও বাই কন্ডিশন দেখায়। বাজার খোলার পরে, যদি আমাদের ট্রেডিং সেটআপ কিছু না বলে, তাহলে আমি খুশি ট্রেড করা এড়িয়ে যাই।</p>
+<p><strong>পরামর্শ:</strong>&nbsp;যদি ইনডেক্স এবং সেক্টর বুলিশ হয়, তাহলে শক্তিশালী স্টকের সাথে বুলিশ দিকে ট্রেড করুন।</p>
+
+<h4><strong>আপনার নিজস্ব ডে ট্রেডিং স্ক্যানার কিভাবে তৈরি করবেন?</strong></h4>
+<p>আপনার নিজস্ব ডে ট্রেডিং স্ক্যানার তৈরি করতে আপনার ট্রেডিং স্ট্র্যাটেজির সাথে সামঞ্জস্যপূর্ণ নির্দিষ্ট মানদণ্ড অনুযায়ী স্টক বা অন্যান্য আর্থিক উপকরণ ফিল্টার করার জন্য সফটওয়্যার বা একটি প্ল্যাটফর্ম সেট আপ করা জড়িত। এখানে একটি ধাপে ধাপে গাইড দেওয়া হলো একটি বেসিক ডে ট্রেডিং স্ক্যানার সেট আপ করার জন্য:</p>
+<h4><strong>১. একটি ট্রেডিং প্ল্যাটফর্ম বা সফটওয়্যার বেছে নিন:</strong></h4>
+<ul>
+<li>একটি ট্রেডিং প্ল্যাটফর্ম নির্বাচন করুন যা বিল্ট-ইন স্ক্যানিং টুলগুলি অফার করে। উদাহরণগুলো হল Thinkorswim, TradeStation, Interactive Brokers এবং বিভিন্ন অন্যান্য।</li>
+<li>কিছু প্ল্যাটফর্ম ব্রোকারেজ অ্যাকাউন্ট সহ বিনামূল্যে, অন্যগুলোর জন্য সাবস্ক্রিপশন প্রয়োজন হতে পারে।</li>
+
+</ul>
+<h4><strong>২. আপনার মানদণ্ড নির্ধারণ করুন</strong></h4>
+<p>আপনার ট্রেডিং কৌশলের সঙ্গে সামঞ্জস্যপূর্ণ পরামিতি নির্ধারণ করুন। ডে ট্রেডারদের জন্য সাধারণ মানদণ্ডের মধ্যে রয়েছে:</p>
+<ul>
+<li><strong>মূল্য পরিসর:</strong>&nbsp;যেমন, $10 থেকে $50 পর্যন্ত মূল্যের স্টক।</li>
+<li><strong>ভলিউম:</strong>&nbsp;যেমন, একটি ন্যূনতম গড় দৈনিক ভলিউম সহ স্টক, যেমন ৫০০,০০০ শেয়ারের বেশি।</li>
+<li><strong>অস্থিরতা:</strong>&nbsp;যেমন, একটি নির্দিষ্ট শতাংশের ইনট্রাডে মূল্য গতির সঙ্গে স্টক।</li>
+<li><strong>গ্যাপারস:</strong>&nbsp;যেমন, আগের দিনের ক্লোজিং থেকে একটি নির্দিষ্ট শতাংশের ওপরে অথবা নিচে গ্যাপ করা স্টক।</li>
+<li><strong>সেক্টর/শিল্প:</strong>&nbsp;আপনি যদি নির্দিষ্ট সেক্টরে ফোকাস করতে চান।</li>
+<li><strong>মার্কেট ক্যাপ:</strong>&nbsp;আপনি যদি ছোট-ক্যাপ বা মাইক্রো-ক্যাপ স্টক ফিল্টার করতে চান।</li>
+<li><strong>সংবাদ উত্স:</strong>&nbsp;সম্প্রতি সংবাদ প্রকাশ বা আয়ের প্রতিবেদন সহ স্টক।</li>
+<li><strong>প্রযুক্তিগত সূচক:</strong>&nbsp;যেমন, একটি ২০ দিনের চলন্ত গড়ের উপরে বা আরএসআই ৩০ এর নিচে থাকা স্টক।</li>
+</ul>
+<h4><strong>৩. স্ক্যানার সেটিংস কনফিগার করুন</strong></h4>
+<ul>
+   <li>আপনার পছন্দের প্ল্যাটফর্মে স্ক্যানার ফিচারটি অ্যাক্সেস করুন।</li>
+   <li>স্ক্যানারের ফিল্টারগুলিতে আপনার মানদণ্ডগুলি প্রবেশ করুন। বেশিরভাগ প্ল্যাটফর্মে নির্দিষ্ট মান ইনপুট করার, ড্রপ-ডাউন মেনু থেকে নির্বাচন করার বা স্লাইডার ব্যবহার করার অনুমতি দেয়।</li>
+   <li>কিছু প্ল্যাটফর্মে আপনি যদি কোডিংয়ে দক্ষ হন তবে আরও জটিল স্ক্যানিং লজিকের জন্য কাস্টম স্ক্রিপ্ট লিখতে পারেন।</li>
+   </ul>
+   <h4><strong>৪. আপনার স্ক্যানার পরীক্ষা ও সংশোধন করুন</strong></h4>
+   <ul>
+   <li>বাজার চালু থাকার সময় স্ক্যানারটি চালান এবং দেখুন এটি কি আপনার কৌশলের সাথে সংযুক্ত স্টকগুলি ফেরত দেয় কিনা।</li>
+   <li>ফলাফলের উপর ভিত্তি করে আপনার মানদণ্ডগুলো পরিমার্জন করুন। এতে থ্রেশোল্ডগুলি সামঞ্জস্য করা বা ফিল্টার যোগ/অপসারণ করা থাকতে পারে।</li>
+   <li>আপনার মানদণ্ডের সাথে মিলিত স্টকগুলি এবং স্ক্যানে উপস্থিত হওয়ার পরে তারা কিভাবে কার্যকর করে তা রেকর্ড করুন। এটি আপনাকে স্ক্যানারের সেটিংস নিখুঁত করতে সহায়তা করবে।</li>
+   </ul>
+   <h4><strong>৫. সংরক্ষণ করুন এবং স্বয়ংক্রিয় করুন</strong></h4>
+<ul>
+   <li>একবার আপনি সেটিংসে সন্তুষ্ট হলেই, ভবিষ্যতের ব্যবহারের জন্য আপনার স্ক্যানার সেটআপ সংরক্ষণ করুন।</li>
+   <li>কিছু প্ল্যাটফর্ম আপনাকে স্ক্যানারের ফলাফলের ভিত্তিতে সতর্কতা সেট করতে দেবে, যাতে একটি নতুন স্টক আপনার মানদণ্ড পূরণ করলে তাৎক্ষণিকভাবে জানানো হয়।</li>
+   </ul>
+   <h4><strong>৬. ধারাবাহিক পর্যবেক্ষণ এবং আপডেট</strong></h4>
+   <ul>
+   <li>নিয়মিত আপনার স্ক্যানারের কার্যক্ষমতা পর্যালোচনা করুন। বাজার পরিস্থিতি পরিবর্তিত হলে, আপনাকে আপনার মানদণ্ড সমন্বয় করতে হতে পারে।</li>
+   <li>বাজারের প্রবণতা সম্পর্কে সচেতন থাকুন যা আপনার মানদণ্ডের প্রাসঙ্গিকতায় প্রভাব ফেলতে পারে।</li>
+   </ul>
+   <h4><strong>৭. হার্ডওয়্যার এবং সফ্টওয়্যার সম্মতি</strong></h4>
+   <ul>
+   <li>নিশ্চিত করুন আপনার কম্পিউটার এবং ইন্টারনেট সংযোগ যথেষ্ট নির্ভরযোগ্য এবং দ্রুত যাতে তাৎক্ষণিক স্ক্যানিং এবং ট্রেডিং পরিচালনা করতে পারে।</li>
+   <li>বহু মনিটর ব্যবহারের কথা বিবেচনা করুন, যাতে স্ক্যানারের আউটপুট ট্র্যাক করার সময় অন্যান্য ট্রেডিং কাজগুলো কার্যকরভাবে পরিচালনা করতে পারেন।</li>
+</ul>
+<h4><strong>অতিরিক্ত বিবেচনা:</strong></h4>
+<ul>
+<li><strong>ব্যাকটেস্টিং:</strong>&nbsp;যদি সম্ভব হয়, আপনার মানদণ্ডকে ঐতিহাসিক তথ্যের বিপরীতে ব্যাকটেস্ট করে দেখুন যে আপনার স্ক্যানার অতীতে সম্ভাব্য ট্রেডগুলি কতটা সঠিকভাবে শনাক্ত করতে পারত।</li>
+<li><strong>ঝুঁকি ব্যবস্থাপনা:</strong>&nbsp;স্ক্যানার শুধুমাত্র সম্ভাব্য ট্রেডগুলি শনাক্ত করার একটি টুল। আপনি যে কোনও ট্রেডে প্রবেশ করার আগে সর্বদা শক্তিশালী ঝুঁকি ব্যবস্থাপনা কৌশলগুলি প্রয়োগ করুন।</li>
+<li><strong>শিক্ষা:</strong>&nbsp;বেশিরভাগ সময় ট্রেডিং প্ল্যাটফর্মগুলির দ্বারা প্রদত্ত শিক্ষার উপকরণগুলি ব্যবহার করুন যাতে আপনি আপনার স্ক্যানিং টুলের বৈশিষ্ট্যগুলি সম্পর্কে আরও জানতে পারেন এবং কীভাবে সেগুলি কার্যকরভাবে ব্যবহার করতে পারেন তা শিখতে পারেন।</li>
+</ul>
+<p>মনে রাখবেন, একটি ডে ট্রেডিং স্ক্যানার আপনার নির্দিষ্ট মানদণ্ডের সাথে মিলে যাওয়া ট্রেডিং সুযোগগুলি দ্রুত শনাক্ত করে দক্ষতা বাড়াতে চায়। এটি একজন ডে ট্রেডারের অস্ত্রাগারে একটি অপরিহার্য টুল তবে এটি একটি সামগ্রিক ট্রেডিং পরিকল্পনা এবং কৌশলের সাথে ব্যবহার করা উচিত।</p>
+
+</body>
+
+</html>
