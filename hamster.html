@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive YouTube Embed with Controls</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe id="video" src="https://ubooksmail.ams3.digitaloceanspaces.com/Hamster-Kombat-Key-Mini-Game-Puzzle-Video-Aug-5-1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="replay">Replay</button>
+    </div>
+
+    <script>
+document.getElementById('play').addEventListener('click', function() {
+    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
+
+document.getElementById('pause').addEventListener('click', function() {
+    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+});
+
+document.getElementById('replay').addEventListener('click', function() {
+    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0,true]}', '*');
+    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
+
+
+    </script>
+</body>
+</html>
