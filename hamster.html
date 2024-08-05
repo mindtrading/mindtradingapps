@@ -15,7 +15,7 @@
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #181818;
 }
 
 .video-container {
@@ -38,20 +38,6 @@
     margin-top: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
     </style>
 </head>
@@ -59,27 +45,8 @@ button:hover {
     <div class="video-container">
         <iframe id="video" src="https://ubooksmail.ams3.digitaloceanspaces.com/Hamster-Kombat-Key-Mini-Game-Puzzle-Video-Aug-5-1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="controls">
-        <button id="play">Play</button>
-        <button id="pause">Pause</button>
-        <button id="replay">Replay</button>
-    </div>
+    
 
-    <script>
-document.getElementById('play').addEventListener('click', function() {
-    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-});
-
-document.getElementById('pause').addEventListener('click', function() {
-    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-});
-
-document.getElementById('replay').addEventListener('click', function() {
-    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"seekTo","args":[0,true]}', '*');
-    document.getElementById('video').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-});
-
-
-    </script>
+   
 </body>
 </html>
