@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'bangla';
+    src:url("https://fonts.maateen.me/siyam-rupali/font.css")
+ }
+
+ body {
+    font-family: bangla;
+    text-align: left;
+    color: #242424;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures proper rendering */
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+ }
+ .pattern-image {
+       width: 70%;
+    }
+
+    .article{
+       text-align: justify;
+    }
