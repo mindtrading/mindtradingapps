@@ -1,7 +1,7 @@
 {
     "bangla_candle": {
-        "imageUrl": "https://example.com/ad_image.jpg",
-        "linkText": "Visit Our Website",
-        "linkUrl": "https://example.com"
+        "adImageIcon": "https://mindtradingapps.pages.dev/learn-trading-bangla/logo.webp",
+        "appName": "সম্পূর্ণ বাংলায় স্টক মার্কেট কোর্স",
+        "packageName": "com.bengali.stockmarket.tradingcoursebangla"
     }
 }
