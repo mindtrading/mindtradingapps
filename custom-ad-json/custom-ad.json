@@ -4,5 +4,11 @@
         "adImageIcon": "https://mindtradingapps.pages.dev/learn-trading-bangla/logo.webp",
         "appName": "সম্পূর্ণ বাংলায় স্টক মার্কেট কোর্স",
         "packageName": "com.bengali.stockmarket.tradingcoursebangla"
+    },
+    "learn_trading": {
+        "isAd" : "true",
+        "adImageIcon": "https://mindtradingapps.pages.dev/learn-trading/learn_trading.webp",
+        "appName": "Learn Trading & Strategies Free",
+        "packageName": "com.learntotrade.learntrading"
     }
 }
