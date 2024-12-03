@@ -9,7 +9,6 @@
         "isAd" : "true",
         "adImageIcon": "https://mindtradingapps.pages.dev/learn-trading/learn_trading.webp",
         "appName": "Learn Trading & Strategies Free",
-        "packageName": "com.learntotrade.learntrading",
-        "adTime": 1000
+        "packageName": "com.learntotrade.learntrading"
     }
 }
