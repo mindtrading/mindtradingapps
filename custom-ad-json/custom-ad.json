@@ -10,5 +10,17 @@
         "adImageIcon": "https://mindtradingapps.pages.dev/learn-trading/learn_trading.webp",
         "appName": "Learn Trading & Strategies Free",
         "packageName": "com.learntotrade.learntrading"
+    },
+    "japanese_candlestick_pattern": {
+        "isAd" : "true",
+        "adImageIcon": "https://mindtradingapps.pages.dev/custom-ad-json/app_logo/japanese_candlestic_pattern.webp",
+        "appName": "Japanese candlestick pattern",
+        "packageName": "com.japanesecandlestick.pattern"
+    },
+    "learn_forex_trading": {
+        "isAd" : "true",
+        "adImageIcon": "https://mindtradingapps.pages.dev/custom-ad-json/app_logo/learn_forex_trading.webp",
+        "appName": "Learn Forex Trading",
+        "packageName": "com.forextradingschool.learnforextrading"
     }
 }
